@@ -1,0 +1,18 @@
+.container{
+height: 110px;
+
+}
+.logo {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  left: 520px;
+
+}
+.collapse ul{
+position: absolute;
+left: 10px;
+}
+.fotopagina{
+  width: 100%;
+}
