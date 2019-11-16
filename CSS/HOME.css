@@ -1,19 +1,16 @@
 .container{
 height: 110px;
-background-color:inherit;
-
-
 }
 .logo {
   height: 100px;
   width: 100px;
   position: relative;
-  left: 520px;
-
+  left: 50px;
 }
-.collapse ul{
+.collapse ul {
 position: absolute;
 left: 10px;
+margin-top: 10px;
 }
 .fotopagina{
   width: 100%;
