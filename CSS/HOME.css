@@ -25,13 +25,21 @@ margin-top: 10px;
 }
 .jorge{
 margin-right: 157px;
+margin-top: 30px;
 }
 .primer{
 margin-left: 55px;
+margin-top: px;
 }
 .segundo{
   margin-right: 70px;
 }
 .mano{
   background-color: green;
+}
+.fab {
+  color: red;
+}
+.fas{
+  color: red;
 }
