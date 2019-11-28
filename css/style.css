@@ -32,7 +32,7 @@ header {
 }
 
 .topbar {
-  padding-top: 15px;
+  padding-top: 25px;
   max-width: calc(1300px - 100px);
   margin: 0 auto;
   overflow: hidden;
@@ -154,6 +154,7 @@ header {
   padding-bottom: 10px;
   border-top: 2px solid #22556e;
   border-bottom: 2px solid #22556e;
+  margin-top: 20px;
 }
 
 #menu-pcipal .logo {
@@ -171,6 +172,7 @@ header {
   padding-bottom: 10px;
   border-top: 2px solid #22556e;
   border-bottom: 2px solid #22556e;
+  margin-top: 20px;
 }
 
 /* .top-logo {
@@ -178,17 +180,23 @@ header {
   top: 25px;
 } */
 .top-logo img {
-  max-width: 100%;
+  max-width: 185px;
   height: auto;
-  margin-top: -35px;
+  margin-top: -40px;
 }
 
 .nav-right ul li a, .nav-left ul li a {
   font-weight: 300;
-  color: #FFF;
-  font-size: 24px;
-  line-height: 24px;
+  color: #b2b2b2;
+  font-size: 28px;
+  line-height: 28px;
   margin: 0 25px;
+}
+
+.nav-right ul li a:hover, .nav-left ul li a:hover,
+.nav-right ul li a.active, .nav-left ul li a.active {
+  color: #FFF;
+  text-decoration: none;
 }
 
 /* ______ GALERIA ______*/
@@ -201,58 +209,74 @@ header {
 
 .carousel-inner {
   overflow: hidden;
-  padding: 300px 100px 200px 100px;
+  padding: 250px 100px 100px 100px;
 }
 
 .producto {
   float: left;
 }
 
+.carousel-item {
+  displayu: flex;
+  justify-content: left;
+}
+
 .carousel-item img {
   width: 100%;
-  max-width: 274px;
+  max-width: 400px;
+  height: auto;
 }
 
 .info-slide {
   float: left;
   text-align: left;
-  padding-left: 50px;
   padding-top: 35px;
+  padding-left: 0px;
 }
 
 .info-slide h1 {
   font-family: 'Alfa Slab One', cursive;
   color: #FFF;
-  font-size: 48px;
+  font-size: 65px;
+  line-height: 65px;
   text-transform: uppercase;
   margin-bottom: 50px;
+  max-width: 400px;
 }
 
 .info-slide h2 {
   font-family: 'Alfa Slab One', cursive;
   color: #00c1de;
-  font-size: 24px;
+  font-size: 36px;
+  margin-top: 50px;
+  margin-bottom: 35px;
 }
 
 .info-slide span {
+  display: inline-block;
   font-family: 'Teko', sans-serif;
   color: #FFF;
-  font-size: 36px;
+  font-size: 48px;
+  line-height: 52px;
   font-weight: bold;
-  padding: 5px 20px;
+  padding: 10px 30px 5px 30px;
   border: 1px solid #FFF;
+  margin-top: 30px;
 }
-.forma_de_pagar{
+
+.forma_de_pagar {
   background-image: url(../img/bg-beneficios.jpg);
 }
-.forma_de_pagar img{
- width: 180px;
- margin-right: 200px;
 
+.forma_de_pagar img {
+  width: 180px;
+  margin-right: 200px;
 }
-.letras{
+
+.letras {
   color: white;
 }
+
 .forma_de_pagar h1 {
   font-family: 'Alfa Slab One', cursive;
   color: #FFF;
