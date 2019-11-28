@@ -244,7 +244,7 @@ header {
   max-width: 400px;
 }
 
-.info-slide h2 {
+.info-slide h3 {
   font-family: 'Alfa Slab One', cursive;
   color: #00c1de;
   font-size: 36px;
@@ -262,6 +262,14 @@ header {
   padding: 10px 30px 5px 30px;
   border: 1px solid #FFF;
   margin-top: 30px;
+}
+
+/* _______ EMPRESA________ */
+.empresa {
+  background-image: url("../img/bg-empresa.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .forma_de_pagar {
