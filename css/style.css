@@ -242,3 +242,20 @@ header {
   padding: 5px 20px;
   border: 1px solid #FFF;
 }
+.forma_de_pagar{
+  background-image: url(../img/bg-beneficios.jpg);
+}
+.forma_de_pagar img{
+ width: 180px;
+ margin-right: 200px;
+
+}
+.letras{
+  color: white;
+}
+.forma_de_pagar h1 {
+  font-family: 'Alfa Slab One', cursive;
+  color: #FFF;
+  font-size: 48px;
+  text-transform: uppercase;
+}
