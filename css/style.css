@@ -271,23 +271,46 @@ header {
   background-repeat: no-repeat;
   background-size: contain;
 }
-
-.forma_de_pagar {
+.forma_de_pagar{
+  height: 500px;
   background-image: url(../img/bg-beneficios.jpg);
-}
+  background-repeat: no-repeat;
+  background-position: center;
 
-.forma_de_pagar img {
-  width: 180px;
-  margin-right: 200px;
-}
 
-.letras {
-  color: white;
 }
+.primero {
+  margin-top: 150px;
+  float: left;
+  margin-left: 70px;
+}
+.primero h2{
+width: 100px;
 
-.forma_de_pagar h1 {
+}
+.primero h3{
+
+}
+.segundo{
+  margin-top: 150px;
+  float: left;
+}
+.segundo h2 {
+width: 100px;
+}
+.tercero{
+padding-top: 150px;
+}
+.tercero h2{
+  width: 10
+}
+.forma_de_pagar img{
+ width: 150px;
+ margin-right: 200px;
+}
+.forma_de_pagar h2 {
   font-family: 'Alfa Slab One', cursive;
   color: #FFF;
-  font-size: 48px;
+  font-size: 30px;
   text-transform: uppercase;
 }
