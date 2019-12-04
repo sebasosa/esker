@@ -4,15 +4,12 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 a {
   text-decoration: none;
 }
-
 ul {
   padding-left: 0px;
 }
-
 /* __________ HEADER __________ */
 header {
   -webkit-box-sizing: border-box;
@@ -242,18 +239,18 @@ header {
   padding-left: 260px;
 }
       /* FIN GALERIA */
-.fondo{
-  height: 600px;
-  background-image: url(../img/bg-beneficios.jpg);
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-.formulario{
+      .fondo{
+        height: 600px;
+        background-image: url(../img/bg-beneficios.jpg);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      .formulario{
 
-}
-.primer_formulario{
-padding-top: 50px;
-padding-left: 100px;
-font-size: 20px;
-}
+      }
+      .primer_formulario{
+      padding-top: 50px;
+      padding-left: 100px;
+      font-size: 20px;
+      }
