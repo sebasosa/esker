@@ -277,40 +277,34 @@ header {
   background-repeat: no-repeat;
   background-position: center;
 
+}
+.formas{
+ max-width: 1120px;
+ margin: 0 auto;
+ padding-top: 150px;
+ overflow: hidden;
+}
+.primero, .segundo, .tercero{
+  text-align: center;
+  width: 33%;
+ float: left;
+}
+.formas h2{
 
+ font-family: "Teko", sans-serif;
+ color: #FFF;
+ font-size: 46px;
+ line-height: 42px;
+ text-transform: uppercase;
 }
-.primero {
-  margin-top: 150px;
-  float: left;
-  margin-left: 70px;
-}
-.primero h2{
-width: 100px;
-
-}
-.primero h3{
-
-}
-.segundo{
-  margin-top: 150px;
-  float: left;
-}
-.segundo h2 {
-width: 100px;
-}
-.tercero{
-padding-top: 150px;
-}
-.tercero h2{
-  width: 10
+.formas h3{
+  font-family: "Teko", sans-serif;
+  color: #CCC;
+  font-weight: 300;
+  font-size: 24px;
 }
 .forma_de_pagar img{
  width: 150px;
- margin-right: 200px;
-}
-.forma_de_pagar h2 {
-  font-family: 'Alfa Slab One', cursive;
-  color: #FFF;
-  font-size: 30px;
-  text-transform: uppercase;
+ text-align: left;
+ margin-bottom: 30px;
 }
