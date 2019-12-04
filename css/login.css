@@ -198,13 +198,14 @@ header {
   color: #FFF;
   text-decoration: none;
 }
-
 /* ______ GALERIA ______*/
 #carousel {
-  background-image: url("../img/bg-slide-home.jpg");
+  height: 600px;
+  background-image: url("../img/bg-contacto.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 100%;
+
 }
 
 .carousel-inner {
@@ -226,14 +227,10 @@ header {
   max-width: 400px;
   height: auto;
 }
-
 .info-slide {
-  float: left;
   text-align: left;
   padding-top: 35px;
-  padding-left: 0px;
 }
-
 .info-slide h1 {
   font-family: 'Alfa Slab One', cursive;
   color: #FFF;
@@ -242,160 +239,21 @@ header {
   text-transform: uppercase;
   margin-bottom: 50px;
   max-width: 400px;
+  padding-left: 260px;
 }
-
-.info-slide h3 {
-  font-family: 'Alfa Slab One', cursive;
-  color: #00c1de;
-  font-size: 36px;
-  margin-top: 50px;
-  margin-bottom: 35px;
-}
-
-.info-slide span {
-  display: inline-block;
-  font-family: 'Teko', sans-serif;
-  color: #FFF;
-  font-size: 48px;
-  line-height: 52px;
-  font-weight: bold;
-  padding: 10px 30px 5px 30px;
-  border: 1px solid #FFF;
-  margin-top: 30px;
-}
-
-/* _______ EMPRESA ________ */
-.empresa {
-  background-image: url("../img/bg-empresa.jpg");
-  background-position: center top;
+      /* FIN GALERIA */
+.fondo{
+  height: 600px;
+  background-image: url(../img/bg-beneficios.jpg);
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 100%;
-  padding: 100px 0px;
 }
-.empresa .row{
-  justify-content: center;
-  max-width: 1120px;
-  padding: 0 20px
-}
-.titulo{
-  font-family: 'Alfa Slab One', cursive;
-  font-size: 56px;
-  color: #FFF;
-  text-transform: uppercase;
-  margin-bottom: 25px;
+.formulario{
 
 }
-.subtitulo{
-  font-family: 'Teko', cursive;
-  font-size: 34px;
-  color: #FFF;
-  font-weight: 300;
-  margin-bottom: 50px;
-}
-.imagen-texto{
-  overflow: hidden;
-  padding: 0 4%;
-  margin-bottom: 40px;
-}
-.imagen-texto img{
-  float: left;
-  padding-right: 30px;
-}
-.imagen-texto p:nth-of-type(1){
-  padding-top: 10px;
-}
-.imagen-texto p{
-  font-family:'Teko', cursive;
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 300;
-  color: #FFF;
-  text-align: justify;
-  margin-bottom: 20px;
-}
-.empresa .iconos{
-  overflow: hidden;
-  padding-top: 15px;
-}
-
-.empresa .iconos img{
-  width: auto;
-  max-height: 115px;
-  float: left;
-  padding: 0 22px;
-}
-.empresa .iconos img:first-child{
-  padding-left: 0px;
-}
-.empresa .iconos img:last-child{
-  padding-right: 0px;
-}
-
-/* _______ FORMAS DE PAGAR ________ */
-.forma_de_pagar{
-  height: 500px;
-  background-image: url(../img/bg-beneficios.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.formas{
-  max-width: 1120px;
-  margin: 0 auto;
-}
-.primero, .segundo, .tercero {
-  float: left;
-}
-
-.primero h2{
-width: 100px;
-
-}
-.formas h2{
-
- font-family: "Teko", sans-serif;
- color: #FFF;
- font-size: 46px;
- line-height: 42px;
- text-transform: uppercase;
-}
-.segundo{
-  float: left;
-}
-.segundo h2 {
-width: 100px;
-}
-.tercero{
-}
-.tercero h2{
-  width: 10
-}
-.forma_de_pagar img{
- width: 150px;
- text-align: left;
- margin-bottom: 30px;
-}
-.marcas_acompanan{
-  height: 500px;
-  background-image: url(../img/bg-marcas.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.marcas h2{
-  font-family: 'Alfa Slab One', cursive;
-  color: grey;
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 50px;
-}
-.cada_marca ul li{
-float: left;
-margin: 20px;
-list-style: none;
-}
-.cada_marca ul li:nth-of-type(1){
-  padding-left: 30px;
-}
-.elunico{
-  width: 170px;
+.primer_formulario{
+padding-top: 50px;
+padding-left: 100px;
+font-size: 20px;
 }

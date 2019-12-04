@@ -2,9 +2,158 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Esker Outdoors</title>
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Teko:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/login.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/bf37ca3396.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <h1>probando git</h1>
+    <!-- INICIO HEADER -->
+   <header>
+     <!-- TOPBAR -->
+     <div class="topbar">
+       <div class="social-media">
+         <ul class="">
+           <li class="">
+             <a class="" href="#"><i class="fab fa-facebook-f"></i></a>
+           </li>
+           <li class="">
+             <a class="" href="#"><i class="fab fa-instagram"></i></a>
+           </li>
+           <li class="">
+             <a class="" href="#"><i class="fab fa-linkedin-in"></i></a>
+           </li>
+         </ul>
+       </div>
+       <div class="top-bar-right">
+         <div class="carrito">
+           <a href="#">
+             <i class="fas fa-shopping-cart"></i>
+             <span class="total">$ <span class="acumulado">0,00</span></span>
+             <span class="contador">0</span>
+           </a>
+         </div>
+
+         <div class="buscador">
+           <a class="" href="#">
+             <i class="fas fa-search"></i>
+           </a>
+         </div>
+         </ul>
+         <div class="usuario">
+           <ul>
+             <li>
+               <span class="divisor"> / </span>
+             </li>
+             <li>
+               <a href="#">
+                 <span>Registrarse</span>
+               </a>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </div>
+     </div>
+
+     <!-- NAV PRINCIPAL -->
+     <nav id="menu-pcipal">
+       <div class="logo">
+         <a class="top-logo" href="#">
+           <img src="logos/logo-esker.png" alt="Logo Esker Outdoors" width="185" height="153">
+         </a>
+       </div>
+       <div class="nav-left">
+         <ul>
+           <li>
+             <a href="index.html" class="active">
+               <span>Home</span>
+             </a>
+           </li>
+           <li>
+             <a href="#">
+               <span>Productos</span>
+             </a>
+           </li>
+         </ul>
+       </div>
+       <div class="nav-right">
+         <ul>
+           <li>
+             <a href="#">
+               <span>Preguntas Frecuentes</span>
+             </a>
+           </li>
+           <li>
+             <a href="contacto.html">
+               <span>Contacto</span>
+             </a>
+           </li>
+         </ul>
+       </div>
+     </nav>
+   </header>
+   <!-- FIN HEADER -->
+
+   <!-- INICIO GALERIA -->
+   <div id="carousel" class="carousel slide" data-ride="carousel">
+     <div class="container">
+       <div class="row">
+         <section class="carousel-inner">
+           <article class="carousel-item active">
+             <div class="col-6 info-slide">
+                 <h1>LOGIN</h1>
+             </div>
+           </article>
+         </section>
+       </div>
+     </div>
+   </div>
+   <!-- FIN GALERIA -->
+
+  <div class="fondo">
+    <div class="formulario">
+     <form class="primer_formulario" action="index.html" method="post">
+      <p>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" value="">
+      </p>
+      <p>
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" value="">
+      </p>
+      <p>
+        <label for="Telefono">Teléfono:</label>
+        <input type="text" name="Telefono" value="">
+      </p>
+      <p>
+        <label for="Email">Email:</label>
+        <input type="text" name="Email" value="">
+      </p>
+      <p>
+        <label for="Contraseña">Contraseña:</label>
+        <input type="text" name="Contraseña" value="">
+      </p>
+      <p>
+        <label for="Confirmar contraseña">Confirmar contraseña</label>
+        <input type="text" name="Confirmar contraseña" value="">
+      </p>
+      <p>
+        <input type="submit" name="Enviar" value="Enviar">
+      </p>
+     </form>
+    </div>
+  </div>
+
+
+   <!--  SCRIPTS  -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
   </body>
 </html>
