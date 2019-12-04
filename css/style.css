@@ -204,7 +204,7 @@ header {
   background-image: url("../img/bg-slide-home.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .carousel-inner {
@@ -264,26 +264,89 @@ header {
   margin-top: 30px;
 }
 
-/* _______ EMPRESA________ */
+/* _______ EMPRESA ________ */
 .empresa {
   background-image: url("../img/bg-empresa.jpg");
   background-position: center top;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
+  padding: 100px 0px;
 }
+.empresa .row{
+  justify-content: center;
+  max-width: 1120px;
+  padding: 0 20px
+}
+.titulo{
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 56px;
+  color: #FFF;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+
+}
+.subtitulo{
+  font-family: 'Teko', cursive;
+  font-size: 34px;
+  color: #FFF;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+.imagen-texto{
+  overflow: hidden;
+  padding: 0 4%;
+  margin-bottom: 40px;
+}
+.imagen-texto img{
+  float: left;
+  padding-right: 30px;
+}
+.imagen-texto p:nth-of-type(1){
+  padding-top: 10px;
+}
+.imagen-texto p{
+  font-family:'Teko', cursive;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #FFF;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.empresa .iconos{
+  overflow: hidden;
+  padding-top: 15px;
+}
+
+.empresa .iconos img{
+  width: auto;
+  max-height: 115px;
+  float: left;
+  padding: 0 22px;
+}
+.empresa .iconos img:first-child{
+  padding-left: 0px;
+}
+.empresa .iconos img:last-child{
+  padding-right: 0px;
+}
+
+/* _______ FORMAS DE PAGAR ________ */
 .forma_de_pagar{
   height: 500px;
   background-image: url(../img/bg-beneficios.jpg);
   background-repeat: no-repeat;
   background-position: center;
-
-
 }
-.primero {
-  margin-top: 150px;
+
+.formas{
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.primero, .segundo, .tercero {
   float: left;
-  margin-left: 70px;
 }
+
 .primero h2{
 width: 100px;
 
@@ -292,14 +355,12 @@ width: 100px;
 
 }
 .segundo{
-  margin-top: 150px;
   float: left;
 }
 .segundo h2 {
 width: 100px;
 }
 .tercero{
-padding-top: 150px;
 }
 .tercero h2{
   width: 10
