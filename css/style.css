@@ -204,7 +204,7 @@ header {
   background-image: url("../img/bg-slide-home.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .carousel-inner {
@@ -264,30 +264,92 @@ header {
   margin-top: 30px;
 }
 
-/* _______ EMPRESA________ */
+/* _______ EMPRESA ________ */
 .empresa {
   background-image: url("../img/bg-empresa.jpg");
   background-position: center top;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
+  padding: 100px 0px;
 }
+.empresa .row{
+  justify-content: center;
+  max-width: 1120px;
+  padding: 0 20px
+}
+.titulo{
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 56px;
+  color: #FFF;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+
+}
+.subtitulo{
+  font-family: 'Teko', cursive;
+  font-size: 34px;
+  color: #FFF;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+.imagen-texto{
+  overflow: hidden;
+  padding: 0 4%;
+  margin-bottom: 40px;
+}
+.imagen-texto img{
+  float: left;
+  padding-right: 30px;
+}
+.imagen-texto p:nth-of-type(1){
+  padding-top: 10px;
+}
+.imagen-texto p{
+  font-family:'Teko', cursive;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #FFF;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.empresa .iconos{
+  overflow: hidden;
+  padding-top: 15px;
+}
+
+.empresa .iconos img{
+  width: auto;
+  max-height: 115px;
+  float: left;
+  padding: 0 22px;
+}
+.empresa .iconos img:first-child{
+  padding-left: 0px;
+}
+.empresa .iconos img:last-child{
+  padding-right: 0px;
+}
+
+/* _______ FORMAS DE PAGAR ________ */
 .forma_de_pagar{
   height: 500px;
   background-image: url(../img/bg-beneficios.jpg);
   background-repeat: no-repeat;
   background-position: center;
+}
 
-}
 .formas{
- max-width: 1120px;
- margin: 0 auto;
- padding-top: 150px;
- overflow: hidden;
+  max-width: 1120px;
+  margin: 0 auto;
 }
-.primero, .segundo, .tercero{
-  text-align: center;
-  width: 33%;
- float: left;
+.primero, .segundo, .tercero {
+  float: left;
+}
+
+.primero h2{
+width: 100px;
+
 }
 .formas h2{
 
@@ -297,11 +359,16 @@ header {
  line-height: 42px;
  text-transform: uppercase;
 }
-.formas h3{
-  font-family: "Teko", sans-serif;
-  color: #CCC;
-  font-weight: 300;
-  font-size: 24px;
+.segundo{
+  float: left;
+}
+.segundo h2 {
+width: 100px;
+}
+.tercero{
+}
+.tercero h2{
+  width: 10
 }
 .forma_de_pagar img{
  width: 150px;
