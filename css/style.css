@@ -351,8 +351,13 @@ header {
 width: 100px;
 
 }
-.primero h3{
+.formas h2{
 
+ font-family: "Teko", sans-serif;
+ color: #FFF;
+ font-size: 46px;
+ line-height: 42px;
+ text-transform: uppercase;
 }
 .segundo{
   float: left;
@@ -367,11 +372,6 @@ width: 100px;
 }
 .forma_de_pagar img{
  width: 150px;
- margin-right: 200px;
-}
-.forma_de_pagar h2 {
-  font-family: 'Alfa Slab One', cursive;
-  color: #FFF;
-  font-size: 30px;
-  text-transform: uppercase;
+ text-align: left;
+ margin-bottom: 30px;
 }
