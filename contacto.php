@@ -46,7 +46,7 @@
             <fieldset class="form-group">
               <textarea class="form-control" name="mensaje" rows="8" cols="80"></textarea>
             </fieldset>
-            <button type="submit" class="btn btn-primary">Registrarme</button>
+            <button type="submit" class="btn btn-primary">Enviar</button>
           </form>
         </div>
 
