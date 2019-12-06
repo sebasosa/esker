@@ -13,8 +13,8 @@ ul {
   padding-left: 0px;
 }
 
-.topbar .usuario ul li.active a span{
-  color: #FFF!important;
+.topbar .usuario ul li.active a span {
+  color: #FFF !important;
   text-decoration: none;
 }
 
@@ -199,7 +199,7 @@ top: 25px;
 }
 
 .nav-right ul li a:hover, .nav-left ul li a:hover,
-.nav-right ul li a.active, .nav-left ul li a.active{
+.nav-right ul li a.active, .nav-left ul li a.active {
   color: #FFF;
   text-decoration: none;
 }
@@ -208,7 +208,6 @@ top: 25px;
 #carousel {
   background-image: url("../img/bg-slide-home.jpg");
   background-position: center bottom;
-  background-repeat: no-repeat;
   background-size: 100%;
 }
 
@@ -272,8 +271,7 @@ top: 25px;
 /* _______ EMPRESA ________ */
 .empresa {
   background-image: url("../img/bg-empresa.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
+  background-position: center center;
   background-size: 100%;
   padding: 100px 0px;
 }
@@ -365,8 +363,8 @@ top: 25px;
 .forma_de_pagar {
   min-height: 500px;
   background-image: url(../img/bg-beneficios.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
+  background-size: 100%;
 }
 
 .formas {
@@ -407,8 +405,7 @@ top: 25px;
 /* _______ MARCAS QUE ACOMPAÑAN ________ */
 .marcas_acompanan {
   background-image: url(../img/bg-marcas.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: 100%;
 }
 
@@ -451,227 +448,369 @@ top: 25px;
 
 .cada_marca ul li:nth-of-type(1) {}
 
-  .elunico {
-    width: 170px;
-  }
+.elunico {
+  width: 170px;
+}
 
-  /* _______ FOOTER ________ */
-  footer {
-    background-image: url(../img/bg-footer.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 100%;
-    padding-top: 90px;
-  }
+/* _______ FOOTER ________ */
+footer {
+  background-image: url(../img/bg-footer.jpg);
+  background-position: center center;
+  background-size: 100%;
+  padding-top: 90px;
+}
 
-  footer h6 {
-    font-family: "Teko", sans-serif;
-    font-size: 24px;
-    color: #00c1de;
-    font-weight: 400;
-    margin-bottom: 0px;
-  }
+footer h6 {
+  font-family: "Teko", sans-serif;
+  font-size: 24px;
+  color: #00c1de;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
 
-  .newsletter, .ubicacion, .legales {
-    text-align: center;
-  }
+.newsletter, .ubicacion, .legales {
+  text-align: center;
+}
 
-  .newsletter {
-    padding-bottom: 50px;
-    border-bottom: 1px solid #666;
-    margin: 0 auto;
-  }
+.newsletter {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #666;
+  margin: 0 auto;
+}
 
-  .newsletter form {
-    justify-content: center;
-  }
+.newsletter form {
+  justify-content: center;
+}
 
-  .newsletter form fieldset {
-    padding-right: 10px;
-  }
+.newsletter form fieldset {
+  padding-right: 10px;
+}
 
-  .newsletter form button {
-    background-color: #f02a0f;
-    border-color: #f02a0f;
-    font-family: "Teko", sans-serif;
-    font-size: 28px;
-    line-height: 28px;
-    font-weight: 300;
-    text-transform: uppercase;
-    border-radius: none;
-    padding: 8px 30px;
-  }
+.newsletter form button {
+  background-color: #f02a0f;
+  border-color: #f02a0f;
+  font-family: "Teko", sans-serif;
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 8px 30px;
+}
 
-  .newsletter form input.form-control {
-    font-family: "Teko", sans-serif;
-    font-size: 21px;
-    color: #17a2b8;
-    font-weight: 300;
-  }
+.newsletter form input.form-control {
+  font-family: "Teko", sans-serif;
+  font-size: 21px;
+  color: #17a2b8;
+  font-weight: 300;
+}
 
-  .newsletter form button:hover {
-    background-color: #00c1de;
-    border-color: #00c1de;
-  }
+.newsletter form button:hover {
+  background-color: #00c1de;
+  border-color: #00c1de;
+}
 
-  .newsletter p:first-of-type {
-    font-family: "Teko", sans-serif;
-    font-size: 36px;
-    color: #fff;
-    font-weight: 400;
-  }
+.newsletter p:first-of-type {
+  font-family: "Teko", sans-serif;
+  font-size: 36px;
+  color: #fff;
+  font-weight: 400;
+}
 
-  .ubicacion {
-    padding-top: 60px;
-    overflow: hidden;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #666;
-  }
+.ubicacion {
+  padding-top: 60px;
+  overflow: hidden;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #666;
+}
 
-  .iconos-footer {
-    overflow: hidden;
-    float: left;
-  }
+.iconos-footer {
+  overflow: hidden;
+  float: left;
+}
 
-  .iconos-footer div {
-    float: left;
-    width: 33%;
-  }
+.iconos-footer div {
+  float: left;
+  width: 33%;
+}
 
-  .iconos-footer p:first-of-type {
-    font-family: "Teko", sans-serif;
-    font-size: 36px;
-    color: #f02a0f;
-    font-weight: 400;
-    margin-bottom: 0px;
-    text-align: left;
-  }
+.iconos-footer p:first-of-type {
+  font-family: "Teko", sans-serif;
+  font-size: 36px;
+  color: #f02a0f;
+  font-weight: 400;
+  margin-bottom: 0px;
+  text-align: left;
+}
 
-  .iconos-footer p:nth-of-type(2) {
-    font-family: "Teko", sans-serif;
-    font-size: 32px;
-    line-height: 21px;
-    color: #b2b2b2;
-    font-weight: 300;
-    text-align: left;
-    margin-bottom: 50px;
-  }
+.iconos-footer p:nth-of-type(2) {
+  font-family: "Teko", sans-serif;
+  font-size: 32px;
+  line-height: 21px;
+  color: #b2b2b2;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 50px;
+}
 
-  .iconos-footer i {
-    color: #fff;
-    font-size: 36px;
-    border: 1px solid #00c1de;
-    border-radius: 50%;
-    padding: 25px;
-    width: 88px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
+.iconos-footer i {
+  color: #fff;
+  font-size: 36px;
+  border: 1px solid #00c1de;
+  border-radius: 50%;
+  padding: 25px;
+  width: 88px;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-  .contacto small, .contacto a {
-    font-family: "Teko", sans-serif;
-    font-size: 21px;
-    line-height: 21px;
-    color: #FFF;
-    font-weight: 300;
-  }
+.contacto small, .contacto a {
+  font-family: "Teko", sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  color: #FFF;
+  font-weight: 300;
+}
 
-  .contacto .mapa {
-    float: right;
-  }
+.contacto .mapa {
+  float: right;
+}
 
-  .contacto {
-    overflow: hidden;
-  }
+.contacto {
+  overflow: hidden;
+}
 
-  .contacto a {
-    text-decoration: none;
-  }
+.contacto a {
+  text-decoration: none;
+}
 
-  .contacto a:hover {
-    text-decoration:
-  }
+.contacto a:hover {
+  text-decoration:
+}
 
-  .sm-footer {
-    float: left;
-    margin-top: 50px;
-    width: 40%;
-  }
+.sm-footer {
+  float: left;
+  margin-top: 50px;
+  width: 40%;
+}
 
-  .sm-footer ul {
-    margin: 0px;
-    padding: 0px;
-  }
+.sm-footer ul {
+  margin: 0px;
+  padding: 0px;
+}
 
-  .sm-footer ul li {
-    list-style-type: none;
-    display: inline;
-  }
+.sm-footer ul li {
+  list-style-type: none;
+  display: inline;
+}
 
-  .sm-footer ul li a i {
-    color: #00c1de;
-    width: 41px;
-    text-align: center;
-    padding: 10px;
-  }
+.sm-footer ul li a i {
+  color: #00c1de;
+  width: 41px;
+  text-align: center;
+  padding: 10px;
+}
 
-  .sm-footer ul li a i:hover {
-    color: #fff;
-    background-color: #00c1de;
-    border-radius: 50%;
-  }
+.sm-footer ul li a i:hover {
+  color: #fff;
+  background-color: #00c1de;
+  border-radius: 50%;
+}
 
-  .legales {
-    padding: 10px 0px;
-  }
+.legales {
+  padding: 10px 0px;
+}
 
-  .legales small {
-    font-family: "Teko", sans-serif;
-    font-size: 18px;
-    color: #ccc;
-    font-weight: 300;
-  }
+.legales small {
+  font-family: "Teko", sans-serif;
+  font-size: 18px;
+  color: #ccc;
+  font-weight: 300;
+}
 
-  /* ---------- LOGIN --------- */
-  #login {
-    height: 500px;
-    background-image: url("../img/bg-contacto.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
-  .pagina h1{
-    font-family: 'Alfa Slab One', cursive;
-    color: #FFF;
-    font-size: 65px;
-    line-height: 65px;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 300px;
-    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
-  }
+/* ---------- LOGIN --------- */
+#login {
+  height: 500px;
+  background-image: url("../img/bg-novedades.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+}
 
-  .contenido{
-    background-image: url("../img/pattern-iso.png");
-    background-position: top left;
-    background-repeat: repeat;
-    height: 600px;
-    padding-top: 70px;
-  }
+.pagina h1 {
+  font-family: 'Alfa Slab One', cursive;
+  color: #FFF;
+  font-size: 65px;
+  line-height: 65px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 300px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
 
-  .login{
-    width: 50%;
-  }
+.contenido {
+  background-image: url("../img/pattern-iso.png");
+  background-position: top left;
+  background-repeat: repeat;
+  padding: 70px 0px;
+  overflow: hidden;
+}
 
-  .contenido p:first-child{
-    font-family: 'Alfa Slab One', cursive;
-    font-size: 28px;
-    line-height: 32px;
-    color: #22556e;
-  }
-  .login-form{
-    margin-top: 50px;
-  }
-  .login-form input[type="text"], .login-form input[type="text"]{
-    width: 100%;
-  }
+.login {
+  width: 50%;
+  border-right: 1px solid #CCC;
+  padding: 0px 35px 15px 0px;
+  overflow: hidden;
+  float: left;
+}
+
+.contenido p:first-child {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 28px;
+  line-height: 32px;
+  color: #22556e;
+}
+
+.login-form {
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+input[type="email"], input[type="password"], input[type="text"], input[type="tel"] {
+  width: 100%;
+  font-family: "Teko", sans-serif;
+  font-size: 21px;
+  font-weight: 300;
+}
+
+.login-form input[type="checkbox"] {
+  margin-right: 5px;
+  height: 16px;
+  width: auto;
+}
+
+.login-form label {
+  font-family: "Teko", sans-serif;
+  font-size: 21px;
+  color: #999;
+  font-weight: 300;
+}
+
+.login-form button, .register-form button {
+  background-color: #00c2de;
+  border-color: #00c2de;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 8px 30px;
+  -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.login-form .olvidopass a {
+  font-family: "Teko", sans-serif;
+  font-size: 24px;
+  color: #00c2de;
+  font-weight: 400;
+}
+
+.registro {
+  width: 47%;
+  float: left;
+  margin-left: 3%;
+}
+
+.registro p:nth-last-child(2), .registarse p:nth-last-child(2) {
+  font-family: "Teko", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ccc;
+  font-weight: 300;
+  margin: 50px 0px;
+}
+
+.registro a {
+  background-color: #00c2de;
+  border-color: #00c2de;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 8px 30px;
+  color: #FFF;
+}
+
+/* ---------- REGISTRARSE --------- */
+#registro {
+  height: 500px;
+  background-image: url("../img/bg-formasdepago.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.registrarse {
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+
+.registarse p:nth-last-child(2) {
+  margin: 30px 0;
+}
+
+.register-form {
+  overflow: hidden;
+}
+
+.register-form button {
+  float: left;
+  margin-top: 20px;
+}
+
+/* ---------- CONTACTO --------- */
+#contacto {
+  height: 500px;
+  background-image: url("../img/bg-contacto.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+textarea.form-control {
+  width: 100%;
+  font-family: "Teko", sans-serif;
+  font-size: 21px;
+  font-weight: 300;
+}
+
+/* ---------- Bienvenidos --------- */
+#bienvenidos {
+  height: 500px;
+  background-image: url("../img/bg-como-comprar.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.bienvenidos {
+  text-align: center;
+}
+
+.bienvenidos p {
+  margin-bottom: 50px;
+}
+
+.bienvenidos a.btn, .contact-form button{
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 24px;
+  color: #FFF;
+  font-weight: 400;
+  text-transform: uppercase;
+}
