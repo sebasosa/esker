@@ -814,3 +814,14 @@ textarea.form-control {
   font-weight: 400;
   text-transform: uppercase;
 }
+/* PREGUNTAS FRECUENTES */
+#faq{
+  height: 500px;
+  background-image: url("../img/bg-como-comprar.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.contenidofaq{
+  background-image: url("../img/bg-catalogo.jpg");
+}
