@@ -77,7 +77,7 @@
     <div class="nav-right">
       <ul>
         <li>
-          <a href="#">
+          <a href="faq.php">
             <span>Preguntas Frecuentes</span>
           </a>
         </li>
