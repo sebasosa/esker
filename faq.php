@@ -29,7 +29,7 @@
         <ul>
           <li>
             <h2>¿CÓMO CANCELAR MI PEDIDO?</h2>
-            <p>Una ves que recibiste la confirmación de tu compra, tenes un maximo de 12hs para cancelar el envio de tu pedido para esto debes escribirnos un mail a ventas@eskeroutdoors.com.ar con el numero de tu orden</p>
+            <p>Una vez que recibiste la confirmación de tu compra, tenes un maximo de 12hs para cancelar el envio de tu pedido para esto debes escribirnos un mail a <a href="mailto:ventas@eskeroutdoors.com.ar" class="email">ventas@eskeroutdoors.com.ar</a> con el numero de tu orden</p>
           </li>
          <li>
            <h2>¿CÓMO CONOZCO EL NUMERO DE ORDEN DE MI PEDIDO?</h2>
@@ -61,9 +61,11 @@
          </li>
          <li>
            <h2>*PRODUCTO</h2>
-           <p>ESKER OUTDOORS garantiza todos sus productos. Cada productos se envía en su correspondiente bolso y debidamente embalada.</p>
-           <p>Si el paquete que contiene tu pedido esta abierto a la hora de ser entregado, por favor no lo aceptes y escribinos a ventas@eskeroutdoors.com.ar con el numero de tu orden para chequear la mercadería con el correo antes de entregarla</p>
-           <p>Los días feriados no se realizan envías. Los gastos de envpio aparecen claramente reflejados antes que haga su pedido.</p>
+           <p>ESKER OUTDOORS garantiza todos sus productos. Cada productos se envía en su correspondiente bolso y debidamente embalada.<br/> Si el paquete que contiene tu pedido esta abierto a la hora de ser entregado, por favor no lo aceptes y escribinos a <a href="mailto:ventas@eskeroutdoors.com.ar" class="email">ventas@eskeroutdoors.com.ar</a> con el numero de tu orden para chequear la mercadería con el correo antes de entregarla. Los días feriados no se realizan envías. Los gastos de envpio aparecen claramente reflejados antes que haga su pedido.</p>
+         </li>
+         <li>
+           <h2>*DEVOLUCIONES</h2>
+           <p>Las prendas adquiridas por internet no tienen cambio excepto por falla de fábrica. En este caso ESKER OUTDOORS asume los gastos correspondientes a la reposicion de su pedido en excelente estado</p>
          </li>
 
         </ul>
@@ -74,5 +76,34 @@
     </div>
 
   </div>
+  <!--  FORMAS DE PAGO  -->
+  <div class="forma_de_pagar">
+    <div class="formas">
+      <div class="primero">
+        <img src="iconos/beneficio-1.png" alt="">
+        <h2 class="letras">ENVÍO</br>GRATIS</h2>
+        <h3 class="">A partir de los $699,00</h3>
+      </div>
+      <div class="segundo">
+        <img class="fototercero" src="iconos/beneficio-2.png" alt="">
+        <h2 class="letras">SATISFACCIÓN GARANTIZADA</h2>
+        <h3 class="">30 días para la devolucion sin cargo</h3>
+      </div>
+      <div class="tercero">
+        <img src="iconos/beneficio-3.png" alt="">
+        <h2 class="letras">COMPRA</br>SEGURA</h2>
+        <h3 class="">Tienda Online verificada</h3>
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER -->
+  <?php require_once 'partials/footer.php' ?>
+  <!-- FIN DEL FOOTER -->
+
+
+  <!--  SCRIPTS  -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>

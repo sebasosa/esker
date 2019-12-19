@@ -1022,14 +1022,46 @@ nav ol.breadcrumb {
 .descripcion-larga ul li {
   list-style: none;
 }
-/* PREGUNTAS FRECUENTES */
-#faq{
+
+/* -------- PREGUNTAS FRECUENTES --------- */
+#faq {
   height: 500px;
   background-image: url("../img/bg-como-comprar.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
 }
-.contenidofaq{
+
+.contenidofaq {
   background-image: url("../img/bg-catalogo.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 50px 0px;
+  overflow: hidden;
+}
+
+.faq ul li {
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.faq ul li h2 {
+  font-family: "Teko", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #22556e;
+  margin-bottom: 5px;
+}
+
+.faq ul li p {
+  font-family: "Teko", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #666;
+}
+
+.faq ul li p a.email {
+  color: #f02a0f;
 }

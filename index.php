@@ -28,14 +28,17 @@
         <div class="row">
           <section class="carousel-inner">
             <article class="carousel-item active">
+              <a href="detalle-producto.php">
               <div class="col-6 producto">
                 <img src="productos/mochila-azul-frente.png" class="" alt="Mochila 30 lts">
+
               </div>
               <div class="col-6 info-slide">
                 <h3>Mochila 30 lts</h2>
                   <h1>Natway Blanc 30</h1>
                   <span>$1690.00</span>
               </div>
+              </a>
             </article>
           </section>
         </div>

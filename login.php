@@ -82,7 +82,7 @@ if($_POST) {
         <div class="registro">
           <p>Nuevos Clientes</p>
           <p>Al crear una cuenta en nuestra página podrás moverte rápidamente por el proceso de pago, guardar múltiples direcciones de envío, ver y seguir el rastro de los pedidos de tu cuenta y más!</p>
-          <a href="registro.html" class="btn btn-secondary">Quiero crear mi cuenta</a>
+          <a href="registro.php" class="btn btn-secondary">Quiero crear mi cuenta</a>
         </div>
 
       </div>
