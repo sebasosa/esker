@@ -17,7 +17,7 @@
     </div>
     <div class="top-bar-right">
       <div class="carrito">
-        <a href="#">
+        <a href="carrito.php">
           <i class="fas fa-shopping-cart"></i>
           <span class="total">$ <span class="acumulado">0,00</span></span>
           <span class="contador">0</span>
@@ -67,7 +67,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="productos.php">
             <span>Productos</span>
           </a>
         </li>

@@ -83,6 +83,7 @@ header {
   margin-right: 15px;
   padding: 3px;
   float: left;
+  background: none;
 }
 
 .topbar .carrito a, .topbar .carrito .total, .topbar .carrito .contador {
@@ -815,6 +816,139 @@ textarea.form-control {
   text-transform: uppercase;
 }
 
+/*---------- PRODUCTOS ---------*/
+#productos {
+  height: 500px;
+  background-image: url("../img/bg-camping.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.detalle {
+  background-image: url("../img/bg-catalogo.jpg");
+  background-position: top center;
+  background-repeat: repeat;
+  background-size: 100%;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.detalle .container {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+ul.categorias {
+  float: left;
+  overflow: hidden;
+}
+
+.categorias li {
+  list-style: none;
+  float: left;
+  padding-right: 20px;
+}
+
+.categorias li a, .categorias li {
+  font-family: "Teko", sans-serif;
+  font-size: 32px;
+  color: #808080;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.categorias li a:hover, .categorias li a.active {
+  color: #f02a0f;
+}
+
+.filtrar {
+  float: right;
+}
+
+.filtrar label {
+  font-family: "Teko", sans-serif;
+  font-size: 21px;
+  font-weight: 300;
+  color: #22556e;
+  padding-right: 10px;
+}
+
+.filtrar select {
+  font-family: "Teko", sans-serif;
+  font-size: 21px;
+  color: #17a2b8;
+  font-weight: 300;
+}
+
+.filtrar select option {}
+
+.grilla {
+  overflow: hidden;
+  padding: 0 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.prod {
+  font-family: "Teko", sans-serif;
+  max-width: 220px;
+  border: 1px solid #e0e0e0;
+  background-color: #FFF;
+  padding: 15px;
+  text-align: center;
+  margin: 15px;
+  float: left;
+}
+
+.prod img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.prod h5 {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #22556e;
+  margin: 0px;
+}
+
+.prod-price-d {
+  font-size: 21px;
+  font-weight: 400;
+  color: #f02a0f;
+  text-decoration: line-through;
+  padding-right: 5px;
+}
+
+.prod-price {
+  font-size: 28px;
+  font-weight: 600;
+  color: #f02a0f;
+}
+
+.prod-links {
+  font-family: "Teko", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 10px;
+}
+
+.prod-links a, .prod-links span {
+  color: #c9c9c9;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 2px;
+}
+
+.prod-links a:hover {
+  color: #22556D;
+  text-decoration: none;
+}
+
 /*---------- DETALLE DEL PRODUCTO ---------*/
 #producto {
   height: 500px;
@@ -830,6 +964,20 @@ textarea.form-control {
   background-repeat: repeat;
   padding: 50px 0px;
   overflow: hidden;
+}
+
+.volver {
+  display: block;
+  font-family: "Teko", sans-serif;
+  font-size: 21px;
+  color: #999;
+  font-weight: 300;
+  float: right;
+  margin-bottom: 10px;
+}
+
+.volver i {
+  font-size: 16px;
 }
 
 nav ol.breadcrumb {
@@ -1064,4 +1212,22 @@ nav ol.breadcrumb {
 
 .faq ul li p a.email {
   color: #f02a0f;
+}
+
+/* -------- CARRITO --------- */
+#carrito {
+  height: 500px;
+  background-image: url("../img/bg-carrito.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.carrito {
+  background-image: url("../img/bg-catalogo.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 50px 0px;
+  overflow: hidden;
 }
