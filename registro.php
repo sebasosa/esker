@@ -13,6 +13,10 @@ if($_POST) {
             'email' => $_POST['email'],
             'password' => password_hash($_POST['password'], PASSWORD_DEFAULT)
         ];
+        $ext = pathinfo($_FILES["img"]["name"],PATHINFO_EXTENSION);
+        $nombreFoto = "foto " . $usuarioFinal["nombre"] . "." . $ext;
+        move_uploaded_file($_FILES["img"]["tmp_name"], "img/".$nombreFoto);
+        $usuarioFinal["imagen"] = $nombreFoto;
         // ENVIAR A LA BASE DE DATOS $usuarioFinal
         $jsonDeUsuario = json_encode($usuarioFinal);
         file_put_contents('usuarios.json', $jsonDeUsuario . PHP_EOL, FILE_APPEND);
@@ -55,7 +59,7 @@ if($_POST) {
         <div class="registarse">
           <p>Nuevo Cliente? Registrate aquí</p>
           <p>Al crear una cuenta en nuestra página podrás moverte rápidamente por el proceso de pago, guardar múltiples direcciones de envío, ver y seguir el rastro de los pedidos de tu cuenta y más!</p>
-          <form class="register-form" action="" method="post">
+          <form class="register-form" action="registro.php" method="post" enctype="multipart/form-data">
             <fieldset class="form-group">
               <input id="nombre" type="text" class="form-control" name="nombre" value="<?= persistirDato($arrayDeErrores, 'nombre'); ?>" placeholder="Nombre y Apellido">
               <small class="text-danger"><?= isset($arrayDeErrores['nombre']) ? $arrayDeErrores['nombre'] : "" ?></small>
@@ -72,6 +76,11 @@ if($_POST) {
               <input id="repassword" type="password" class="form-control" name="repassword" value="<?= persistirDato($arrayDeErrores, 'repassword'); ?>" placeholder="Repetí tu contraseña">
               <small class="text-danger"><?= isset($arrayDeErrores['repassword']) ? $arrayDeErrores['repassword'] : "" ?></small>
             </fieldset>
+            <fieldset class="form-group">
+              <label for="img">Foto de perfil:</label> <br>
+              <input type="file" name="img" value="<?= persistirDato($arrayDeErrores, 'imagen'); ?>">
+              <small class="text-danger"><?= isset($arrayDeErrores['imagen']) ? $arrayDeErrores['imagen'] : "" ?></small>
+          </fieldset>
             <button type="submit" class="btn btn-primary">Registrarme</button>
           </form>
         </div>

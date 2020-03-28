@@ -228,8 +228,9 @@ top: 25px;
 
 .carousel-item img {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   height: auto;
+  max-height: 550px;
 }
 
 .info-slide {
@@ -268,6 +269,42 @@ top: 25px;
   border: 1px solid #FFF;
   margin-top: 30px;
 }
+/*----- codigo para animacion del slide---*/
+.slider{
+  width: 95%;
+  height: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: cambio 20s infinite alternate;
+  height: 100%;
+}
+.slider li {
+  list-style: none;
+  width: 100%;
+}
+.slider .container {
+  width: 100%;
+
+}
+@keyframes cambio {
+  0% { margin-left: 0;}
+  20% { margin-left: 0;}
+
+  25% {margin-left: -100%;}
+  45% { margin-left: -100%;}
+
+  50% { margin-left: -200%;}
+  70% { margin-left: -200%;}
+
+  75% { margin-left: -300%;}
+  100% { margin-left: -300%;}
+}
+
 
 /* _______ EMPRESA ________ */
 .empresa {

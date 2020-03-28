@@ -1,5 +1,7 @@
 <?php
+session_start();
 
+require_once 'controladores/funciones.php';
 ?>
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
@@ -24,26 +26,88 @@
 
     <!-- INICIO GALERIA -->
     <div id="carousel" class="carousel slide" data-ride="carousel">
-      <div class="container">
-        <div class="row">
-          <section class="carousel-inner">
-            <article class="carousel-item active">
-              <a href="detalle-producto.php">
-              <div class="col-6 producto">
-                <img src="productos/mochila-azul-frente.png" class="" alt="Mochila 30 lts">
+      <div class="slider">
+        <ul>
+          <li> <div class="container">
+            <div class="row">
+              <section class="carousel-inner">
+                <article class="carousel-item active">
+                  <a href="detalle-producto.php">
+                  <div class="col-6 producto">
+                    <img src="slides/productos/bota.png" class="" alt="bota hiking">
 
-              </div>
-              <div class="col-6 info-slide">
-                <h3>Mochila 30 lts</h2>
-                  <h1>Natway Blanc 30</h1>
-                  <span>$1690.00</span>
-              </div>
-              </a>
-            </article>
-          </section>
-        </div>
+                  </div>
+                  <div class="col-6 info-slide">
+                    <h3>Bota Hiking 01</h2>
+                      <h1>HI-TECH ALTITUDE V I WP</h1>
+                      <span>$3799.00</span>
+                  </div>
+                  </a>
+                </article>
+              </section>
+            </div>
+          </div></li>
+          <li><div class="container">
+            <div class="row">
+              <section class="carousel-inner">
+                <article class="carousel-item active">
+                  <a href="detalle-producto.php">
+                  <div class="col-6 producto">
+                    <img src="productos/mochila-azul-frente.png" class="" alt="Mochila 30 lts">
+
+                  </div>
+                  <div class="col-6 info-slide">
+                    <h3>Mochila 30 lts</h2>
+                      <h1>Natway Blanc 30</h1>
+                      <span>$1690.00</span>
+                  </div>
+                  </a>
+                </article>
+              </section>
+            </div>
+          </div></li>
+          <li> <div class="container">
+            <div class="row">
+              <section class="carousel-inner">
+                <article class="carousel-item active">
+                  <a href="detalle-producto.php">
+                  <div class="col-6 producto">
+                    <img src="slides/productos/termo.png" class="" alt="termo">
+
+                  </div>
+                  <div class="col-6 info-slide">
+                    <h3>Botella Térmica con filtro para té o café</h2>
+                      <h1>WATERDOG TA450D</h1>
+                      <span>$629.00</span>
+                  </div>
+                  </a>
+                </article>
+              </section>
+            </div>
+          </div> </li>
+          <li><div class="container">
+            <div class="row">
+              <section class="carousel-inner">
+                <article class="carousel-item active">
+                  <a href="detalle-producto.php">
+                  <div class="col-6 producto">
+                    <img src="slides/productos/carpa.png" class="" alt="carpa 2 ps">
+
+                  </div>
+                  <div class="col-6 info-slide">
+                    <h3>Carpa</h2>
+                      <h1>WATERDOG DOME 3</h1>
+                      <span>$2437.00</span>
+                  </div>
+                  </a>
+                </article>
+              </section>
+            </div>
+          </div></li>
+        </ul>
       </div>
     </div>
+
 
     <!-- FIN DE GALERIA -->
 

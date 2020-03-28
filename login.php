@@ -14,7 +14,9 @@ if($_POST) {
             if($_POST['email'] == $userFinal['email']) {
                 if(password_verify($_POST['password'], $userFinal['password'])) {
                     // Crearle una sesion
+                    $_SESSION['nombre'] = $userFinal['nombre'];
                     $_SESSION['email'] = $userFinal['email'];
+                    $_SESSION['imagen'] = $userFinal['imagen'];
                     if(isset($_POST['recordarme']) && $_POST['recordarme'] == "on") {
                         // Unix time
                         setcookie('userEmail', $userFinal['email'], time() + 60 * 60 * 24 * 7);
@@ -22,7 +24,7 @@ if($_POST) {
                     }
                     header('Location: bienvenido.php');
                     exit;
-                }
+                } else $arrayDeErrores['password'] = "La contraseña no es correcta";
             }
         }
     }
@@ -62,13 +64,13 @@ if($_POST) {
       <div class="container">
         <div class="login">
           <p>Si ya tenés una cuenta, ingresá los datos a continuación</p>
-          <form class="login-form" action="" method="post">
+          <form class="login-form" action="login.php" method="post">
             <fieldset class="form-group">
-              <input id="email" type="email" class="form-control" name="email" value="" placeholder="Escribi tu Email">
+              <input id="email" type="email" class="form-control" name="email" value="<?= persistirDato($arrayDeErrores, 'email'); ?>" placeholder="Escribi tu Email">
               <small class="text-danger"><?= isset($arrayDeErrores['email']) ? $arrayDeErrores['email'] : "" ?></small>
             </fieldset>
             <fieldset class="form-group">
-              <input id="password" type="password" class="form-control" name="password" value="" placeholder="Escribi tu contraseña">
+              <input id="password" type="password" class="form-control" name="password" value="<?= persistirDato($arrayDeErrores, 'password'); ?>"  placeholder="Escribi tu contraseña">
               <small class="text-danger"><?= isset($arrayDeErrores['password']) ? $arrayDeErrores['password'] : "" ?></small>
             </fieldset>
             <fieldset class="form-group">

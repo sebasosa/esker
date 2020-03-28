@@ -1,15 +1,36 @@
 <?php
+
 session_start();
 
 require_once 'controladores/funciones.php';
-?>
+$arrayDeErrores = "";
 
+if(sessionCheck()) {
+
+    $usuariosGuardados = file_get_contents('usuarios.json');
+    $arrayUsuarios = explode(PHP_EOL, $usuariosGuardados);
+    array_pop($arrayUsuarios);
+    foreach($arrayUsuarios as $usuarioJson) {
+       $userFinal = json_decode($usuarioJson, true);
+
+       if($_SESSION['nombre']==$userFinal['nombre']){
+         $nombre = $userFinal['nombre'];
+         $email = $userFinal['email'];
+         $imagen= $userFinal['imagen'];
+       }
+
+   }
+}
+
+ ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
   <head>
-    <meta charset="utf-8">
-    <title>Contactate con Esker Outdoors</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registrarse en Esker Outdoors</title>
     <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Teko:300,400,500,600,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
@@ -20,40 +41,37 @@ require_once 'controladores/funciones.php';
   </head>
 
   <body>
-    <!-- INICIO HEADER -->
+    <!-- HEADER -->
     <?php require_once 'partials/header.php' ?>
 
-
-    <!-- CONTACTO -->
-    <div id="contacto" class="pagina">
+    <!-- INICIO PERFIL -->
+    <div id="registro" class="pagina">
       <div class="container">
-        <h1>CONTACTANOS</h1>
+        <h1>PERFIL</h1>
       </div>
     </div>
 
-    <div class="contenido">
-      <div class="container">
-        <div class="contacto">
-          <p>Envianos tu mensaje o consulta</p>
-          <form class="contact-form" action="index.php" method="post">
-            <fieldset class="form-group">
-              <input id="nombre" type="text" class="form-control" name="nombre" value="" placeholder="Nombre y Apellido">
-            </fieldset>
-            <fieldset class="form-group">
-              <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email">
-            </fieldset>
-            <fieldset class="form-group">
-              <input id="tel" type="tel" class="form-control" name="tel" value="" placeholder="Telefono">
-            </fieldset>
-            <fieldset class="form-group">
-              <textarea class="form-control" name="mensaje" rows="8" cols="80"></textarea>
-            </fieldset>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-          </form>
-        </div>
-
+    <div class="usuario contenido">
+        <center>
+          <img class="usuario" src="img\<?= $imagen ?>" alt="">
+        </center>
       </div>
-    </div>
+
+      <div class="usuario1 contenido">
+        <br>
+        <article class="">
+          <strong>Nombre:</strong> <?= $nombre ?>
+        </article>
+        <br>
+
+        <article class="">
+          <strong>Email:</strong> <?= $email ?>
+        </article>
+        <br>
+        <form class="boton-salir" action="logout.php" method="post">
+          <button type="submit" name="salir">Cerrar sesion</button>
+       </form>
+      </div>
 
     <!-- FOOTER -->
     <?php require_once 'partials/footer.php' ?>
