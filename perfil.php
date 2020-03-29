@@ -51,13 +51,13 @@ if(sessionCheck()) {
       </div>
     </div>
 
-    <div class="usuario contenido">
+    <div class="perfil_usuario">
         <center>
           <img class="usuario" src="img\<?= $imagen ?>" alt="">
         </center>
-      </div>
 
-      <div class="usuario1 contenido">
+
+      <div class="datos_usuario">
         <br>
         <article class="">
           <strong>Nombre:</strong> <?= $nombre ?>
@@ -72,7 +72,7 @@ if(sessionCheck()) {
           <button type="submit" name="salir">Cerrar sesion</button>
        </form>
       </div>
-
+      </div>
     <!-- FOOTER -->
     <?php require_once 'partials/footer.php' ?>
 
