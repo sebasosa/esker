@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\ProductsShoppingCart;
 use App\ShoppingCart;
 
-class ShoppingCartController extends Controller
+class Product_ShoppingCartController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,16 +15,7 @@ class ShoppingCartController extends Controller
      */
     public function index()
     {
-      $shopping_cart_id = \Session::get('shopping_cart_id'); //me fijo si en la sesion hay guardado un id de un carro
-
-      $shopping_cart = ShoppingCart::encontrarOCrearPorSessionID($shopping_cart_id); // aca mandamos a llamar la funcion del modelo ShoppingCart que verifica si tenemos un  carro asignado a esa session
-
-      $products = $shopping_cart->products()->get(); //devuelve un arreglo con los productos del carrito
-
-      $total = $shopping_cart->total(); // saco el total del precio de los productos dentro del carrito
-
-      return view('shopping_carts.index', ['products'=> $products, 'total' => $total]); // retorno la vista del carrito pasandole los productos y el total calculado mas arriba
-
+        //
     }
 
     /**
@@ -45,7 +36,21 @@ class ShoppingCartController extends Controller
      */
     public function store(Request $request)
     {
-        //
+      $shopping_cart_id = \Session::get('shopping_cart_id'); //me fijo si en la sesion hay guardado un id de un carro
+
+      $shopping_cart = ShoppingCart::encontrarOCrearPorSessionID($shopping_cart_id); // aca mandamos a llamar la funcion del modelo ShoppingCart que verifica si tenemos un  carro asignado a esa session
+
+      $response = ProductsShoppingCart::create([ // creamos una asociacion entre el producto y el carrito mediante la table pivot
+        'shopping_cart_id' => $shopping_cart->id,
+        'product_id' => $request->product_id
+      ]);
+
+    if (false/*$response*/) {
+        return redirect('/carrito');
+      } else {
+        return back();
+      }
+
     }
 
     /**

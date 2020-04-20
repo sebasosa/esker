@@ -14,8 +14,8 @@
     {{ Form::textarea('long_description',"$product->long_description", ['class'=>'form-control', 'placeholder'=>'descripcion...'])}}
   </div>
   <div class="form-group">
-    Categoria: 
-    {{ Form::select('category_id', $categories, NULL, ['class' => 'category_id', 'id' =>'category_id', 'placeholder' => $product->category()]) }}
+    Categoria:
+    {{ Form::select('category_id', $categories, NULL, ['class' => 'category_id', 'id' =>'category_id', 'placeholder' => (isset($product->title)) ? $product->category() : " " ]) }}
   </div>
   <div class="form-group">
     <a href="{{url('/products')}}">Regresar al listado de productos</a>
