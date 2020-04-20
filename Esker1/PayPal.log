@@ -1,0 +1,28 @@
+[20-04-2020 06:39:42] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[20-04-2020 06:39:44] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[20-04-2020 06:39:44] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/payments/payment
+[20-04-2020 06:39:45] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 400
+[20-04-2020 06:39:45] PayPal\Core\PayPalHttpConnection : ERROR: Got Http response code 400 when accessing https://api.sandbox.paypal.com/v1/payments/payment. {"name":"VALIDATION_ERROR","details":[{"field":"transactions[0].amount","issue":"Amount cannot be zero"}],"message":"Invalid request - see details","information_link":"https://developer.paypal.com/docs/api/payments/#errors","debug_id":"f71985667f497"}
+[20-04-2020 06:39:59] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[20-04-2020 06:40:00] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[20-04-2020 06:40:00] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/payments/payment
+[20-04-2020 06:40:02] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 400
+[20-04-2020 06:40:02] PayPal\Core\PayPalHttpConnection : ERROR: Got Http response code 400 when accessing https://api.sandbox.paypal.com/v1/payments/payment. {"name":"VALIDATION_ERROR","details":[{"field":"transactions[0].amount","issue":"Amount cannot be zero"}],"message":"Invalid request - see details","information_link":"https://developer.paypal.com/docs/api/payments/#errors","debug_id":"72b3533033f47"}
+[20-04-2020 07:01:52] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[20-04-2020 07:01:54] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[20-04-2020 07:01:54] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/payments/payment
+[20-04-2020 07:01:56] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 201
+[20-04-2020 07:04:54] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[20-04-2020 07:04:55] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[20-04-2020 07:04:55] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/payments/payment
+[20-04-2020 07:04:57] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 201
+[20-04-2020 07:44:40] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[20-04-2020 07:44:41] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[20-04-2020 07:44:41] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/payments/payment
+[20-04-2020 07:44:43] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 201
+[20-04-2020 07:45:11] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[20-04-2020 07:45:12] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[20-04-2020 07:45:12] PayPal\Core\PayPalHttpConnection : INFO: GET https://api.sandbox.paypal.com/v1/payments/payment/PAYID-L2O7XLI9KE02425V8518084X
+[20-04-2020 07:45:14] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[20-04-2020 07:45:14] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/payments/payment/PAYID-L2O7XLI9KE02425V8518084X/execute
+[20-04-2020 07:45:17] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200

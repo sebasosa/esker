@@ -24,3 +24,5 @@ Route::get('/carrito', 'ShoppingCartController@index');
 Route::resource('products', 'ProductController');
 
 Route::resource('products_shoppingcarts', 'Product_ShoppingCartController');
+
+Route::get('/payments/store', 'PaymentsController@store');

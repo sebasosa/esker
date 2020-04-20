@@ -32,6 +32,10 @@ class ShoppingCart extends Model
      return $this->products()->sum('pricing'); //sumo todos los precios de los productos dentro del carrito de compras
    }
 
+   public function totalUSD() //esta funcion me tranforma el total de pesos a dolares
+  {
+    return $this->total() / 67 ;
+  }
   /* cuando el cliente recien entra le mostramos el carrito q ya tenia o si no tiene le creamos uno */
   public static function encontrarOCrearPorSessionID($shopping_cart_id)
   {
