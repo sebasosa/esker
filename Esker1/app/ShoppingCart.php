@@ -7,8 +7,25 @@ use Illuminate\Database\Eloquent\Model;
 class ShoppingCart extends Model
 {
   //mass assigment
-  protected $fillable = ["status"];
+  protected $fillable = ['status'];
   /*Los metodos estaticos , los podemos llamar desde la clase ej ShoppingCart::crearSinSessionen cambio los metodos publicos solo los llamamos cuando instanciamos la clase*/
+
+  public function approve() // este metodo se encarga de iniciar la actualizacion del custom_id y de poner el status en aprobado
+  {
+    $this->updateCustomIdAndStatus();
+  }
+
+  public function generateCustomId() //una vez q el carro fue pagado generamos un id con  un hash cosa de q no puedan acceder a los carros sin tener el id correcto
+  {
+    return md5("$this->id $this->updated_at");// esta funcion devuelve un hash a partir de un string para mas seguridad le agragamos al numero de id el timestamp de cuando fue creado
+  }
+
+  public function updateCustomIdAndStatus()// guardamos el custom id en el carro de compras y modifica el status del mismo
+  {
+    $this->status = 'Aprobado';
+    $this->custom_id = $this->generateCustomId();
+    $this->save();
+  }
 
   public function inShoppingCarts()
   {
@@ -17,6 +34,11 @@ class ShoppingCart extends Model
   public function products()
   {
     return $this->belongsToMany("App\Product", "products_shopping_carts");
+  }
+
+  public function order()
+  {
+    return $this->hasOne("App\Order")->first(); // nos devuelve la orden q esta relacionada a este carro de compras
   }
 
   public function productsSize()

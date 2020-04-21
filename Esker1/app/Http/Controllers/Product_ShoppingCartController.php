@@ -44,12 +44,12 @@ class Product_ShoppingCartController extends Controller
         'shopping_cart_id' => $shopping_cart->id,
         'product_id' => $request->product_id
       ]);
-
-    if (false/*$response*/) {
-        return redirect('/carrito');
-      } else {
         return back();
-      }
+    // if ($response) {
+    //     return redirect('/carrito');
+    //   } else {
+    //     return back();
+    //   }
 
     }
 

@@ -15,14 +15,17 @@
 //     return view('welcome');
 // });
 Route::get('/', 'MainController@home');
-Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/carrito', 'ShoppingCartController@index');
 
+Route::get('/payments/store', 'PaymentsController@store');
+
+Auth::routes();
+
 Route::resource('products', 'ProductController');
 
 Route::resource('products_shoppingcarts', 'Product_ShoppingCartController');
 
-Route::get('/payments/store', 'PaymentsController@store');
+Route::resource('compras', 'ShoppingCartController');

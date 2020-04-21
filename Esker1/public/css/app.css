@@ -1367,6 +1367,9 @@ nav ol.breadcrumb {
   padding: 30px;
   background-color: black;
 }
+.top-space {
+  margin-top: 1em;
+}
 .white {
   background-color: #fff;
 }
@@ -1402,4 +1405,7 @@ nav ol.breadcrumb {
 .product .actions {
   right: 1em;
   top: 10px;
+}
+.large-padding {
+  padding: 10px 15px;
 }
