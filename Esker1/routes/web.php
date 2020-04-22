@@ -29,3 +29,5 @@ Route::resource('products', 'ProductController');
 Route::resource('products_shoppingcarts', 'Product_ShoppingCartController');
 
 Route::resource('compras', 'ShoppingCartController');
+
+Route::resource('orders', 'OrdersController');
