@@ -60,6 +60,7 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+        'shopping_cart' => \App\Http\Middleware\CrearShoppingCart::class, // aca le indico que clase ascceder cuando invoco el middleware con el nombre shopping_cart
     ];
 
     /**

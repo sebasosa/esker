@@ -75,7 +75,16 @@ class OrdersController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $order = Order::find($id); // busco la orden con ese id con el metodo de Eloquent
+
+        $campo = $request->name; // en esta variable guardo el nombre del campo a actualizar
+
+        $order->$campo = $request->value; // en el campo asigando antes guardo el valor que viene con el Request
+
+        $order->save();
+
+        return $order->$campo;
+
     }
 
     /**

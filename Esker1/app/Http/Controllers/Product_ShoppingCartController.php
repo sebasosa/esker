@@ -8,6 +8,13 @@ use App\ShoppingCart;
 
 class Product_ShoppingCartController extends Controller
 {
+
+    /* en el constructor de la clase le indicamos que utilize el middleware del  carro de compras*/
+    public function __construct()
+    {
+      $this->middleware("shopping_cart");
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -36,9 +43,7 @@ class Product_ShoppingCartController extends Controller
      */
     public function store(Request $request)
     {
-      $shopping_cart_id = \Session::get('shopping_cart_id'); //me fijo si en la sesion hay guardado un id de un carro
-
-      $shopping_cart = ShoppingCart::encontrarOCrearPorSessionID($shopping_cart_id); // aca mandamos a llamar la funcion del modelo ShoppingCart que verifica si tenemos un  carro asignado a esa session
+      $shopping_cart = $request->shopping_cart; //ahora accedo al carro a travez del middleware mediante el objeto request
 
       $response = ProductsShoppingCart::create([ // creamos una asociacion entre el producto y el carrito mediante la table pivot
         'shopping_cart_id' => $shopping_cart->id,
