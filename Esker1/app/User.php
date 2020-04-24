@@ -36,4 +36,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function rol()
+    {
+      return $this->role;//devuelve el rol del usuario, por si es admin , se toma nulo como user normal
+    }
 }

@@ -7,6 +7,11 @@ use App\Product;
 use App\Category;
 class ProductController extends Controller
 {
+
+    public function __construct()
+    {
+      $this->middleware('admin', ["except" => "show"]);
+    }
     /**
      * Display a listing of the resource.
      *

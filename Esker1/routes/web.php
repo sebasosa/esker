@@ -31,3 +31,10 @@ Route::resource('products_shoppingcarts', 'Product_ShoppingCartController');
 Route::resource('compras', 'ShoppingCartController');
 
 Route::resource('orders', 'OrdersController');
+
+Route::group(['prefix' => 'admin', 'middleware' => ['auth' => 'admin']], function(){
+  Route::get('/', function(){
+    return view('welcome');
+  });
+
+});
