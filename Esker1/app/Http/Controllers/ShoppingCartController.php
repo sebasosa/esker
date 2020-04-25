@@ -14,7 +14,7 @@ class ShoppingCartController extends Controller
     {
       $this->middleware("shopping_cart");
     }
-    
+
     /**
      * Display a listing of the resource.
      *
@@ -30,11 +30,7 @@ class ShoppingCartController extends Controller
 
       return view('shopping_carts.index', ['products'=> $products, 'total' => $total]); // retorno la vista del carrito pasandole los productos y el total calculado mas arriba
 
-      // $paypal = new PayPal($shopping_cart); //creo una instancia de la clase paypal pasandole el shopping_cart
-      //
-      // $payment = $paypal->generate(); //guardo el resultado en al variable payment
-      //
-      // return redirect($payment->getApprovalLink()); //nos da un link a paypal hacia donde el ususario puede dirigirse a aprobar el pago
+
 
     }
 
@@ -52,6 +48,17 @@ class ShoppingCartController extends Controller
 
         return view('shopping_carts.completed', ['shopping_carro' => $shopping_cart, 'order' => $order]); // retorno la vista de completed
 
+    }
+
+    public function checkOut(Request $request)
+    {
+      $shopping_cart = $request->shopping_cart; //ahora accedo al carro a travez del middleware mediante el objeto request
+
+      $paypal = new PayPal($shopping_cart); //creo una instancia de la clase paypal pasandole el shopping_cart
+
+      $payment = $paypal->generate(); //guardo el resultado en al variable payment
+
+      return redirect($payment->getApprovalLink()); //nos da un link a paypal hacia donde el ususario puede dirigirse a aprobar el pago
     }
 
 

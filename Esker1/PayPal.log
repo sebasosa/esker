@@ -265,3 +265,25 @@
 [21-04-2020 06:34:39] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
 [21-04-2020 06:34:39] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/payments/payment/PAYID-L2PJH2A5KK11023BY932562H/execute
 [21-04-2020 06:34:42] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[25-04-2020 12:52:47] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[25-04-2020 12:52:49] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[25-04-2020 12:52:49] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/payments/payment
+[25-04-2020 12:52:51] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 201
+[25-04-2020 12:55:36] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[25-04-2020 12:55:37] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[25-04-2020 12:55:37] PayPal\Core\PayPalHttpConnection : INFO: GET https://api.sandbox.paypal.com/v1/payments/payment/PAYID-L2RYTZA49F44187GF9684727
+[25-04-2020 12:55:38] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[25-04-2020 12:55:39] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/payments/payment/PAYID-L2RYTZA49F44187GF9684727/execute
+[25-04-2020 12:55:42] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[25-04-2020 12:56:01] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[25-04-2020 12:56:03] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[25-04-2020 12:56:03] PayPal\Core\PayPalHttpConnection : INFO: GET https://api.sandbox.paypal.com/v1/payments/payment/PAYID-L2RYTZA49F44187GF9684727
+[25-04-2020 12:56:05] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[25-04-2020 12:56:05] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/payments/payment/PAYID-L2RYTZA49F44187GF9684727/execute
+[25-04-2020 12:56:08] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[25-04-2020 12:56:14] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[25-04-2020 12:56:15] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[25-04-2020 12:56:15] PayPal\Core\PayPalHttpConnection : INFO: GET https://api.sandbox.paypal.com/v1/payments/payment/PAYID-L2RYTZA49F44187GF9684727
+[25-04-2020 12:56:16] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[25-04-2020 12:56:16] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/payments/payment/PAYID-L2RYTZA49F44187GF9684727/execute
+[25-04-2020 12:56:19] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200

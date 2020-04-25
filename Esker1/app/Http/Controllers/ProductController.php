@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Product;
 use App\Category;
+use App\Image;
 class ProductController extends Controller
 {
 
@@ -44,6 +45,9 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
+      $hasFile = $request->hasFile('imagen1') && $request->imagen1->isValid();// pregunto si el post del formulario trae un archivo , y si ese archivo esta en la carp temporal
+
+
       $product = new Product;
       $product->title = $request->title;
       $product->pricing = $request->pricing;
@@ -51,6 +55,18 @@ class ProductController extends Controller
       $product->long_description = $request->long_description;
       $product->category_id = $request->category_id;
       if ($product->save()) {
+
+        if ($hasFile) {
+          Image::imagen($request,1,$product);
+          if($request->hasFile('imagen2') && $request->imagen2->isValid()){
+            Image::imagen($request,2,$product);
+            if ($request->hasFile('imagen3') && $request->imagen3->isValid()) {
+              Image::imagen($request,3,$product);
+            }
+          }
+
+        }
+
         return redirect('/products');
       } else {
         return view('products.create',['product' => $product]);
