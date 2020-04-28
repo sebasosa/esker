@@ -45,8 +45,8 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-      $hasFile = $request->hasFile('imagen1') && $request->imagen1->isValid();// pregunto si el post del formulario trae un archivo , y si ese archivo esta en la carp temporal
-
+      //$hasFile = $request->hasFile('imagen1') && $request->imagen1->isValid();// pregunto si el post del formulario trae un archivo , y si ese archivo esta en la carp temporal
+      $hasFile = $request->hasFile('imagen1') && $request->imagen1->isValid();
 
       $product = new Product;
       $product->title = $request->title;
@@ -83,7 +83,9 @@ class ProductController extends Controller
     public function show($id)
     {
         $product = Product::find($id);
-        return view('products.show', ['product' => $product]);
+        // Seleccionamos las imágenes por su 'id'
+        $images= Product::find($id)->imagenes();
+        return view('products.show', ['product' => $product, 'images' => $images]);
     }
 
     /**

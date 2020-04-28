@@ -13,10 +13,10 @@ class Image extends Model
   public static function imagen(Request $request, $i, $product)
   {
     $imgn ="imagen$i";
-    
+
     $ext = $request->$imgn->extension();
     $name = "$request->title $i";
-    $request->$imgn->storeAs('img', "$name.$ext");
+    $request->$imgn->move(public_path().'/uploads/', "$name.$ext");
     $imagen = Image::create([
       'name' => $name,
       'ext' => $ext,

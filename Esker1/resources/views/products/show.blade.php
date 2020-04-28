@@ -6,7 +6,16 @@
     <div class="card product text-left">
       <h1>{{$product->title}}</h1>
       <div class="row">
-        <div class="col-sm-6 col-xs-12"></div>
+        <div class="col-sm-6 col-xs-12">
+          <!-- Mostramos todas las imágenes pertenecientes a a este registro -->
+            @foreach($images as $img)
+
+                <a data-fancybox="gallery" href="../../public/uploads/{{ "$img->name.$img->ext" }}">
+                    <img src="../../public/uploads/{{ "$img->name.$img->ext" }}" width="200" class="img-fluid">
+                </a>
+
+            @endforeach
+        </div>
         <div class="col-sm-6 col-xs-12">
           <p>
             <strong>Descripción</strong>
