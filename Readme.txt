@@ -9,6 +9,7 @@ con eso entra al index del home
 
 Tareas a realizar en el proyecto Laravel
 
+-Agregar registro para administrador donde se fije si coincide el legajo para poder seleccionar el campo role.
 -Agregar en el edit de productos la funcion de modificar las imagenes
 -Agregar las validaciones de laravel
 -Agregar la funcionalidad del boton de agregar al carro con javascript
@@ -32,3 +33,33 @@ Hacer todas las vistas para el usuario
 -pag Carro de compras
 -pag Contacto
 -pag Preguntas Frecuentes
+
+==========================================================
+
+REQUISITOS MINIMOS PROYECTO INTEGRADOR
+
+Lo mas importante de todo, que haya un ABM de algo. sea el proyecto que sea.
+Debe acceso con usuario administrador: o armar middleware o hacer que haya dos role.
+Debe contar con alta de usuarios en laravel
+A su vez, que un controlador pueda poder subir imagenes
+En los formularios, todo ellos, deberia haber validaciones del lado de laravel
+En resumen, los formularios deben contar con 4 validaciones:
+
+-html
+-javascript
+-laravel
+-a punto de insertarse en la base de datos
+
+Asegurarse en esa instacia que la información 
+esté formateada de acuerdo a como la voy a guardar
+
+BASE DE DATOS
+Se recomienda utilizar migraciones, por comodidad y para aprender.
+No es obligatorio hacer factories y seeders
+
+HTML/CSS
+Es requisito que el sitio sea resposive aunque algo no funcione del todo 
+-> se recomienda mobile first!
+Utilizar algunas etiquetas de html sean
+semanticas, section, article, footer, main, nav, header
+También es requisito utilizar blade, usar layouts (plantillas)

@@ -126,7 +126,7 @@
             </a>
           </li>
           <li>
-            <a href="productos.php">
+            <a href="products">
               <span>Productos</span>
             </a>
           </li>

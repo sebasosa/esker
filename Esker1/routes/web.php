@@ -38,5 +38,6 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth' => 'admin']], functio
   Route::get('/', function(){
     return view('welcome');
   });
+  Route::resource('products', 'ProductController');
 
 });
