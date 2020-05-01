@@ -11,7 +11,7 @@ class ProductController extends Controller
 
     public function __construct()
     {
-      $this->middleware('admin', ["except" => "show"]);
+      $this->middleware('admin', ["except" =>[ "show", "catalogo", "catalogoCat"]]);
     }
     /**
      * Display a listing of the resource.
@@ -25,6 +25,20 @@ class ProductController extends Controller
         return view('products.index',["products" => $products]); // llamamos a la vista y le pasamos los productos de la base de datos
     }
 
+    public function catalogo()
+    {
+        $products = Product::all();  //traemos todos los productos de la base de datos
+        $categories= Category::select('title','id')->get(); //traigo los nombres de las categorias
+
+        return view('user.catalogo',["products" => $products, 'categories'=> $categories]); // llamamos a la vista y le pasamos los productos de la base de datos
+    }
+    public function catalogoCat($id)
+    {
+        $products = Category::productos($id);  //traemos todos los productos de la base de datos
+        $categories= Category::select('title','id')->get(); //traigo los nombres de las categorias
+
+        return view('user.catalogo',["products" => $products, 'categories'=> $categories]); // llamamos a la vista y le pasamos los productos de la base de datos
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -83,8 +97,11 @@ class ProductController extends Controller
     public function show($id)
     {
         $product = Product::find($id);
+
         // Seleccionamos las imágenes por su 'id'
-        $images= Product::find($id)->imagenes();
+        $images= $product->imagenes();
+
+
         return view('products.show', ['product' => $product, 'images' => $images]);
     }
 

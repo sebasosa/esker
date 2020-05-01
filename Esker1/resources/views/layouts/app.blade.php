@@ -126,7 +126,7 @@
             </a>
           </li>
           <li>
-            <a href="products">
+            <a href="productos">
               <span>Productos</span>
             </a>
           </li>

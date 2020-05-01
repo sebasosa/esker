@@ -1419,3 +1419,360 @@ nav ol.breadcrumb {
   font-size: 2.2em;
   color: #3f51b5;
 }
+#productos {
+  height: 500px;
+  background-image: url("../img/bg-camping.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.detalle {
+  background-image: url("../img/bg-catalogo.jpg");
+  background-position: top center;
+  background-repeat: repeat;
+  background-size: 100%;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.detalle .container {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+ul.categorias {
+  float: left;
+  overflow: hidden;
+}
+
+.categorias li {
+  list-style: none;
+  float: left;
+  padding-right: 20px;
+}
+
+.categorias li a, .categorias li {
+  font-family: "Teko", sans-serif;
+  font-size: 32px;
+  color: #808080;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.categorias li a:hover, .categorias li a.active {
+  color: #f02a0f;
+}
+
+.filtrar {
+  float: right;
+}
+
+.filtrar label {
+  font-family: "Teko", sans-serif;
+  font-size: 21px;
+  font-weight: 300;
+  color: #22556e;
+  padding-right: 10px;
+}
+
+.filtrar select {
+  font-family: "Teko", sans-serif;
+  font-size: 21px;
+  color: #17a2b8;
+  font-weight: 300;
+}
+
+.filtrar select option {}
+
+.grilla {
+  overflow: hidden;
+  padding: 0 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.prod {
+  font-family: "Teko", sans-serif;
+  max-width: 220px;
+  border: 1px solid #e0e0e0;
+  background-color: #FFF;
+  padding: 15px;
+  text-align: center;
+  margin: 15px;
+  float: left;
+}
+ .prod .image {
+   display: flex;
+    align-items: center;
+    min-height: 290px;
+ }
+.prod img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.prod h5 {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #22556e;
+  margin: 0px;
+}
+
+.prod-price-d {
+  font-size: 21px;
+  font-weight: 400;
+  color: #f02a0f;
+  text-decoration: line-through;
+  padding-right: 5px;
+}
+
+.prod-price {
+  font-size: 28px;
+  font-weight: 600;
+  color: #f02a0f;
+}
+
+.prod-links {
+  font-family: "Teko", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 10px;
+}
+
+.prod-links a, .prod-links span {
+  color: #c9c9c9;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 2px;
+}
+
+.prod-links a:hover {
+  color: #22556D;
+  text-decoration: none;
+}
+
+/*---------- DETALLE DEL PRODUCTO ---------*/
+#producto {
+  height: 500px;
+  background-image: url("../img/bg-calzado.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.detalle {
+  background-image: url("../img/bg-catalogo.jpg");
+  background-position: top center;
+  background-repeat: repeat;
+  padding: 50px 0px;
+  overflow: hidden;
+}
+
+.volver {
+  display: block;
+  font-family: "Teko", sans-serif;
+  font-size: 21px;
+  color: #999;
+  font-weight: 300;
+  float: right;
+  margin-bottom: 10px;
+}
+
+.volver i {
+  font-size: 16px;
+}
+
+nav ol.breadcrumb {
+  padding-left: 0px;
+}
+
+.breadcrumb-item {
+  font-family: "Teko", sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.breadcrumb-item a {
+  color: #f02a0f;
+}
+
+.breadcrumb-item.active a {
+  color: #333;
+}
+
+.ficha {
+  overflow: hidden;
+}
+
+.box-descuento {
+  position: absolute;
+  width: 50%;
+}
+
+.descuento {
+  position: relative;
+  max-width: 275px;
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+  background-color: #d673bd;
+  padding: 10px 20px 30px 15px;
+}
+
+.descuento span {
+  font-family: "Teko", sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.fotos {
+  width: 50%;
+  float: left;
+}
+
+.fotos-detalle .viewport {
+  width: 100%;
+  height: auto;
+  min-height: 516px;
+  background-color: #FFF;
+  display: flex;
+  align-items: center;
+}
+
+.fotos-detalle .viewport img {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.fotos-detalle .thumbs ol {
+  overflow: hidden;
+  padding: 0px;
+  margin-top: 20px;
+}
+
+.fotos-detalle .thumbs ol li {
+  list-style: none;
+  float: left;
+  width: 32%;
+  background-color: #FFF;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.fotos-detalle .thumbs ol li:last-child {
+  margin-right: 0px;
+}
+
+.fotos-detalle .thumbs ol li img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.opciones {
+  padding-left: 40px;
+  width: 50%;
+  float: right;
+}
+
+.opciones h2 {
+  font-family: "Teko", sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  color: #22556e;
+}
+
+.precio-descuento {
+  font-family: "Teko", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #f02a0f;
+  margin-right: 10px;
+}
+
+.precio-anterior {
+  font-family: "Teko", sans-serif;
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 400;
+  color: #f02a0f;
+  text-decoration: line-through;
+}
+
+.descripcion-corta p {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.descripcion-corta p, .descripcion-larga p, .descripcion-larga ul li {
+  font-family: "Teko", sans-serif;
+  font-weight: 300;
+  color: #7f7f7f;
+}
+
+.add-cart-form fieldset {
+  padding: 5px 0px;
+}
+
+.add-cart-form fieldset label {
+  font-family: "Teko", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: #22556e;
+  text-transform: uppercase;
+  width: 100px;
+}
+
+.add-cart-form fieldset select {
+  width: 50%;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: none;
+  border-radius: 0px;
+  font-family: "Teko", sans-serif;
+  font-size: 21px;
+  font-weight: 300;
+  color: #999999;
+  text-transform: uppercase;
+}
+
+.add-cart-form fieldset select option {
+  padding-left: 10px;
+}
+
+.add-cart-form button {
+  float: left;
+  margin-top: 20px;
+}
+
+.descripcion-larga {
+  margin-top: 20px;
+  width: 100%;
+  float: left;
+}
+
+.descripcion-larga h3 {
+  font-family: "Teko", sans-serif;
+  font-size: 42px;
+  font-weight: 500;
+  color: #22556e;
+  text-transform: uppercase;
+  border-bottom: 2px solid #00c2de;
+  margin-bottom: 10px;
+}
+
+.descripcion-larga p, .descripcion-larga ul li {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.descripcion-larga ul li {
+  list-style: none;
+}

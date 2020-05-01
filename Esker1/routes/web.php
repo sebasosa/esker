@@ -18,6 +18,9 @@ Route::get('/', 'MainController@home');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/productos', 'ProductController@catalogo');
+Route::get('/productos/{id}', 'ProductController@catalogoCat');
+
 Route::get('/carrito', 'ShoppingCartController@index');
 
 Route::post('/carrito', 'ShoppingCartController@checkOut');//cuando accedemos a esta ruta con el metodo post nos va a mandar a la funcion checkOut
