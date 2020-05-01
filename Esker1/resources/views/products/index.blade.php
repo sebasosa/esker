@@ -8,7 +8,7 @@
     <table class="table table-bordered">
       <thead class="bg-primary">
         <tr>
-          <td>ID</td>
+          <td>Imagen</td>
           <td>Título</td>
           <td>Descripción corta</td>
           <td>Descripción larga</td>
@@ -20,7 +20,14 @@
       <tbody class="bg-success">
         @foreach ($products as $product)
           <tr>
-            <td>{{$product->id}}</td>
+            <td>
+              @if ($product->imagen())
+                <img src="{{asset('uploads/'.$product->imagenes()->first()->name.".".$product->imagenes()->first()->ext)}}" class="mini">
+              @else
+                <img src="{{asset('img/productos/cuello.jpg')}}" class="mini">
+              @endif
+
+            </td>
             <td>{{$product->title}}</td>
             <td>{{$product->short_description}}</td>
             <td>{{$product->long_description}}</td>

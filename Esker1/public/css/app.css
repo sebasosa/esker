@@ -28,6 +28,11 @@ ul {
   text-decoration: none;
 }
 
+.py-4 {
+  margin-bottom: -22px;
+}
+
+
 /* __________ HEADER __________ */
 header {
   -webkit-box-sizing: border-box;
@@ -677,16 +682,20 @@ footer h6 {
   background-size: 100%;
   overflow: hidden;
 }
+.pagina {
+  margin-bottom: -198px;
+}
 
 .pagina h1 {
   font-family: 'Alfa Slab One', cursive;
   color: #FFF;
-  font-size: 65px;
   line-height: 65px;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 300px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  font-size: 3em;
+  padding-top: 7em;
+
 }
 
 .contenido {
@@ -996,6 +1005,8 @@ ul.categorias {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
 }
 
 .detalle {
@@ -1420,11 +1431,18 @@ nav ol.breadcrumb {
   color: #3f51b5;
 }
 #productos {
-  height: 500px;
+
   background-image: url("../img/bg-camping.jpg");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  min-height: 50vh;
+  position: relative;
+  top: -199px;
+  background: ;
+  background-size: cover;
+  width: 100%;
+  z-index: -1;
+  max-height: 80vh;
 }
 
 .detalle {
@@ -1775,4 +1793,8 @@ nav ol.breadcrumb {
 
 .descripcion-larga ul li {
   list-style: none;
+}
+.mini {
+  height: 50px;
+  width: auto;
 }

@@ -51,7 +51,7 @@
             <div class="prod-links">
               <a href="#">vista rapida</a>
               <span> | </span>
-              <a href="#">agregar al carrito</a>
+              @include('products_shoppingcarts.form', ['product' => $product])
             </div>
 
         </div>
