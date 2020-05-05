@@ -97,12 +97,19 @@ class ProductController extends Controller
     public function show($id)
     {
         $product = Product::find($id);
+        if ($product) {
+          $images= $product->imagenes();
+          return view('products.show', ['product' => $product, 'images' => $images]);
+        } else {
+          return redirect('/productos');
+        }
+
 
         // Seleccionamos las imágenes por su 'id'
-        $images= $product->imagenes();
 
 
-        return view('products.show', ['product' => $product, 'images' => $images]);
+
+
     }
 
     /**

@@ -12,7 +12,8 @@ use App\Product;
 
 class MainController extends Controller {
     public function home () {
+        $products = Product::all()->take(3);
 
-        return view('main.home');
+        return view('main.home', ['products' => $products]);
     }
 }

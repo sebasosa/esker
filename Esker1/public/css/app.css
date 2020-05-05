@@ -149,6 +149,14 @@ header {
   line-height: 16px;
 }
 
+.navbar-toggler .navbar-toggler-icon {
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(102,198,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler .navbar-toggler-icon {
+     border-color: rgb(102,198,255);
+}
+
 /* --------- ACA EMPIEZA EL MENU PRINCIPAL ----------*/
 #menu-pcipal {
   max-width: calc(1300px - 100px);
@@ -187,10 +195,6 @@ header {
   margin-top: 20px;
 }
 
-/* .top-logo {
-position: absolute;
-top: 25px;
-} */
 .top-logo img {
   max-width: 185px;
   height: auto;
@@ -214,8 +218,11 @@ top: 25px;
 /* ______ GALERIA ______*/
 #carousel {
   background-image: url("../img/bg-slide-home.jpg");
-  background-position: center bottom;
-  background-size: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 1px;
 }
 
 .carousel-inner {
@@ -223,14 +230,14 @@ top: 25px;
   padding: 250px 100px 100px 100px;
 }
 
-.producto {
+/* .producto {
   float: left;
-}
+} */
 
-.carousel-item {
-  displayu: flex;
+/* .carousel-item {
+  /* display: flex;
   justify-content: left;
-}
+} */
 
 .carousel-item img {
   width: 100%;
@@ -239,27 +246,27 @@ top: 25px;
   max-height: 550px;
 }
 
-.info-slide {
+/* .info-slide {
   float: left;
   text-align: left;
   padding-top: 35px;
   padding-left: 0px;
-}
+} */
 
 .info-slide h1 {
   font-family: 'Alfa Slab One', cursive;
   color: #FFF;
-  font-size: 65px;
-  line-height: 65px;
+  font-size: 55px;
+  line-height: 60px;
   text-transform: uppercase;
-  margin-bottom: 50px;
-  max-width: 400px;
+  margin-bottom: 30px;
+  max-width: 450px;
 }
 
 .info-slide h3 {
   font-family: 'Alfa Slab One', cursive;
   color: #00c1de;
-  font-size: 36px;
+  font-size: 26px;
   margin-top: 50px;
   margin-bottom: 35px;
 }
@@ -268,15 +275,15 @@ top: 25px;
   display: inline-block;
   font-family: 'Teko', sans-serif;
   color: #FFF;
-  font-size: 48px;
-  line-height: 52px;
+  font-size: 36px;
+  line-height: 45px;
   font-weight: bold;
   padding: 10px 30px 5px 30px;
   border: 1px solid #FFF;
   margin-top: 30px;
 }
 /*----- codigo para animacion del slide---*/
-.slider{
+/* .slider{
   width: 95%;
   height: 800px;
   margin: auto;
@@ -296,8 +303,8 @@ top: 25px;
 .slider .container {
   width: 100%;
 
-}
-@keyframes cambio {
+} */
+/* @keyframes cambio {
   0% { margin-left: 0;}
   20% { margin-left: 0;}
 
@@ -309,7 +316,7 @@ top: 25px;
 
   75% { margin-left: -300%;}
   100% { margin-left: -300%;}
-}
+} */
 
 
 /* _______ EMPRESA ________ */
@@ -630,7 +637,7 @@ footer h6 {
 }
 
 .contacto a:hover {
-  text-decoration:
+  text-decoration:none;
 }
 
 .sm-footer {
@@ -868,10 +875,10 @@ textarea.form-control {
 /*---------- PRODUCTOS ---------*/
 #productos {
   height: 500px;
-  background-image: url("../img/bg-camping.jpg");
+  /* background-image: url("../img/bg-camping.jpg");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100%; */
 }
 
 .detalle {
@@ -986,7 +993,7 @@ ul.categorias {
   padding-top: 10px;
 }
 
-.prod-links a, .prod-links span {
+.prod-links a, .prod-links span, .prod-links .cart-add {
   color: #c9c9c9;
   text-decoration: none;
   text-transform: uppercase;
@@ -1007,7 +1014,7 @@ ul.categorias {
   background-size: 100%;
 }
 
-}
+
 
 .detalle {
   background-image: url("../img/bg-catalogo.jpg");
@@ -1435,10 +1442,9 @@ nav ol.breadcrumb {
   background-image: url("../img/bg-camping.jpg");
   background-position: center center;
   background-repeat: no-repeat;
-  min-height: 50vh;
+  height: 500px;
   position: relative;
   top: -199px;
-  background: ;
   background-size: cover;
   width: 100%;
   z-index: -1;
@@ -1797,4 +1803,19 @@ nav ol.breadcrumb {
 .mini {
   height: 50px;
   width: auto;
+}
+#menu-pcipal .faqm {
+  display: none;
+}
+@media (max-width: 400px) {
+  #menu-pcipal {
+    background-color: #000;
+  }
+  #menu-pcipal .faq {
+    display:none;
+  }
+  #menu-pcipal .faqm {
+    display: inline-block;
+  }
+
 }

@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -34,7 +34,7 @@
   <header>
     <div id="app" class="fondo">
         <nav class="navbar navbar-expand-md navbar-light shadow-sm">
-          <div class="container top">
+          <div class="container top clasex">
             <div class="social-media topbar">
               <ul class="">
                 <li >
@@ -109,8 +109,10 @@
 
       <div class="nav-left">
         <ul>
-          <li>
-            <a href="{{url('/')}}">
+          <li><a class="faqm" href="faq.php">
+            <span>F.A.Q.</span>
+          </a>
+            <a class="faq" href="{{url('/')}}">
               <span>Home</span>
             </a>
           </li>
@@ -125,7 +127,10 @@
       <div class="nav-right">
         <ul>
           <li>
-            <a href="faq.php">
+            <a class="faqm" href="faq.php">
+              <span>F.A.Q.</span>
+            </a>
+            <a class="faq" href="faq.php">
               <span>Preguntas Frecuentes</span>
             </a>
           </li>

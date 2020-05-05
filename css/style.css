@@ -370,13 +370,12 @@ top: 25px;
 .empresa .iconos img {
   width: auto;
   max-height: 115px;
+
   float: left;
-  padding: 0 22px;
+  padding: 0 19px !important;
 }
 
-.empresa .iconos img:first-child {
-  padding-left: 0px;
-}
+
 
 .empresa .iconos img:last-child {
   padding-right: 0px;
