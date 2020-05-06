@@ -112,10 +112,8 @@
 
       <div class="nav-left">
         <ul>
-          <li><a class="faqm" href="faq.php">
-            <span>F.A.Q.</span>
-          </a>
-            <a class="faq" href="{{url('/')}}">
+          <li>
+            <a  href="{{url('/')}}">
               <span>Home</span>
             </a>
           </li>
@@ -130,15 +128,15 @@
       <div class="nav-right">
         <ul>
           <li>
-            <a class="faqm" href="faq.php">
+            <a class="faq-xs" href="{{url('/faq')}}">
               <span>F.A.Q.</span>
             </a>
-            <a class="faq" href="faq.php">
+            <a class="faq-lg" href="{{url('/faq')}}">
               <span>Preguntas Frecuentes</span>
             </a>
           </li>
           <li>
-            <a href="contacto.php">
+            <a href="{{url('/contacto')}}">
               <span>Contacto</span>
             </a>
           </li>

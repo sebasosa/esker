@@ -30,14 +30,14 @@ class ProductController extends Controller
         $products = Product::all();  //traemos todos los productos de la base de datos
         $categories= Category::select('title','id')->get(); //traigo los nombres de las categorias
 
-        return view('user.catalogo',["products" => $products, 'categories'=> $categories]); // llamamos a la vista y le pasamos los productos de la base de datos
+        return view('main.catalogo',["products" => $products, 'categories'=> $categories]); // llamamos a la vista y le pasamos los productos de la base de datos
     }
     public function catalogoCat($id)
     {
         $products = Category::productos($id);  //traemos todos los productos de la base de datos
         $categories= Category::select('title','id')->get(); //traigo los nombres de las categorias
 
-        return view('user.catalogo',["products" => $products, 'categories'=> $categories]); // llamamos a la vista y le pasamos los productos de la base de datos
+        return view('main.catalogo',["products" => $products, 'categories'=> $categories]); // llamamos a la vista y le pasamos los productos de la base de datos
     }
     /**
      * Show the form for creating a new resource.

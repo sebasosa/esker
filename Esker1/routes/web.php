@@ -15,7 +15,12 @@
 //     return view('welcome');
 // });
 Route::get('/', 'MainController@home');
-
+Route::get('/faq',function(){
+  return view('main.faq');
+});
+Route::get('/contacto', function(){
+  return view('main.contacto');
+});
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/productos', 'ProductController@catalogo');

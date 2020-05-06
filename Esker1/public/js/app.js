@@ -12,7 +12,7 @@ $(document).ready(function(){
       ]
   });
 
-  $('.your-class').slick({
+  $('.your-class').slick({ //este codigo es del slide de la pag principal 
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
