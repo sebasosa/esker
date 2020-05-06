@@ -30,6 +30,7 @@ ul {
 
 .py-4 {
   margin-bottom: -22px;
+
 }
 
 
@@ -45,7 +46,7 @@ header {
   font-family: 'Teko', sans-serif;
   text-transform: uppercase;
   height: 175px;
-  /* position: absolute; */
+  position: absolute;
   top: 0;
   width: 100%;
   z-index: 500;
@@ -69,6 +70,7 @@ header {
 
 .topbar ul li a, #menu-pcipal ul li a {
   display: block;
+  z-index: 125;
 }
 
 .top .social-media {
@@ -216,109 +218,75 @@ header {
 }
 
 /* ______ GALERIA ______*/
-#carousel {
-  background-image: url("../img/bg-slide-home.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  margin-top: 1px;
+.content {
+    background: url("../img/bg-slide-home.jpg");
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    padding-top: 220px;
+    z-index: 1;
+    width: 100%;
+    padding-bottom: 20px;
+
+
+}
+.slick-dots li.slick-active button::before {
+    /* color: black; */
+    color: #dffff4;
+  }
+
+  .slick-dots li button::before {
+    /* opacity: .25; */
+    /* color: black; */
+    opacity: .45;
+    color: #dffff4;
+    font-size: 1rem;
+  }
+.slick-next {
+    /* right: -25px; */
+    right: 2rem;
+  }
+
+  .slick-prev {
+    /* left: -25px; */
+    left: 2rem;
+    z-index: 100;
+  }
+  .your-class img {
+    max-height: 450px;
+}
+.info-wrapper h1 {
+    font-family: 'Alfa Slab One', cursive;
+    color: #FFF;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+
 }
 
-.carousel-inner {
-  overflow: hidden;
-  padding: 250px 100px 100px 100px;
+.info-wrapper h3 {
+    font-family: 'Alfa Slab One', cursive;
+    color: #00c1de;
+    font-size: 1.6rem;
+    margin-top: 30px;
+    margin-bottom: 35px;
 }
 
-/* .producto {
-  float: left;
-} */
-
-/* .carousel-item {
-  /* display: flex;
-  justify-content: left;
-} */
-
-.carousel-item img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  max-height: 550px;
+.info-wrapper span {
+    display: inline-block;
+    font-family: 'Teko', sans-serif;
+    color: #FFF;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+    padding: 10px 30px 5px 30px;
+    border: 1px solid #FFF;
+    margin-top: 30px;
 }
-
-/* .info-slide {
-  float: left;
-  text-align: left;
-  padding-top: 35px;
-  padding-left: 0px;
-} */
-
-.info-slide h1 {
-  font-family: 'Alfa Slab One', cursive;
-  color: #FFF;
-  font-size: 55px;
-  line-height: 60px;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-  max-width: 450px;
-}
-
-.info-slide h3 {
-  font-family: 'Alfa Slab One', cursive;
-  color: #00c1de;
-  font-size: 26px;
-  margin-top: 50px;
-  margin-bottom: 35px;
-}
-
-.info-slide span {
-  display: inline-block;
-  font-family: 'Teko', sans-serif;
-  color: #FFF;
-  font-size: 36px;
-  line-height: 45px;
-  font-weight: bold;
-  padding: 10px 30px 5px 30px;
-  border: 1px solid #FFF;
-  margin-top: 30px;
-}
-/*----- codigo para animacion del slide---*/
-/* .slider{
-  width: 95%;
-  height: 800px;
-  margin: auto;
-  overflow: hidden;
-}
-.slider ul {
-  display: flex;
-  padding: 0;
-  width: 400%;
-  animation: cambio 20s infinite alternate;
-  height: 100%;
-}
-.slider li {
-  list-style: none;
-  width: 100%;
-}
-.slider .container {
-  width: 100%;
-
-} */
-/* @keyframes cambio {
-  0% { margin-left: 0;}
-  20% { margin-left: 0;}
-
-  25% {margin-left: -100%;}
-  45% { margin-left: -100%;}
-
-  50% { margin-left: -200%;}
-  70% { margin-left: -200%;}
-
-  75% { margin-left: -300%;}
-  100% { margin-left: -300%;}
-} */
-
-
 /* _______ EMPRESA ________ */
 .empresa {
   background-image: url("../img/bg-empresa.jpg");

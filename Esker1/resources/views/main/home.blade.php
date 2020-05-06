@@ -5,41 +5,33 @@
 
 @section('content')
   <!-- INICIO GALERIA -->
-  <div id="carousel" class="carousel slide" data-ride="carousel">
-            <!--indicadores-->
-            <ul class="carousel-indicators">
-                <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel" data-slide-to="1"></li>
-                <li data-target="#carousel" data-slide-to="2"></li>
-            </ul>
+  <div class="content text-center">
 
-            <!--imagenes-->
+         <div class="your-class">
+           @foreach ($products as $prod)
+             <div class="container">
+               <div class="row">
+                 <div class="col-md-6"><a href="">
+                   @if ($prod->imagen())
 
-            <div class="carousel-inner ">
-              @foreach ($products as $product)
-                <div class="carousel-item">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-md-8 product"><a href=""><img src="{{asset('uploads/'.$product->imagenes()->first()->name.".".$product->imagenes()->first()->ext)}}"  class="img-fluid"></a></div>
-                          <div class="col-md-4 info">
-                            <div class="info-slide">
-                              <h3>{{$product->short_description}}</h2>
-                              <h1>{{$product->title}}</h1>
-                              <span>${{$product->pricing}}</span><hr>
+                     <img src="{{asset('uploads/'.$prod->imagenes()->first()->name.".".$prod->imagenes()->first()->ext)}}" class="img-fluid" >
+                   @else
+                     <img src="{{asset('img/productos/cuello.jpg')}}" class="img-fluid" alt="Cuello Multipropósito Buff">
+                   @endif
+                 </a></div>
+                 <div class="col-md-6 ">
+                   <div class="info-wrapper">
+                     <h3>{{$prod->short_description}}</h2>
+                     <h1>{{$prod->title}}</h1>
+                     <span>${{$prod->pricing}}</span><hr>
 
-                            </div><a href="#" class="add-to-cart btn btn-success">Agregar <i class="fas fa-cart-plus"></i></a>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-              @endforeach
-            </div>
-
-            <!--controles-->
-            <a href="#carousel" class="carousel-control-prev" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a>
-            <a href="#carousel" class="carousel-control-next" data-slide="next"> <span class="carousel-control-next-icon"></span> </a>
-        </div>
-      </div>
+                   </div><a href="#" class="add-to-cart btn btn-success">add to cart <i class="icon-cart-1"></i></a>
+                 </div>
+               </div>
+             </div>
+           @endforeach
+         </div>
+  </div>
 
 
   <!-- FIN DE GALERIA -->

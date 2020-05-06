@@ -11,8 +11,17 @@ $(document).ready(function(){
       {value:"recibido", text: "Recibido"}
       ]
   });
-  $('div.carousel-item:first').addClass("active");
-  $('.carousel').carousel({
-    interval: 5000
-  })
+
+  $('.your-class').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    dots: true,
+  });
+
+
+
+
+
 })
