@@ -15,7 +15,7 @@
   </div>
   <div class="form-group">
     Categoria:
-    {{ Form::select('category_id', $categories, NULL, ['class' => 'category_id', 'id' =>'category_id', 'placeholder' => (isset($product->title)) ? $product->category() : " " ]) }}
+     {{ Form::select('category_id', $categories, (isset($product->title)) ? $product->category('id') : " ")}} 
   </div>
   <div class="form-group inline-block">
     {{ Form::file('imagen1')}}

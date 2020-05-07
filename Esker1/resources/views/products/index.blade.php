@@ -32,7 +32,7 @@
             <td>{{$product->short_description}}</td>
             <td>{{$product->long_description}}</td>
             <td>{{$product->pricing}}</td>
-            <td>{{$product->category()}}</td>
+            <td>{{$product->category('title')}}</td>
             <td>
               <a href="{{url('/products/'.$product->id.'/edit')}}"><i class="far fa-edit text-white"></i></a>
               @include('products.delete', ['product' => $product->id])

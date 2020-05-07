@@ -6,9 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    public function category()
+    public function category($request)
     {
-      return $this->belongsTo("App\Category")->first()->title;
+      $categ = $this->belongsTo("App\Category")->get();
+      foreach ($categ as $key) {
+        return $key->$request;
+      }
     }
 
     public function imagenes()
