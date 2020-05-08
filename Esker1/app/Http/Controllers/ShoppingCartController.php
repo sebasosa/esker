@@ -28,7 +28,7 @@ class ShoppingCartController extends Controller
 
       $total = $shopping_cart->total(); // saco el total del precio de los productos dentro del carrito
 
-      return view('shopping_carts.index', ['products'=> $products, 'total' => $total]); // retorno la vista del carrito pasandole los productos y el total calculado mas arriba
+      return view('main.shopping_cart', ['products'=> $products, 'total' => $total]); // retorno la vista del carrito pasandole los productos y el total calculado mas arriba
 
 
 
