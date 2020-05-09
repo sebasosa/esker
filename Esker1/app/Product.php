@@ -6,28 +6,22 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    public function category($request)
-    {
+    public function category($request) {
       $categ = $this->belongsTo("App\Category")->get();
       foreach ($categ as $key) {
         return $key->$request;
       }
     }
 
-    public function imagenes()
-    {
+    public function imagenes() {
       return $this->hasMany("App\Image")->get();
     }
 
-    public function imagen()
-    {
+    public function imagen() {
       return $this->hasMany("App\Image")->first();
-
-
     }
 
-    public function paypalItem()
-    {
+    public function paypalItem() {
       return \PaypalPayment::item()->setName($this->title) // en el metodo estatico item,le paso los parametros de cada producto q recibo,el titulo,descripcion, la moneda , la cantidad del prod, el precio
                                   ->setDescription($this->long_description)
                                   ->setCurrency('USD')

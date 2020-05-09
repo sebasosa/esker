@@ -49,7 +49,7 @@ class Product_ShoppingCartController extends Controller
         'shopping_cart_id' => $shopping_cart->id,
         'product_id' => $request->product_id
       ]);
-        return back();
+      return back();
     // if ($response) {
     //     return redirect('/carrito');
     //   } else {
@@ -98,8 +98,11 @@ class Product_ShoppingCartController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($product_id, $shopping_cart_id)
     {
-        //
+      // dd($product_id, $shopping_cart_id);
+      $id = ProductsShoppingCart::where("product_id", $product_id)->where("shopping_cart_id", $shopping_cart_id)->first()->id;
+      ProductsShoppingCart::destroy($id);
+      return redirect('/carrito');
     }
 }

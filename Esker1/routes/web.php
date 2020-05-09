@@ -28,9 +28,11 @@ Route::get('/productos/{id}', 'ProductController@catalogoCat');
 
 Route::get('/carrito', 'ShoppingCartController@index');
 
+Route::get('/payments/store', 'PaymentsController@store');
+
 Route::post('/carrito', 'ShoppingCartController@checkOut');//cuando accedemos a esta ruta con el metodo post nos va a mandar a la funcion checkOut
 
-Route::get('/payments/store', 'PaymentsController@store');
+Route::get('/products_shoppingcarts/{product_id}/{shopping_cart_id}', 'Product_ShoppingCartController@destroy');
 
 Auth::routes();
 
