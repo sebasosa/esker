@@ -35,11 +35,11 @@ header {
   background: -moz-linear-gradient(top, rgba(6, 9, 26, 0.95) 0%, rgba(6, 9, 26, 0.95) 10%, rgba(6, 9, 26, 0.9) 25%, rgba(6, 9, 26, 0.85) 45%, rgba(6, 9, 26, 0.8) 55%, rgba(6, 9, 26, 0.66) 70%, rgba(6, 9, 26, 0.65) 71%, rgba(6, 9, 26, 0.4) 85%, rgba(0, 0, 0, 0) 100%);
   background: -webkit-linear-gradient(top, rgba(6, 9, 26, 0.95) 0%, rgba(6, 9, 26, 0.95) 10%, rgba(6, 9, 26, 0.9) 25%, rgba(6, 9, 26, 0.85) 45%, rgba(6, 9, 26, 0.8) 55%, rgba(6, 9, 26, 0.66) 70%, rgba(6, 9, 26, 0.65) 71%, rgba(6, 9, 26, 0.4) 85%, rgba(0, 0, 0, 0) 100%);
   background: linear-gradient(to bottom, rgba(6, 9, 26, 0.95) 0%, rgba(6, 9, 26, 0.95) 10%, rgba(6, 9, 26, 0.9) 25%, rgba(6, 9, 26, 0.85) 45%, rgba(6, 9, 26, 0.8) 55%, rgba(6, 9, 26, 0.66) 70%, rgba(6, 9, 26, 0.65) 71%, rgba(6, 9, 26, 0.4) 85%, rgba(0, 0, 0, 0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f206091a', endColorstr='#00000000', GradientType=0);
+  /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f206091a', endColorstr='#00000000', GradientType=0); */
   margin: 0 auto;
   font-family: 'Teko', sans-serif;
   text-transform: uppercase;
-  height: 175px;
+  /* height: 175px; */
   position: absolute;
   top: 0;
   width: 100%;
@@ -67,19 +67,15 @@ header {
   z-index: 125;
 }
 
-.top .social-media {
-  float: left;
-}
+.social-media li a i {
 
-.top .social-media ul li a i {
-  margin: 0 5px;
   color: #f02a0f;
   padding: 5px;
   min-width: 24px;
   text-align: center;
 }
 
-.top .social-media ul li a i:hover {
+.social-media li a i:hover {
   color: #FFF;
   background-color: #f02a0f;
   border-radius: 50%;
@@ -1609,7 +1605,7 @@ nav ol.breadcrumb {
   height: 50px;
   width: auto;
 }
-#menu-pcipal .faq-xs {
+.faq-xs {
   display: none;
 }
 /* -------- CARRITO --------- */
@@ -1980,9 +1976,7 @@ nav ol.breadcrumb {
   font-weight: 400;
 }
 
-/* ============================================ *
- * Checkout - Cart Cross sell
- * ============================================ */
+
   h2 {
   color: #000;
 }
@@ -2086,7 +2080,7 @@ nav ol.breadcrumb {
   display: block;
   width: 100%;
   padding: 0;
-  /* We always want this shipping method to display on its own line */
+
 }
 .checkout-types li {
   margin: 0 0 20px 0;
@@ -2145,13 +2139,21 @@ nav ol.breadcrumb {
 /* ==========================MEDIA QUERIES============================ */
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 
-  #menu-pcipal .faq-lg {
+  #menu-pcipal .nav-left, #menu-pcipal .nav-right, .faq-lg {
     display:none;
   }
-  #menu-pcipal .faq-xs {
-    display: inline-block;
+  #menu-pcipal .logo {
+    display: block;
+    margin: 0 auto;
+  }
+  #menu-pcipal .logo img {
+    width: 150px;
+  }
+  .faq-xs {
+    display: block;
+    margin: 10px 0;
   }
   .men-cat-lg {
     display:none;
@@ -2328,9 +2330,33 @@ nav ol.breadcrumb {
     min-height: 58px;
     text-align: center;
   }
-.cart-totals table tfoot td {
+  .cart-totals table tfoot td {
   font-size: 18px;
   font-weight: bold;
+  }
 }
 
+@media (max-width: 1024px) {
+  #menu-pcipal .nav-right, #menu-pcipal .nav-left  {
+  padding-bottom: 0; */
+    padding-top: 10px;
+  }
+  .nav-left > ul {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .nav-left > ul > li {
+    width: 100%;
+    text-align: center;
+    margin: 5px auto;
+  }
+  .nav-right > ul {
+    width: 100%;
+    padding: 0;
+  }
+  .nav-right > ul > li {
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+  }
 }

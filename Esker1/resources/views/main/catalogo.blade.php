@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title','Catalogo')
 @section('content')
 
   <div id="productos" class="pagina">

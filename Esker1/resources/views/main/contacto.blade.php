@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('tilte','Contacto')
 @section('content')
   <!-- CONTACTO -->
   <div id="contacto" class="pagina">
@@ -30,5 +30,5 @@
       </div>
 
     </div>
-  </div>  
+  </div>
 @endsection
