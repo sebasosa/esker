@@ -64,6 +64,7 @@ class ShoppingCart extends Model
       if ($shopping_cart_id) {
         return ShoppingCart::encontrarPorSession($shopping_cart_id) ;// Buscar el carrito de compras con este ID
       } else {
+
         return ShoppingCart::crearSinSession();// Crear un carrito de compras
       }
 

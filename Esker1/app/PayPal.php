@@ -87,7 +87,7 @@ class PayPal
 
     $execution= \PaypalPayment::PaymentExecution()->setPayerId($payerId); //a la ejecucion del págo le paso el id del pagador
 
-    return $payment->execute($execution, $this->_apiContext); //ester es me todo de la api 
+    return $payment->execute($execution, $this->_apiContext); //ester es me todo de la api
   }
 }
 

@@ -19,4 +19,10 @@ $(document).ready(function(){
     autoplaySpeed: 4000,
     dots: true,
   });
+  $("#menu-toggle").click(function() {
+      $("#wrapper").toggleClass("toggled");
+      let icon = document.getElementById('iconito');
+      icon.classList.toggle('fa-angle-double-left');
+      icon.classList.toggle('fa-angle-double-right');
+    });
 })

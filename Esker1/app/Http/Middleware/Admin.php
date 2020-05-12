@@ -19,6 +19,6 @@ class Admin
       if (Auth::check() && Auth::user()->rol() == "admin") { // si el usuario esta logueado y su rol es administrador sigue con el la cadena de middleware , si no es admin manda la login
         return $next($request);
       }
-        return redirect('login');
+        return redirect('/administrador');
     }
 }

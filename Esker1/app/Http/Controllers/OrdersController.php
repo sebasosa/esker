@@ -7,6 +7,11 @@ use App\Order;
 
 class OrdersController extends Controller
 {
+
+  public function __construct()
+  {
+    $this->middleware('admin');
+  }
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +19,7 @@ class OrdersController extends Controller
      */
     public function index()
     {
-        $orders = Order::latest()->get();//con el metodo lates obtenemos un query builder para pasarlo a collecion lo llamamos con el get()
+        $orders = Order::ultimas()->get();//con el metodo latest obtenemos un query builder para pasarlo a collecion lo llamamos con el get()
 
         $totalMensual = Order::totalMensual() ;
 

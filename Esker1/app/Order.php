@@ -9,8 +9,9 @@ class Order extends Model
 {
   protected $fillable = ['line1', 'line2', 'city', 'country_code', 'state', 'postal_code', 'email', 'shopping_cart_id', 'status', 'total', 'guide_number', 'recipient_name'];
 
-  public function scopeLatest($query) //usando el prefijo scope podemos usar la funcion como metodo de clase o como un metodo del objeto
+  public function scopeUltimas($query) //usando el prefijo scope podemos usar la funcion como metodo de clase o como un metodo del objeto
   {
+  
     return $query->orderId()->mensual(); //esto devuelve las ordenes del mes ordenadas por el id
   }
 
@@ -21,7 +22,7 @@ class Order extends Model
 
   public function scopeMensual($query)
   {
-    return $query->whereMonth('created_at', "=", date('m')) ;//la funcion date con el paremetro m devuelve el mes actual, con eso bucamos las ordenes del mes con el whereMonth
+    return $query->whereMonth('created_at', "=", date('m')) ;//la funcion date con el paremetro m devuelve el mes actual, con eso buscamos las ordenes del mes con el whereMonth
   }
 
   public function address()
@@ -51,6 +52,7 @@ class Order extends Model
     $orderData['email'] = $payer->payer_info->email; // agrego la info del mail al array
 
     $orderData['total'] = $shopping_cart->total(); // del carro de copras saco el total y el id
+
 
     $orderData['shopping_cart_id'] = $shopping_cart->id;
 

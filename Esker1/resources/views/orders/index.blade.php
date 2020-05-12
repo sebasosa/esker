@@ -1,6 +1,11 @@
 @extends('layouts.app')
 @section('title', 'Ordenes')
 @section('content')
+  <div id="bienvenidos" class="pagina">
+    <div class="container">
+      <h1>Ordenes</h1>
+    </div>
+  </div>
 <div class="container">
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -28,7 +33,7 @@
             <td>Nro. de guía</td>
             <td>Estado</td>
             <td>Fecha de venta</td>
-            <td>Acciones</td>
+            
           </tr>
         </thead>
         <tbody>
@@ -58,7 +63,7 @@
                     data-name="status"></a>
               </td>
               <td>{{$order->created_at}}</td>
-              <td>Acciones</td>
+
             </tr>
           @endforeach
         </tbody>

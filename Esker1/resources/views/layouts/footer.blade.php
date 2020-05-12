@@ -58,6 +58,7 @@
     </div>
     <div class="legales">
       <small>Esker Outdoors © 2019 - Todos los derechos reservados</small>
+      <small><a href="{{url('/administrador')}}">Administrador</a></small>
     </div>
   </div>
 
