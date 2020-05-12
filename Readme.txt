@@ -9,8 +9,8 @@ con eso entra al index del home
 
 Tareas a realizar en el proyecto Laravel
 
--Agregar registro para administrador donde se fije si coincide el legajo para poder seleccionar el campo role.
--Agregar en el edit de productos la funcion de modificar las imagenes
+-Agregar registro para administrador donde se fije si coincide el legajo para poder seleccionar el campo role. //hecho
+-Agregar en el edit de productos la funcion de modificar las imagenes //hecho
 -Agregar las validaciones de laravel
 -Agregar la funcionalidad del boton de agregar al carro con javascript
 -Agregar las alertas de exito o fracaso.
@@ -27,12 +27,12 @@ Tareas a realizar en el proyecto Laravel
 
 Hacer todas las vistas para el usuario
 
--pag home
--pag productos
--pag detalle productos
--pag Carro de compras
--pag Contacto
--pag Preguntas Frecuentes
+-pag home //hecho
+-pag productos //hecho
+-pag detalle productos 
+-pag Carro de compras //hecho
+-pag Contacto //hecho
+-pag Preguntas Frecuentes //hecho
 
 ==========================================================
 
