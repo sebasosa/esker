@@ -11,7 +11,7 @@
            @foreach ($products as $prod)
              <div class="container">
                <div class="row">
-                 <div class="col-md-6"><a href="">
+                 <div class="col-md-6"><a href="{{url('/products/'.$prod->id)}}">
                    @if ($prod->imagen())
 
                      <img src="{{asset('uploads/'.$prod->imagenes()->first()->name.".".$prod->imagenes()->first()->ext)}}" class="img-fluid" >

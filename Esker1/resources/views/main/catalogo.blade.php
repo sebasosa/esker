@@ -39,16 +39,6 @@
           <a class="dropdown-item" href="#">Orden Alfabético</a>
         </div>
       </div>
-      {{-- <div class="filtrar">
-        <label for="mostrarPor">Mostrar Por</label>
-        <select class="" name="mostrarPor" id="mostrarPor">
-          <option value="min">Menor Precio</option>
-          <option value="max">Mayor Precio</option>
-          <option value="new">Nuevos Ingresos</option>
-          <option value="destacados">Destacados</option>
-          <option value="az">Orden Alfabético</option>
-        </select>
-      </div> --}}
     </div>
     <div class="grilla">
       @foreach ($products as $product)
@@ -69,7 +59,7 @@
               <span class="prod-price">{{$product->pricing}}<span>
             </div>
             <div class="prod-links">
-              <a href="#">vista rapida</a>
+              <a href="{{url('/products/'.$product->id)}}">vista rapida</a>
               <span> | </span>
               @include('products_shoppingcarts.form', ['product' => $product])
             </div>

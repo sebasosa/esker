@@ -99,7 +99,7 @@ class ProductController extends Controller
         $product = Product::find($id);
         if ($product) {
           $images= $product->imagenes();
-          return view('products.show', ['product' => $product, 'images' => $images]);
+          return view('main.detalle_producto', ['product' => $product, 'images' => $images]);
         } else {
           return redirect('/productos');
         }

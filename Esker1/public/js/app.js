@@ -20,9 +20,28 @@ $(document).ready(function(){
     dots: true,
   });
   $("#menu-toggle").click(function() {
-      $("#wrapper").toggleClass("toggled");
-      let icon = document.getElementById('iconito');
-      icon.classList.toggle('fa-angle-double-left');
-      icon.classList.toggle('fa-angle-double-right');
-    });
+    $("#wrapper").toggleClass("toggled");
+    let icon = document.getElementById('iconito');
+    icon.classList.toggle('fa-angle-double-left');
+    icon.classList.toggle('fa-angle-double-right');
+  });
+  document.getElementById("imag-selector1").addEventListener("click", function(event){
+    event.preventDefault()
+    let dir = $("#img-selected1").attr("src");
+
+    $("#imag-producto").attr("src", dir);
+  });
+  document.getElementById("imag-selector2").addEventListener("click", function(event){
+    event.preventDefault()
+    let dir = $("#img-selected2").attr("src");
+
+    $("#imag-producto").attr("src", dir);
+  });
+  document.getElementById("imag-selector0").addEventListener("click", function(event){
+    event.preventDefault()
+    let dir = $("#img-selected0").attr("src");
+
+    $("#imag-producto").attr("src", dir);
+  });
+
 })
