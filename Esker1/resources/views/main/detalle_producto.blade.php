@@ -47,11 +47,9 @@
               </div>
               <div class="thumbs">
                 <ol>
-                  @for($i=0 ; $i< 3; $i++)
-                    <li><a id="{{'imag-selector'.$i}}" href="#"><img id="{{'img-selected'.$i}}"src="{{asset('uploads/'.$images[$i]->name.".".$images[$i]->ext)}}" alt="" class="img-min-det-prod"></a>
-                    </li>
-                  @endfor
-
+                  @foreach ($images as $key)
+                    <li><a id="img-selector" href="#"><img src="{{asset('/uploads/'.$key->name.".".$key->ext)}}" alt=""></a></li>
+                  @endforeach
                 </ol>
               </div>
             </div>

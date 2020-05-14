@@ -25,7 +25,7 @@
                      <h1>{{$prod->title}}</h1>
                      <span>${{$prod->pricing}}</span><hr>
 
-                   </div><a href="#" class="add-to-cart btn btn-success">add to cart <i class="icon-cart-1"></i></a>
+                   </div>@include('products_shoppingcarts.form', ['product' => $prod])
                  </div>
                </div>
              </div>

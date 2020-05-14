@@ -49,6 +49,11 @@ class Product_ShoppingCartController extends Controller
         'shopping_cart_id' => $shopping_cart->id,
         'product_id' => $request->product_id
       ]);
+      if($request->ajax()){ // si el request que llega a la funcion el del tipo ajax , transformo a json la respuesta
+        return response()->json([
+          'products_count' => ProductsShoppingCart::productsCount($shopping_cart->id)
+        ]);
+      }
       return back();
     // if ($response) {
     //     return redirect('/carrito');

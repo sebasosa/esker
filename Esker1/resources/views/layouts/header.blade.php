@@ -23,9 +23,9 @@
                 <ul class="navbar-nav ml-auto">
                   <li class="pt-2">
                     <a class="topbar mr-5" href="{{url('/carrito')}}">
-                      <i class="fas fa-shopping-cart"> {{$shopping_cart->idCarro()}} </i>
-                      <span class="total">$ <span class="acumulado">0,00</span></span>
-                      <span class="contador">{{$shopping_cart->productsSize()}}</span>
+                      <i class="fas fa-shopping-cart mr-2">{{--  {{$shopping_cart->idCarro()}} --}}</i>
+                      <span class="total mr-2">$ <span class="acumulado">0,00</span></span>
+                      <span class="contador mr-2">{{$shopping_cart->productsSize()}}</span>
                     </a>
                   </li>
                   <li>
