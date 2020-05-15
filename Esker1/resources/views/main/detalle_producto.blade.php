@@ -42,7 +42,7 @@
             <div class="fotos-detalle">
               <div class="viewport">
 
-                  <img id="imag-producto" src="{{asset('uploads/'.$images[0]->name.".".$images[0]->ext)}}" alt="">
+                  <img id="imag-producto" src="{{asset('uploads/'.$images[0]->url)}}" alt="">
 
               </div>
               <div class="thumbs">
