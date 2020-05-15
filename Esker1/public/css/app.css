@@ -29,7 +29,26 @@ body {
 #wrapper.toggled #sidebar-wrapper {
   margin-left: 0;
 }
-
+.administrador .row {
+  margin: 2rem auto;
+  align-items: baseline;
+  padding: 0 2rem;
+}
+.administrador .card {
+  width: 100%;
+  font-family: Teko, sans-serif;
+  }
+  .administrador .card-header {
+    font-size: 1.5rem;
+  }
+  .administrador .card-header h2{
+    float: left;
+    color: #fff;
+  }
+  .administrador .card-header a{
+    float: right;
+  }
+/*===============MAIN =============*/
 .py-4 {
   margin-bottom: -24px;
   padding-top: 12rem !important;
