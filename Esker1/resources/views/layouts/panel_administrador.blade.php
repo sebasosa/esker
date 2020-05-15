@@ -17,12 +17,12 @@
         <button class="btn btn-primary" id="menu-toggle"><i id="iconito" class="fas fa-angle-double-right"></i></button>
         <div class="row">
             <div class="col-lg-8">
-              <div class="card text-white bg-dark " >
+              <div class="card " >
               <div class="card-header">
                 <h2>Ordenes</h2>
-                <a class="btn btn-info"href="{{asset('/orders')}}"> Administrar </a>
+                <a class="btn btn-dark"href="{{asset('/orders')}}"> Administrar </a>
               </div>
-              <div class="card-content bg-light text-dark">
+              <div class="card-content">
                 <table class="table table-bordered">
                   <thead>
                     <tr>
@@ -69,12 +69,12 @@
             </div>
             </div>
             <div class="col-lg-4">
-              <div class="card text-white bg-dark " >
+              <div class="card " >
               <div class="card-header">
                 <h2>Mensual</h2>
-                <a class="btn btn-info"href="{{asset('/orders')}}"> Administrar </a>
+
               </div>
-              <div class="card-content bg-light text-dark">
+              <div class="card-content">
                 <div class="row">
                   <div class="col-lg-6 sale-data">
                     <span>{{$totalMensual}}USD</span>
@@ -91,14 +91,14 @@
         </div>
         <div class="row">
             <div class="col-lg-8">
-              <div class="card text-white bg-dark " >
+              <div class="card " >
               <div class="card-header">
                 <h2>Productos</h2>
-                <a class="btn btn-info"href="{{asset('/orders')}}"> Administrar </a>
+                <a class="btn btn-dark"href="{{asset('/products')}}"> Administrar </a>
               </div>
-              <div class="card-content bg-light text-dark">
+              <div class="card-content">
                 <table class="table table-bordered">
-                  <thead class="bg-primary">
+                  <thead >
                     <tr>
                       <td>Id producto</td>
                       <td>Título</td>
@@ -107,7 +107,7 @@
                       <td class="faq-lg">Categoria</td>
                     </tr>
                   </thead>
-                  <tbody class="bg-success">
+                  <tbody>
                     @foreach ($products as $product)
                       <tr>
                         <td>{{$product->id}}</td>
@@ -123,12 +123,12 @@
             </div>
             </div>
             <div class="col-lg-4">
-              <div class="card text-white bg-dark " >
+              <div class="card " >
               <div class="card-header">
                 <h2>Producto</h2>
-                <a class="btn btn-info"href="{{asset('/orders')}}"> Administrar </a>
+
               </div>
-              <div class="card-content bg-light text-dark">
+              <div class="card-content">
                 <div class="ficha">
                   <div class="fotos">
                     <div class="fotos-detalle">
@@ -158,14 +158,14 @@
         </div>
         <div class="row">
             <div class="col-lg-8">
-              <div class="card text-white bg-dark " >
+              <div class="card " >
               <div class="card-header">
                 <h2>Usuarios</h2>
-                <a class="btn btn-info"href="{{asset('/orders')}}"> Administrar </a>
+                <a class="btn btn-dark"href="{{asset('/users')}}"> Administrar </a>
               </div>
-              <div class="card-content bg-light text-dark">
+              <div class="card-content">
                 <table class="table table-bordered">
-                  <thead class="bg-primary">
+                  <thead >
                     <tr>
                       <td>Id usuario</td>
                       <td>Nombre</td>
@@ -174,7 +174,7 @@
                       <td class="faq-lg">Avatar</td>
                     </tr>
                   </thead>
-                  <tbody class="bg-success">
+                  <tbody>
                     @foreach ($users as $user)
                       <tr>
                         <td>{{$user->id}}</td>
@@ -192,20 +192,20 @@
             </div>
             </div>
             <div class="col-lg-4">
-              <div class="card text-white bg-dark " >
+              <div class="card " >
               <div class="card-header">
                 <h2>Categorias</h2>
-                <a class="btn btn-info"href="{{asset('/orders')}}"> Administrar </a>
+                <a class="btn btn-dark"href="{{asset('/categorias')}}"> Administrar </a>
               </div>
-              <div class="card-content bg-light text-dark">
+              <div class="card-content">
                 <table class="table table-bordered">
-                  <thead class="bg-primary">
+                  <thead >
                     <tr>
                       <td>Id Categoria</td>
                       <td>Título</td>
                     </tr>
                   </thead>
-                  <tbody class="bg-success">
+                  <tbody>
                     @foreach ($categories as $cat)
                       <tr>
                         <td>{{$cat->id}}</td>

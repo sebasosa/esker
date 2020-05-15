@@ -18,7 +18,7 @@ class CreateOrdersTable extends Migration
             $table->unsignedBigInteger('shopping_cart_id');
             $table->foreign('shopping_cart_id')->references('id')->on('shopping_carts');
             $table->string('line1');
-            $table->string('line2');
+            $table->string('line2')->nullable(true);
             $table->string('city');
             $table->string('postal_code');
             $table->string('country_code');

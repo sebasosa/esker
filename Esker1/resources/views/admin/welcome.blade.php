@@ -6,7 +6,7 @@
       <h1>Administrador</h1>
     </div>
   </div>
-  <main class="contenido">
+  <main id="administrador" class="contenido">
     @if (Auth::user() && Auth::user()->role == 'admin')
       @include('layouts.panel_administrador')
     @else
