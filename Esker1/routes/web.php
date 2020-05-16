@@ -31,9 +31,5 @@ Route::group(['middleware' => 'shopping_cart'], function(){
   Route::resource('compras', 'ShoppingCartController');
   Route::resource('orders', 'OrdersController');
   Route::get('/administrador', 'AdministradorController@dashboard');
-  // Route::group(['prefix' => 'admin', 'middleware' => ['auth' => 'admin' ]], function(){ // con esto accedemos a las rutas de administrador que llevan el prefijo /admin/
-  //   Route::get('/', function(){
-  //     return view('admin.welcome');
-  //   });
-  // });
+  Route::resource('categories', 'CategoryController');
 });
