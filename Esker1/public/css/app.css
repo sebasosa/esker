@@ -86,7 +86,22 @@ body {
   margin-bottom: -24px;
   padding-top: 12rem !important;
 }
-
+/*================Categorias=======*/
+.categorias {
+  position: relative;
+}
+.administrador .agregar-item{
+  background: blueviolet;
+  color: white;
+  margin: 2rem;
+  border-radius: 50%;
+  }
+.long-agregar {
+  border-radius: 5px !important;
+  width: 200px;
+  color: black  !important;
+  background: blue !important;
+}
 
 /* __________ HEADER __________ */
 header {
@@ -1084,15 +1099,22 @@ ul.categorias {
 }
 .sale-data {
   padding: 1em;
+
   text-align: center;
-  border-right: 1px solid #222;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
   }
 .sale-data span {
   display: block;
-  font-size: 2.2em;
+  font-weight: 700;
+  font-size: 3rem;
   color: #3f51b5;
 }
-
+#estadisticas h2 , h3{
+  color: white;
+  font-family: Teko, sans-serif;
+  font-weight: 700;
+}
 
 /*---------- DETALLE DEL PRODUCTO ---------*/
 #producto {

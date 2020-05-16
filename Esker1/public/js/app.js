@@ -77,4 +77,5 @@ $(document).ready(function(){
     button.val("Agregar al carrito").attr("style", "");
     $(".contador").removeClass("resaltar");
   }
+  
 });

@@ -8,7 +8,7 @@
   </div>
   <main id="administrador" class="contenido">
     @if (Auth::user() && Auth::user()->role == 'admin')
-      @include('layouts.panel_administrador')
+      @include('admin.panel_administrador')
     @else
       <div class="container welcome">
         <div class="row justify-content-center">
