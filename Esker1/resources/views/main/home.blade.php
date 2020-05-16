@@ -14,7 +14,7 @@
                  <div class="col-md-6"><a href="{{url('/products/'.$prod->id)}}">
                    @if ($prod->imagen())
 
-                     <img src="{{asset('uploads/'.$prod->imagenes()->first()->name.".".$prod->imagenes()->first()->ext)}}" class="img-fluid" >
+                     <img src="{{asset('uploads/'.$prod->imagenes()->first()->url)}}" class="img-fluid" >
                    @else
                      <img src="{{asset('img/productos/cuello.jpg')}}" class="img-fluid" alt="Cuello Multipropósito Buff">
                    @endif

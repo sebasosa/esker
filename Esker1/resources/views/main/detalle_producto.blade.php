@@ -48,7 +48,7 @@
               <div class="thumbs">
                 <ol>
                   @foreach ($images as $key)
-                    <li><a id="img-selector" href="#"><img src="{{asset('/uploads/'.$key->name.".".$key->ext)}}" alt=""></a></li>
+                    <li><a id="img-selector" href="#"><img src="{{asset('/uploads/'.$key->url)}}" alt=""></a></li>
                   @endforeach
                 </ol>
               </div>
