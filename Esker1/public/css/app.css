@@ -1021,6 +1021,7 @@ ul.categorias {
   margin: 0 auto;
   margin-bottom: 10px;
   max-height: 230px;
+  max-width: 100%;
 }
 
 .prod h5 {
@@ -1375,7 +1376,7 @@ nav ol.breadcrumb {
 }
 
 .fotos-detalle .thumbs ol li img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   margin: 0 auto;
   max-height: 150px;
