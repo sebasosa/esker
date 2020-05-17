@@ -133,6 +133,27 @@ header {
   overflow: hidden;
 }
 
+.topbar .usuario {
+  padding-top: 3px;
+  margin-left: 25px;
+  float: left;
+}
+
+ul li.nav-item a, ul li.nav-item span {
+  color: #b2b2b2;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 300;
+}
+
+ul li.nav-item span.divisor {
+  display: block;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 300;
+  padding: .5rem 0;
+}
+
 .topbar ul li, #menu-pcipal ul li {
   float: left;
 }
@@ -373,8 +394,9 @@ header {
 .empresa {
   background-image: url("../img/bg-empresa.jpg");
   background-position: center center;
-  background-size: 100%;
+  background-size: cover;
   padding: 100px 0px;
+  padding-bottom: 345px;
 }
 
 .empresa .row {
@@ -465,8 +487,13 @@ header {
   min-height: 500px;
   background-image: url(../img/bg-beneficios.jpg);
   background-position: center center;
-  background-size: 100%;
+  background-size: cover;
+  margin-top: -315px;
+  padding: 200px 0px;
+  -webkit-clip-path: polygon(0 35%, 100% 0, 100% 65%, 0% 100%);
+  clip-path: polygon(0 35%, 100% 0, 100% 65%, 0% 100%);
 }
+
 
 .formas {
   max-width: 1120px;
@@ -507,7 +534,9 @@ header {
 .marcas_acompanan {
   background-image: url(../img/bg-marcas.jpg);
   background-position: center center;
-  background-size: 100%;
+  background-size: cover;
+  padding-top: 220px;
+  margin-top: -315px;
 }
 
 .marcas {
@@ -558,7 +587,7 @@ header {
 footer {
   background-image: url(../img/bg-footer.jpg);
   background-position: center center;
-  background-size: 100%;
+  background-size: cover;
   padding-top: 30px;
   margin:0;
 }

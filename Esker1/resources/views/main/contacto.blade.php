@@ -12,18 +12,19 @@
     <div class="container">
       <div class="contacto">
         <p>Envianos tu mensaje o consulta</p>
-        <form class="contact-form" action="index.php" method="post">
+        <form class="contact-form" action="" method="post">
+          {{ csrf_field() }}
           <fieldset class="form-group">
-            <input id="nombre" type="text" class="form-control" name="nombre" value="" placeholder="Nombre y Apellido">
+            <input id="nombre" type="text" class="form-control" name="name" value="" placeholder="Nombre y Apellido" required>
           </fieldset>
           <fieldset class="form-group">
-            <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email">
+            <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email" required>
           </fieldset>
           <fieldset class="form-group">
-            <input id="tel" type="tel" class="form-control" name="tel" value="" placeholder="Telefono">
+            <input id="tel" type="tel" class="form-control" name="phone" value="" placeholder="Telefono" required>
           </fieldset>
           <fieldset class="form-group">
-            <textarea class="form-control" name="mensaje" rows="8" cols="80"></textarea>
+            <textarea class="form-control" name="body" rows="8" cols="80" required></textarea>
           </fieldset>
           <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
