@@ -155,7 +155,9 @@ header {
   background-color: #f02a0f;
   border-radius: 50%;
 }
-
+.navbar{
+  padding-top: 20px;
+}
 .top-bar-right {
   float: right;
   overflow: hidden;
@@ -178,7 +180,7 @@ header {
 
 .topbar .total, .topbar .buscador a {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 18px;
   color: #b2b2b2;
 }
@@ -252,11 +254,11 @@ header {
   order: 1;
   flex: 1 1 0%;
   justify-content: space-around;
-  padding-top: 25px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 5px;
   border-top: 2px solid #22556e;
   border-bottom: 2px solid #22556e;
-  margin-top: 20px;
+  margin-top: 6px;
 }
 
 #menu-pcipal .logo {
@@ -270,17 +272,17 @@ header {
   flex: 1 1 0%;
   order: 3;
   justify-content: space-around;
-  padding-top: 25px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 5px;
   border-top: 2px solid #22556e;
   border-bottom: 2px solid #22556e;
-  margin-top: 20px;
+  margin-top: 6px;
 }
 
 .top-logo img {
   max-width: 185px;
   height: auto;
-  margin-top: -40px;
+  margin-top: -48px;
 }
 
 .nav-right ul li a, .nav-left ul li a {
@@ -529,6 +531,7 @@ header {
 
 .cada_marca ul {
   overflow: hidden;
+  padding: 0px;
 }
 
 .cada_marca img {
@@ -553,11 +556,10 @@ header {
 
 /* _______ FOOTER ________ */
 footer {
-  margin-top: -40;
   background-image: url(../img/bg-footer.jpg);
   background-position: center center;
   background-size: 100%;
-  padding-top: 90px;
+  padding-top: 30px;
   margin:0;
 }
 
@@ -721,7 +723,7 @@ footer h6 {
   padding: 10px 0px;
 }
 
-.legales small {
+.legales small, .legales small a {
   font-family: "Teko", sans-serif;
   font-size: 18px;
   color: #ccc;
@@ -760,8 +762,8 @@ footer h6 {
   text-transform: uppercase;
   text-align: center;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-  font-size: 3em;
-  padding-top: 7em;
+  font-size: 65px;
+  padding-top: 300px;
 
 }
 
@@ -772,6 +774,117 @@ footer h6 {
   padding: 70px 0px;
   overflow: hidden;
 }
+
+/************ Agrego los estilos del login **********/
+.login {
+  width: 50%;
+  border-right: 1px solid #CCC;
+  padding: 0px 35px 15px 0px;
+  overflow: hidden;
+  float: left;
+}
+
+.contenido p:first-child {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 28px;
+  line-height: 32px;
+  color: #22556e;
+}
+
+.login-form {
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+input[type="email"], input[type="password"], input[type="text"], input[type="tel"] {
+  width: 100%;
+  font-family: "Teko", sans-serif;
+  font-size: 21px;
+  font-weight: 300;
+}
+
+.login-form input[type="checkbox"] {
+  margin-right: 5px;
+  height: 16px;
+  width: auto;
+}
+
+.login-form label {
+  font-family: "Teko", sans-serif;
+  font-size: 21px;
+  color: #999;
+  font-weight: 300;
+}
+
+.login-form button, .register-form button, .add-cart-form button {
+  background-color: #00c2de;
+  border-color: #00c2de;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 8px 30px;
+  -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.login-form .olvidopass a {
+  font-family: "Teko", sans-serif;
+  font-size: 24px;
+  color: #00c2de;
+  font-weight: 400;
+}
+
+.registro {
+  width: 47%;
+  float: left;
+  margin-left: 3%;
+}
+
+.registro p:nth-last-child(2), .registrarse p:nth-last-child(2) {
+  font-family: "Teko", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  color: #00c2de;
+  font-weight: 300;
+  margin: 50px 0px;
+}
+
+.registro a {
+  background-color: #00c2de;
+  border-color: #00c2de;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 8px 30px;
+  color: #FFF;
+}
+
+.registrarse {
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+
+.registrarse p:nth-last-child(2) {
+  margin: 30px 0;
+}
+
+.register-form {
+  overflow: hidden;
+}
+
+.register-form button {
+  float: left;
+  margin-top: 20px;
+}
+
 /* ---------- CONTACTO --------- */
 #contacto {
   background-image: url("../img/bg-contacto.jpg");

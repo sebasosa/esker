@@ -1,6 +1,6 @@
 <footer>
   <div class="container">
-    <div class="newsletter">
+    {{-- <div class="newsletter">
       <p>Suscribite a nuestro newsletter y recibí nuestras novedades</p>
       <form class="form-inline">
         <fieldset class="form-group">
@@ -12,7 +12,7 @@
         </fieldset>
         <button type="submit" class="btn btn-primary">Suscribirme</button>
       </form>
-    </div>
+    </div> --}}
     <div class="ubicacion">
       <div class="contacto">
         <div class="iconos-footer">
@@ -57,7 +57,7 @@
       </div>
     </div>
     <div class="legales">
-      <small>Esker Outdoors © 2019 - Todos los derechos reservados</small>
+      <small>Esker Outdoors © 2020 - Todos los derechos reservados - </small>
       <small><a href="{{url('/administrador')}}">Administrador</a></small>
     </div>
   </div>
