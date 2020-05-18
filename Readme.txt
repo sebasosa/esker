@@ -16,12 +16,12 @@ Tareas a realizar en el proyecto Laravel
 -Agregar las alertas de exito o fracaso.
 
 -crear el ABM usuario
--crear el ABM categoria
--crear Panel de Adminstrador
+-crear el ABM categoria //hecho
+-crear Panel de Adminstrador //hecho
 
 - hacer las vistas q faltan de administrador :
 	-ABM users
-	-ABM Categorias
+	-ABM Categorias//hecho
 
 ----------------------------------------------------
 
@@ -29,7 +29,7 @@ Hacer todas las vistas para el usuario
 
 -pag home //hecho
 -pag productos //hecho
--pag detalle productos 
+-pag detalle productos //hecho
 -pag Carro de compras //hecho
 -pag Contacto //hecho
 -pag Preguntas Frecuentes //hecho
