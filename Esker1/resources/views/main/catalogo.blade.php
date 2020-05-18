@@ -55,7 +55,7 @@
 
             <div class="prod-body">
               <h5 class="prod-title"><a href="#"></a>{{$product->title}}</h5>
-              <span class="prod-price-d">$250,00</span>
+              
               <span class="prod-price">{{$product->pricing}}<span>
             </div>
             <div class="prod-links">
