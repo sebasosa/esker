@@ -47,25 +47,21 @@ $(document).ready(function(){
       data: form.serialize(), //transformo el formulario en datos q maneja ajax
       dataType: "JSON",
       beforeSend: function(){// esta funcion pone el valor del boton en cargando...
-        button.val("cargando...");
+        button.val("CARGANDO PRODUCTO");
       },
       success: function(data){ // esta funcion se activa si el pedido fue realizado con exito , cambiamos el color del boton y el valor para mostrar el exito de la operacion
         button.css({
-      "color": "black",
-      "background-color": "#98bf21",
-      "font-weight": "700",
-      "font-size": "16px",
-      "width": "180px"
-    }).val("Agregado");
+      "background-color": "#2ecc71",
+    }).val("PRODUCTO AGREGADO!");
         console.log(data);
         $(".contador").html(data.products_count).addClass("resaltar"); //con esta linea actualizo el contador de productos q esta en el header
         setTimeout(function(){ // con esta funcion le decimos que despues de un tiempo corra la funcion que esta dentro
           restartButton(button)
-        },2000);
+        },1500);
       },
       error: function(err){ // si ocurre algun error con la peticion ajax esta funcion se activa
         console.log(err)
-        button.css("background-color","#d50000").val("Hubo un error");
+        button.css("background-color","#2ecc71").val("HUBO UN ERROR");
         setTimeout(function(){
           restartButton(button)
         },2000);
@@ -77,5 +73,5 @@ $(document).ready(function(){
     button.val("Agregar al carrito").attr("style", "");
     $(".contador").removeClass("resaltar");
   }
-  
+
 });

@@ -64,15 +64,12 @@
               <p>{{$product->short_description}}
               </p>
             </div>
-            <br>
-            <br>
-            <br>
 
             @include('products_shoppingcarts.form', ['product' => $product])
           </div>
           <div class="descripcion-larga">
             <h3>Detalle</h3>
-            {{$product->long_description}}
+            <p>{{$product->long_description}}</p>
           </div>
 
         </div>

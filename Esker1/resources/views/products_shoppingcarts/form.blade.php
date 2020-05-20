@@ -1,4 +1,4 @@
-{!!Form::open(['url' => '/products_shoppingcarts', 'method' => 'POST', 'class' =>'inline-block cart-add'])!!}
+{!!Form::open(['url' => '/products_shoppingcarts', 'method' => 'POST', 'class' =>'cart-add'])!!}
   <input type="hidden" name="product_id" value="{{$product->id}}">
-  <input type="submit" value="Agregar al Carrito" class="btn btn-info text-white">
+  <input class="agregarCarrito btn btn-primary" type="submit" value="Agregar al Carrito" class="btn btn-primary">
 {!!Form::close()!!}

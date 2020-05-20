@@ -1,7 +1,10 @@
 body {
   overflow-x: hidden;
 }
-
+button:focus, a:focus, img:focus, input:focus, input:link {
+  outline: none;
+  box-shadow: 0 0 0 0!important;
+}
 
 /* __________ ADMINISTRADOR: sidebar __________ */
 #sidebar-wrapper {
@@ -219,16 +222,18 @@ ul li.nav-item span.divisor {
   padding: 3px 10px;
 }
 .resaltar {
-  animation: resaltar 1.5s;
+  animation: resaltar 1s;
 }
 /*========animacion del contador del carro======*/
 @keyframes resaltar {
-  50% {
-    background-color: #00ff00;
-    color: black;
+  0% {
+    color:#2ecc71;
   }
-  100% {
-    background-color: inherit;
+  50% {
+    background-color: #2ecc71;
+    color:#000;
+    font-size: 21px;
+
   }
 }
 
@@ -324,7 +329,7 @@ ul li.nav-item span.divisor {
 .content {
     background: url("../img/bg-slide-home.jpg");
     background-position-x: center;
-    background-position-y: center;
+    background-position-y: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -338,14 +343,14 @@ ul li.nav-item span.divisor {
 }
 .slick-dots li.slick-active button::before {
     /* color: black; */
-    color: #dffff4;
+    color: #FFF;
   }
 
   .slick-dots li button::before {
     /* opacity: .25; */
     /* color: black; */
     opacity: .45;
-    color: #dffff4;
+    color: #FFF;
     font-size: 1rem;
   }
 .slick-next {
@@ -358,8 +363,17 @@ ul li.nav-item span.divisor {
     left: 2rem;
     z-index: 100;
   }
+  .slick-dots{bottom:20px;}
+  .your-class a{
+    border:none;
+
+  }
   .your-class img {
     max-height: 450px;
+    margin: 0 auto;
+}
+.info-wrapper{
+  overflow: hidden;
 }
 .info-wrapper h1 {
     font-family: 'Alfa Slab One', cursive;
@@ -368,15 +382,24 @@ ul li.nav-item span.divisor {
     line-height: 3.5rem;
     text-transform: uppercase;
     margin-bottom: 30px;
-
+    text-align: left;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+}
+.info-wrapper h1 a{
+  color: #FFF;
+  text-decoration: none;
 }
 
 .info-wrapper h3 {
     font-family: 'Alfa Slab One', cursive;
     color: #00c1de;
     font-size: 1.6rem;
+    font-weight: 300;
     margin-top: 30px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
+    line-height: 2.2rem;
+    text-align: left;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
 }
 
 .info-wrapper span {
@@ -388,15 +411,25 @@ ul li.nav-item span.divisor {
     font-weight: bold;
     padding: 10px 30px 5px 30px;
     border: 1px solid #FFF;
-    margin-top: 30px;
+    float: left;
 }
+
+.slick-prev:before, .slick-next:before { font-family: FontAwesome; font-size: 40px; line-height: 1; color: #fff; opacity: 0.5; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.slick-prev:before { content: "\f053"; }
+[dir="rtl"] .slick-prev:before { content: "\f054"; }
+
+[dir="rtl"] .slick-next { left: -10px; top: 70px; right: auto; }
+.slick-next:before { content: "\f054"; }
+[dir="rtl"] .slick-next:before { content: "\f053"; }
+
+
 /* _______ EMPRESA ________ */
 .empresa {
   background-image: url("../img/bg-empresa.jpg");
   background-position: center center;
   background-size: cover;
   padding: 100px 0px;
-  padding-bottom: 345px;
 }
 
 .empresa .row {
@@ -488,10 +521,6 @@ ul li.nav-item span.divisor {
   background-image: url(../img/bg-beneficios.jpg);
   background-position: center center;
   background-size: cover;
-  margin-top: -315px;
-  padding: 200px 0px;
-  -webkit-clip-path: polygon(0 35%, 100% 0, 100% 65%, 0% 100%);
-  clip-path: polygon(0 35%, 100% 0, 100% 65%, 0% 100%);
 }
 
 
@@ -535,8 +564,6 @@ ul li.nav-item span.divisor {
   background-image: url(../img/bg-marcas.jpg);
   background-position: center center;
   background-size: cover;
-  padding-top: 220px;
-  margin-top: -315px;
 }
 
 .marcas {
@@ -618,15 +645,36 @@ footer h6 {
   padding-right: 10px;
 }
 
-.newsletter form button {
-  background-color: #f02a0f;
-  border-color: #f02a0f;
+.info-wrapper form .agregarCarrito {
+  background-color: #22556e;
+  border: none!important;
+  color: #FFF;
   font-family: "Teko", sans-serif;
-  font-size: 28px;
-  line-height: 28px;
+  font-size: 32px;
+  line-height: 40px;
   font-weight: 300;
   text-transform: uppercase;
   padding: 8px 30px;
+  float: left;
+  margin-left: 20px;
+}
+.info-wrapper form .agregarCarrito:hover, .prod-links form .agregarCarrito:hover {
+  background-color: #00c1de;
+}
+
+.prod-links form .agregarCarrito {
+  font-family: "Teko", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #c9c9c9;
+  text-transform: uppercase;
+  padding: 0 2px;
+  border: none!important;
+  background-color: #FFF;
+  }
+
+.prod-links form .agregarCarrito:hover {
+  color: #22556D;
 }
 
 .newsletter form input.form-control {
@@ -634,11 +682,6 @@ footer h6 {
   font-size: 21px;
   color: #17a2b8;
   font-weight: 300;
-}
-
-.newsletter form button:hover {
-  background-color: #00c1de;
-  border-color: #00c1de;
 }
 
 .newsletter p:first-of-type {
@@ -845,9 +888,10 @@ input[type="email"], input[type="password"], input[type="text"], input[type="tel
   font-weight: 300;
 }
 
-.login-form button, .register-form button, .add-cart-form button {
+.login-form button, .register-form button {
   background-color: #00c2de;
-  border-color: #00c2de;
+  border: none;
+  color: #FFF;
   font-family: 'Alfa Slab One', cursive;
   font-size: 24px;
   line-height: 24px;
@@ -857,7 +901,6 @@ input[type="email"], input[type="password"], input[type="text"], input[type="tel
   -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
-  float: right;
   margin-right: 20px;
   margin-bottom: 20px;
 }
@@ -884,7 +927,7 @@ input[type="email"], input[type="password"], input[type="text"], input[type="tel
   margin: 50px 0px;
 }
 
-.registro a {
+.registro a, .opciones form .agregarCarrito{
   background-color: #00c2de;
   border-color: #00c2de;
   font-family: 'Alfa Slab One', cursive;
@@ -895,6 +938,19 @@ input[type="email"], input[type="password"], input[type="text"], input[type="tel
   padding: 8px 30px;
   color: #FFF;
 }
+.opciones form .agregarCarrito{
+  font-size: 24px;
+  padding: 15px 30px;
+  -webkit-box-shadow: 10px 10px 20px 0px rgba (0,0,0,0.14);
+  -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.opciones form .agregarCarrito:hover {
+  background-color: #22556e;
+}
+
 
 .registrarse {
   overflow: hidden;
@@ -1287,22 +1343,24 @@ ul.categorias {
   font-size: 16px;
 }
 
-nav ol.breadcrumb {
-  padding-left: 0px;
+ol.breadcrumb {
+  padding: 0px;
+  background: none;
+
 }
 
-.breadcrumb-item {
+li.breadcrumb-item {
   font-family: "Teko", sans-serif;
   font-size: 28px;
   font-weight: 300;
   text-transform: uppercase;
 }
 
-.breadcrumb-item a {
+li.breadcrumb-item a {
   color: #f02a0f;
 }
 
-.breadcrumb-item.active a {
+li.breadcrumb-item.active a {
   color: #333;
 }
 
@@ -1468,6 +1526,7 @@ nav ol.breadcrumb {
 .descripcion-larga h3 {
   font-family: "Teko", sans-serif;
   font-size: 42px;
+  font-size: 52px;
   font-weight: 500;
   color: #22556e;
   text-transform: uppercase;
@@ -1477,7 +1536,7 @@ nav ol.breadcrumb {
 
 .descripcion-larga p, .descripcion-larga ul li {
   font-size: 24px;
-  line-height: 28px;
+  line-height: 32px;
 }
 
 .descripcion-larga ul li {
