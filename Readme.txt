@@ -12,15 +12,15 @@ Tareas a realizar en el proyecto Laravel
 -Agregar registro para administrador donde se fije si coincide el legajo para poder seleccionar el campo role. //hecho
 -Agregar en el edit de productos la funcion de modificar las imagenes //hecho
 -Agregar las validaciones de laravel
--Agregar la funcionalidad del boton de agregar al carro con javascript
+-Agregar la funcionalidad del boton de agregar al carro con javascript //hecho
 -Agregar las alertas de exito o fracaso.
 
--crear el ABM usuario
+-crear el ABM usuario //hecho
 -crear el ABM categoria //hecho
 -crear Panel de Adminstrador //hecho
 
 - hacer las vistas q faltan de administrador :
-	-ABM users
+	-ABM users //hecho
 	-ABM Categorias//hecho
 
 ----------------------------------------------------
@@ -33,7 +33,12 @@ Hacer todas las vistas para el usuario
 -pag Carro de compras //hecho
 -pag Contacto //hecho
 -pag Preguntas Frecuentes //hecho
-
+---------------------------------------------------------
+Falta todavia:
+-pagina Perfil.
+-Agregar funcion al boton de ordenar por en la pagina productos
+-Agregar Avatar para el usuario.(esto es opcional)
+-Agregar las validaciones en javascript
 ==========================================================
 
 REQUISITOS MINIMOS PROYECTO INTEGRADOR
@@ -50,7 +55,7 @@ En resumen, los formularios deben contar con 4 validaciones:
 -laravel
 -a punto de insertarse en la base de datos
 
-Asegurarse en esa instacia que la información 
+Asegurarse en esa instacia que la información
 esté formateada de acuerdo a como la voy a guardar
 
 BASE DE DATOS
@@ -58,7 +63,7 @@ Se recomienda utilizar migraciones, por comodidad y para aprender.
 No es obligatorio hacer factories y seeders
 
 HTML/CSS
-Es requisito que el sitio sea resposive aunque algo no funcione del todo 
+Es requisito que el sitio sea resposive aunque algo no funcione del todo
 -> se recomienda mobile first!
 Utilizar algunas etiquetas de html sean
 semanticas, section, article, footer, main, nav, header

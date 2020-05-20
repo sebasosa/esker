@@ -19,17 +19,18 @@ Route::group(['middleware' => 'shopping_cart'], function(){
   Route::get('/contacto', function(){
     return view('main.contacto');
   });
-  Route::get('/productos', 'ProductController@catalogo');
-  Route::get('/productos/{id}', 'ProductController@catalogoCat');
-  Route::get('/carrito', 'ShoppingCartController@index');
+  Route::get('/productos', 'ProductController@catalogo')->name('productos.catalogo');
+  Route::get('/productos/{id}', 'ProductController@catalogoCat')->name('producto.detalle');
+  Route::get('/carrito', 'ShoppingCartController@index')->name('carrito.index');
   Route::get('/payments/store', 'PaymentsController@store');
   Route::post('/carrito', 'ShoppingCartController@checkOut');//cuando accedemos a esta ruta con el metodo post nos va a mandar a la funcion checkOut
-  Route::get('/products_shoppingcarts/{product_id}/{shopping_cart_id}', 'Product_ShoppingCartController@destroy');
+  Route::get('/products_shoppingcarts/{product_id}/{shopping_cart_id}', 'Product_ShoppingCartController@destroy')->name('producto.eliminar');
   Auth::routes();
   Route::resource('products', 'ProductController');
   Route::resource('products_shoppingcarts', 'Product_ShoppingCartController');
   Route::resource('compras', 'ShoppingCartController');
   Route::resource('orders', 'OrdersController');
-  Route::get('/administrador', 'AdministradorController@dashboard');
+  Route::get('/administrador', 'AdministradorController@dashboard')->name('administrador');
   Route::resource('categories', 'CategoryController');
+  Route::resource('users', 'UserController');
 });

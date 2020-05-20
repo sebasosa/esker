@@ -1,11 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
-use App\Category;
-
-class CategoryController extends Controller
+use App\User;
+class UserController extends Controller
 {
   public function __construct()
   {
@@ -18,8 +17,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        $categorias = Category::all();
-        return view('categories.index', ['categorias'=> $categorias]);
+      $users = User::all();
+      return view('users.index', ['users'=> $users]);
     }
 
     /**
@@ -29,9 +28,8 @@ class CategoryController extends Controller
      */
     public function create()
     {
-
-      $category= new Category;
-      return view('categories.create', ['category' => $category]);
+      $user= new User;
+      return view('users.create', ['user' => $user]);
     }
 
     /**
@@ -42,14 +40,16 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-      $category = new Category;
-      $category->id = $request->id;
-      $category->title = $request->title;
+      $user = new User;
+      $user->name = $request->name;
+      $user->email = $request->email;
+      $user->password = Hash::make($request->password);
+      $user->role =$request->role;
 
-      if ($category->save()) {
-        return redirect('/categories');
+      if ($user->save()) {
+        return redirect('/users');
       } else {
-        return view('categories.create',['category' => $category]);
+        return view('users.create',['user' => $user]);
       }
     }
 
@@ -61,7 +61,7 @@ class CategoryController extends Controller
      */
     public function show($id)
     {
-        //
+
     }
 
     /**
@@ -72,8 +72,8 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-      $category = Category::find($id);
-      return view('categories.edit', ['category' => $category]);
+      $user = User::find($id);
+      return view('users.edit', ['user' => $user]);
     }
 
     /**
@@ -85,14 +85,14 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-      $category = Category::find($id);
-      $category->id = $request->id;
-      $category->title = $request->title;
+      $user = User::find($id);
+      $user->name = $request->name;
+      $user->email = $request->email;
 
-      if ($category->save()) {
-        return redirect('/categories');
+      if ($user->save()) {
+        return redirect('/users');
       } else {
-        return view('categories.edit',['category' => $category]);
+        return view('users.edit',['user' => $user]);
     }
     }
 
@@ -104,7 +104,7 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-      Category::destroy($id);
-      return redirect('/categories');
+      User::destroy($id);
+      return redirect('/users');
     }
 }
