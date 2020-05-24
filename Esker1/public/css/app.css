@@ -218,8 +218,15 @@ ul li.nav-item span.divisor {
   background-color: #22556e;
   border-radius: 50%;
   font-size: 18px;
-  line-height: 18px;
-  padding: 3px 10px;
+  line-height: 24px;
+  padding: 3px;
+  min-width: 24px;
+  min-height: 24px;
+  display: inline-block;
+  text-align: center;
+}
+.topbar .contador:hover{
+  background-color: #f02a0f;
 }
 .resaltar {
   animation: resaltar 1s;
@@ -232,8 +239,6 @@ ul li.nav-item span.divisor {
   50% {
     background-color: #2ecc71;
     color:#000;
-    font-size: 21px;
-
   }
 }
 
@@ -674,7 +679,7 @@ footer h6 {
   }
 
 .prod-links form .agregarCarrito:hover {
-  color: #22556D;
+  color: #FFF;
 }
 
 .newsletter form input.form-control {
@@ -1060,7 +1065,7 @@ ul.categorias {
 
 .prod {
   font-family: "Teko", sans-serif;
-  max-width: 230px;
+  width: 230px;
   border: 1px solid #e0e0e0;
   background-color: #FFF;
   padding: 15px;
@@ -1079,13 +1084,17 @@ ul.categorias {
   max-height: 230px;
   max-width: 100%;
 }
-
-.prod h5 {
+.prod .image a {
+margin: 0 auto;
+}
+.prod h5 a {
   font-size: 24px;
   line-height: 24px;
-  font-weight: 300;
+  font-weight: 400;
   color: #22556e;
   margin: 0px;
+  text-transform: capitalize;
+  text-decoration: none;
 }
 
 .prod-price-d {
@@ -1108,6 +1117,7 @@ ul.categorias {
   font-weight: 300;
   border-top: 1px solid #e0e0e0;
   padding-top: 10px;
+  display: inline-flex;
 }
 
 .prod-links a, .prod-links span {
@@ -1121,6 +1131,22 @@ ul.categorias {
   color: #22556D;
   text-decoration: none;
 }
+
+.detalle .btn-group {
+  font-family: "Teko", sans-serif;
+}
+
+.detalle .btn-group .dropdown-menu, .detalle .btn-group .dropdown-item, .detalle .btn-group .btn-info  {
+  font-size: 21px;
+  font-weight: 300;
+}
+
+.detalle .btn-group .btn-info {
+  background-color: #f02a0f;
+  border-color: #f02a0f;
+  border-radius: .25rem;
+}
+
 /* -------- PREGUNTAS FRECUENTES --------- */
 #faq {
   background-image: url("../img/bg-como-comprar.jpg");
@@ -1398,7 +1424,7 @@ li.breadcrumb-item.active a {
 .fotos-detalle .viewport {
   width: 100%;
   height: auto;
-  min-height: 516px;
+  min-height: 400px;
   background-color: #FFF;
   display: flex;
   align-items: center;

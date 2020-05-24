@@ -9,7 +9,7 @@
   </div>
 
   <div class="detalle">
-    <div class="container  clearfix">
+    <div class="container clearfix">
       <!-- Split dropright button -->
       <div class="btn-group dropright men-cat-xs">
         <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -31,7 +31,7 @@
       </ul>
       <div class="btn-group dropleft float-right " >
         <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Mostrar por
+          Ver productos por
         </button>
         <div class="dropdown-menu" >
           <a class="dropdown-item" href="#">Menor Precio</a>
@@ -45,8 +45,7 @@
         <div class="prod">
             <div class="image">
               @if ($product->imagen())
-
-                <img src="{{asset('uploads/'.$product->imagenes()->first()->name.".".$product->imagenes()->first()->ext)}}" class="prod-img" >
+                <a href="{{url('/products/'.$product->id)}}"><img src="{{asset('uploads/'.$product->imagenes()->first()->name.".".$product->imagenes()->first()->ext)}}" class="prod-img"></a>
               @else
                 <img src="{{asset('img/productos/cuello.jpg')}}" class="prod-img" >
               @endif
@@ -54,12 +53,12 @@
 
 
             <div class="prod-body">
-              <h5 class="prod-title"><a href="#"></a>{{$product->title}}</h5>
-              
-              <span class="prod-price">{{$product->pricing}}<span>
+              <h5 class="prod-title"><a href="{{url('/products/'.$product->id)}}">{{$product->title}}</a></h5>
+
+              <span class="prod-price">${{$product->pricing}}<span>
             </div>
             <div class="prod-links">
-              <a href="{{url('/products/'.$product->id)}}">vista rapida</a>
+              <a href="{{url('/products/'.$product->id)}}">ver detalle</a>
               <span> | </span>
               @include('products_shoppingcarts.form', ['product' => $product])
             </div>
