@@ -12,7 +12,7 @@
 */
 
 Route::group(['middleware' => 'shopping_cart'], function(){
-  Route::get('/', 'MainController@home');
+  Route::get('/', 'MainController@home')->name('home');
   Route::get('/faq',function(){
     return view('main.faq');
   });
