@@ -32,12 +32,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <style>@yield('style-home')</style> 
+    @yield('css')
+    
+    <style>@yield('style-home')</style>
 
 </head>
 <body>
 @include('layouts.header')
-  <main class="py-4">
+  <main class="py-4 @yield('class')">
     @yield('content')
   </main>
 @include('layouts.footer')

@@ -32,12 +32,7 @@ button:focus, a:focus, img:focus, input:focus, input:link {
 #wrapper.toggled #sidebar-wrapper {
   margin-left: 0;
 }
-#administrador {
-  background: url('../img/dark-bg.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 .administrador .row {
   margin: 2rem auto;
   align-items: baseline;
@@ -220,7 +215,7 @@ ul li.nav-item span.divisor {
   font-size: 18px;
   line-height: 24px;
   padding: 3px;
-  min-width: 24px;
+  min-width: 26px;
   min-height: 24px;
   display: inline-block;
   text-align: center;
@@ -852,6 +847,11 @@ footer h6 {
   overflow: hidden;
 }
 
+.admin-forms{
+  background-image: none;
+  padding: 70px 0px;
+}
+
 /************ Agrego los estilos del login **********/
 .login {
   width: 50%;
@@ -861,7 +861,7 @@ footer h6 {
   float: left;
 }
 
-.contenido p:first-child {
+.contenido p:first-child, #administrador p.first {
   font-family: 'Alfa Slab One', cursive;
   font-size: 28px;
   line-height: 32px;
@@ -880,13 +880,13 @@ input[type="email"], input[type="password"], input[type="text"], input[type="tel
   font-weight: 300;
 }
 
-.login-form input[type="checkbox"] {
+.login-form input[type="checkbox"], .register-form input[type="checkbox"] {
   margin-right: 5px;
   height: 16px;
   width: auto;
 }
 
-.login-form label {
+.login-form label, .register-form label {
   font-family: "Teko", sans-serif;
   font-size: 21px;
   color: #999;
@@ -910,7 +910,7 @@ input[type="email"], input[type="password"], input[type="text"], input[type="tel
   margin-bottom: 20px;
 }
 
-.login-form .olvidopass a {
+.login-form .olvidopass a, .register-form .olvidopass a {
   font-family: "Teko", sans-serif;
   font-size: 24px;
   color: #00c2de;
@@ -923,13 +923,17 @@ input[type="email"], input[type="password"], input[type="text"], input[type="tel
   margin-left: 3%;
 }
 
-.registro p:nth-last-child(2), .registrarse p:nth-last-child(2) {
+.registro p:nth-last-child(2), .registrarse p:nth-last-child(2), .admin-forms p:nth-last-child(2) {
   font-family: "Teko", sans-serif;
   font-size: 24px;
   line-height: 32px;
   color: #00c2de;
   font-weight: 300;
   margin: 50px 0px;
+}
+
+.admin-forms p:nth-last-child(2){
+  margin: 10px 0px;
 }
 
 .registro a, .opciones form .agregarCarrito{
@@ -2322,6 +2326,12 @@ margin-top: 20px;
   font-weight: bold;
   }
   /*========= Pagina Administrador ===========*/
+.admin {
+    background-image: url(../img/bg-footer.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
   #sidebar-wrapper {
    margin-left: -17rem;
  }

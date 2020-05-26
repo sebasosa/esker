@@ -6,6 +6,5 @@
     <a href="{{url('/users')}}" class="list-group-item list-group-item-action bg-dark text-white">Usuarios</a>
     <a href="{{url('/categories')}}" class="list-group-item list-group-item-action bg-dark text-white">Categorias</a>
     <a href="{{url('/orders')}}" class="list-group-item list-group-item-action bg-dark text-white">Ordenes</a>
-    <a href="{{url('/')}}" class="list-group-item list-group-item-action bg-dark text-white">Home</a>
   </div>
 </div>
