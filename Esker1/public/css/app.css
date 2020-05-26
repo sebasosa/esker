@@ -8,21 +8,41 @@ button:focus, a:focus, img:focus, input:focus, input:link {
 
 /* __________ ADMINISTRADOR: sidebar __________ */
 #sidebar-wrapper {
+  font-family: "Teko", sans-serif;
   min-height: 100vh;
   margin-left: -17rem;
   -webkit-transition: margin .25s ease-out;
   -moz-transition: margin .25s ease-out;
   -o-transition: margin .25s ease-out;
   transition: margin .25s ease-out;
+  background-color: #22556e!important;
 }
 
 #sidebar-wrapper .sidebar-heading {
   padding: 0.875rem 1.25rem;
-  font-size: 1.2rem;
+  font-size: 21px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 #sidebar-wrapper .list-group {
   width: 17rem;
+}
+#sidebar-wrapper .list-group .list-group-item {
+  background-color: #22556e!important;
+}
+
+#sidebar-wrapper .list-group .list-group-item:hover {
+  background-color: #00c1de!important;
+}
+
+#sidebar-wrapper .list-group-flush a {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 300;
+}
+.sidebar-heading{
+  background-color: #212529;
 }
 
 #page-content-wrapper {
@@ -31,6 +51,17 @@ button:focus, a:focus, img:focus, input:focus, input:link {
 
 #wrapper.toggled #sidebar-wrapper {
   margin-left: 0;
+}
+
+#administrador{
+  padding: 0px;
+}
+#administrador p{
+  margin-left: 50px;
+  text-transform: uppercase;
+}
+#administrador .iconito{
+  border-radius: 0px;
 }
 
 .administrador .row {
@@ -42,17 +73,16 @@ button:focus, a:focus, img:focus, input:focus, input:link {
 .administrador .card {
   width: 100%;
   font-family: Teko, sans-serif;
-  font-size: 1.3rem;
-  border: 0.5px solid black;
 
   }
   .administrador .card-header {
-    font-size: 1.5rem;
     background: #6495ed;
   }
-  .administrador .card-header h2{
+  .administrador .card-header h3{
     float: left;
-    color: rgba(0,0,0,0.8);
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
 
   }
   .administrador .card-header a{
@@ -60,25 +90,25 @@ button:focus, a:focus, img:focus, input:focus, input:link {
   }
   .administrador .card-content, .administrador .card-content span{
     overflow-x: hidden;
-    background: #2b2b2b;
-    color: #fff;
     border:none;
   }
   .administrador .table {
-    color: #fff;
-    margin: 0;
+    margin: 0px;
   }
-  .administrador .table td {
-    border: 1px solid darkgrey;
+  .administrador .card-tools{
+    
   }
-
   .administrador .table thead {
-    background-color: #111111;
-
+    color: #FFF;
+    background-color: #22556e;
+    border:none;
+    font-size: 18px;
+    text-transform: uppercase;
   }
-  .administrador .table tbody {
-    background-color: #2b2b2b;
-  }
+.administrador .table tbody{
+  font-size: 18px;
+  font-weight: 300;
+}
 /*===============MAIN =============*/
 .py-4 {
   margin-bottom: -24px;
@@ -923,7 +953,7 @@ input[type="email"], input[type="password"], input[type="text"], input[type="tel
   margin-left: 3%;
 }
 
-.registro p:nth-last-child(2), .registrarse p:nth-last-child(2), .admin-forms p:nth-last-child(2) {
+.registro p:nth-last-child(2), .registrarse p:nth-last-child(2), .admin-forms p:nth-last-child(2){
   font-family: "Teko", sans-serif;
   font-size: 24px;
   line-height: 32px;

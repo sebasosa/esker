@@ -1,13 +1,12 @@
 @extends('layouts.app')
 
-@section('title', 'Administrador')
+@section('title', 'Panel de Administración::Esker Outdoors')
 
 @section('class', 'contenido')
 
 @section('content')
 <div class="content">
 </div>
-    <div class="container">
       <div id="administrador" class="admin-forms">
         @if (Auth::user() && Auth::user()->role == 'admin')
           @include('admin.panel_administrador')
@@ -58,5 +57,4 @@
           </form>
         @endif
         </div>
-      </div>
 @endsection
