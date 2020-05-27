@@ -8,7 +8,7 @@ $(document).ready(function(){
     source:[
       {value:"creado", text: "Creado"},
       {value:"enviado", text: "Enviado"},
-      {value:"recibido", text: "Recibido"}
+      {value:"aprobado", text: "Aprobada"}
       ]
   });
 

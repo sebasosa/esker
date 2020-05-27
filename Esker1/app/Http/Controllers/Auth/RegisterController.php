@@ -54,6 +54,7 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'legajo' => ['exists:legajos,numero_legajo'],
+            'avatar' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048'
         ]);
     }
 
@@ -66,18 +67,22 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
 
+      $path= $data['name'].".".$data['avatar']->extension();
+      $data['avatar']->move(public_path().'/user/', "$path");
       if(isset($data['legajo'])){
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'role' => 'admin',
+            'imagen' => "$path"
         ]);
       } else {
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'imagen' => "$path"
         ]);}
     }
 }

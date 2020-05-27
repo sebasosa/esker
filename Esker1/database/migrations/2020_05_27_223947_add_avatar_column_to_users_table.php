@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateShoppingCartsTable extends Migration
+class AddAvatarColumnToUsersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class CreateShoppingCartsTable extends Migration
      */
     public function up()
     {
-        Schema::create('shopping_carts', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('custom_id')->nullable(true);
-            $table->string('status');
-            $table->timestamps();
+        Schema::table('users', function (Blueprint $table) {
+          $table->string('imagen')->nullable(true);
         });
     }
 
@@ -28,6 +25,8 @@ class CreateShoppingCartsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('shopping_carts');
+        Schema::table('users', function (Blueprint $table) {
+            
+        });
     }
 }

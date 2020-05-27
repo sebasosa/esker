@@ -4,11 +4,12 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 use App\User;
+use Auth;
 class UserController extends Controller
 {
   public function __construct()
   {
-    $this->middleware('admin');
+    $this->middleware('admin', ["except" =>[ "edit", "update"]]);
   }
     /**
      * Display a listing of the resource.
@@ -85,15 +86,22 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-      $user = User::find($id);
-      $user->name = $request->name;
-      $user->email = $request->email;
+      if (Auth::user()->id == $id || Auth::user()->role =='admin') {
+        $user = User::find($id);
+        $user->name = $request->name;
+        $user->email = $request->email;
 
-      if ($user->save()) {
-        return redirect('/users');
-      } else {
-        return view('users.edit',['user' => $user]);
-    }
+        if ($user->save()) {
+          if (Auth::user()->role == 'admin') {
+            return redirect('/users');
+          } else {
+            return redirect('perfil');
+          }
+
+        } else {
+          return view('users.edit',['user' => $user]);
+        }
+      }
     }
 
     /**

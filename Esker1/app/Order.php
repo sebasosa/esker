@@ -11,7 +11,7 @@ class Order extends Model
 
   public function scopeUltimas($query) //usando el prefijo scope podemos usar la funcion como metodo de clase o como un metodo del objeto
   {
-  
+
     return $query->orderId()->mensual(); //esto devuelve las ordenes del mes ordenadas por el id
   }
 
@@ -52,8 +52,7 @@ class Order extends Model
     $orderData['email'] = $payer->payer_info->email; // agrego la info del mail al array
 
     $orderData['total'] = $shopping_cart->total(); // del carro de copras saco el total y el id
-
-
+    $orderData['status'] = 'Aprobado';
     $orderData['shopping_cart_id'] = $shopping_cart->id;
 
     return Order::create($orderData); //creamos una instancia de la clase con los datos recibidos

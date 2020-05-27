@@ -19,6 +19,9 @@ Route::group(['middleware' => 'shopping_cart'], function(){
   Route::get('/contacto', function(){
     return view('main.contacto');
   });
+  Route::get('/perfil', function(){
+    return view('main.perfil');
+  })->name('perfil');
   Route::get('/productos', 'ProductController@catalogo')->name('productos.catalogo');
   Route::get('/productos/{id}', 'ProductController@catalogoCat')->name('producto.detalle');
   Route::get('/carrito', 'ShoppingCartController@index')->name('carrito.index');

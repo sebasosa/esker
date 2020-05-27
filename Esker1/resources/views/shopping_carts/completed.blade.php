@@ -8,7 +8,7 @@
 
   <div class="container">
     <div class="card large-padding bg-primary">
-      <h3>Tu pago fue procesado <span class="{{$order->status}}">{{$order->status}}</span></h3>
+      <h3>Tu pago fue <span >{{$order->status}}</span></h3>
       <p>Corrobora los detalles de tu envío</p>
 
       <div class="row">

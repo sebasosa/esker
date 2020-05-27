@@ -11,7 +11,7 @@
         <div class="registrarse">
           <p>Nuevo Cliente? Registrate aquí</p>
           <p>Al crear una cuenta en nuestra página podrás moverte rápidamente por el proceso de pago, guardar múltiples direcciones de envío, ver y seguir el rastro de los pedidos de tu cuenta y más!</p>
-          <form class="register-form" action="{{ route('register') }}" method="post">
+          <form class="register-form" action="{{ route('register') }}" method="post" enctype="multipart/form-data">
             @csrf
             <fieldset class="form-group">
               <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Nombre y Apellido">
@@ -42,6 +42,9 @@
 
             <fieldset class="form-group">
               <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password" placeholder="Repetí tu contraseña">
+            </fieldset>
+            <fieldset class="form-group">
+              <input id="avatar" type="file" class="form-control" name="avatar">
             </fieldset>
 
             <button type="submit" class="btn btn-primary">Registrarme</button>
