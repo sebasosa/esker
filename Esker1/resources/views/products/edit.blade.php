@@ -1,22 +1,26 @@
 @extends('layouts.app')
-@section('title', 'Productos')
+@section('title', 'Panel de Administración::Editar Producto')
+@section('class', 'contenido')
 @section('content')
-  <div id="faq" class="pagina">
-    <div class="container">
-      <h1>PRODUCTOS</h1>
-    </div>
-  </div>
-  <main id="administrador" class="contenido">
-  <div class="d-flex" id="wrapper">
-    @include('admin.sidebar')
-    <div id="page-content-wrapper" class="administrador">
-      <button class="btn btn-primary" id="menu-toggle"><i id="iconito" class="fas fa-angle-double-right"></i></button>
-      <div class="container white text-center">
-        <h1>Editar Producto</h1>
-        <!-- Formulario -->
-        @include('products.form', ['products' => $product,'categories'=> $categories, 'url' => '/products/'.$product->id, 'method' => 'PATCH'])
+<div class="content">
+</div>
+
+<div id="administrador" class="admin-forms">
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        @include('admin.sidebar')
+        <!-- /#sidebar-wrapper -->
+        <div id="page-content-wrapper" class="administrador">
+            <button class="btn btn-dark btn-sm iconito" id="menu-toggle"><i id="iconito" class="fas fa-angle-double-right"></i></button>
+            <div class="container">
+
+                <p class="first fl">Editar producto</p>
+
+                <a class="btn btn-sm btn-outline-dark agregar-item" href="{{url('/products')}}"><i class="fas fa-undo-alt"></i> Regresar </a>
+                <!-- Formulario -->
+                @include('products.form', ['products' => $product,'categories'=> $categories, 'url' => '/products/'.$product->id, 'method' => 'PATCH'])
+              </div>
+          </div>
       </div>
-    </div>
   </div>
-  </main>
 @endsection

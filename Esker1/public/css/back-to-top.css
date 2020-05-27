@@ -1,0 +1,50 @@
+.cd-top--is-visible {
+    // back-to-top button visible
+    visibility: visible;
+    opacity: 1;
+}
+
+.cd-top--fade-out {
+    // reduce button opacity if user keeps scrolling
+    opacity: .5;
+}
+
+.text-replace {
+    overflow: hidden;
+    color: transparent;
+    text-indent: 100%;
+    white-space: nowrap
+}
+
+.cd-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    background: url(../img/cd-top-arrow.svg) no-repeat center 50%;
+    background-color: #f02a0f;
+    border-radius: 50%;
+}
+
+.js .cd-top:hover {
+    background-color: #22556e;
+    opacity: 1
+}
+
+.js .cd-top {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s, visibility .3s, background-color .3s
+}
+
+.js .cd-top--is-visible {
+    visibility: visible;
+    opacity: 1
+}
+
+.js .cd-top--fade-out {
+    opacity: .5
+}

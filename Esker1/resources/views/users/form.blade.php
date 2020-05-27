@@ -16,7 +16,6 @@
     </div>
   @endif
   <div class="form-group">
-    <a href="{{url('/users')}}">Regresar al listado de usuarios</a>
-    <input type="submit" value="Enviar" class="btn btn-success">
+    <input type="submit" value="Enviar" class="btn btn-primary enviar-admin">
   </div>
 {!!Form::close()!!}

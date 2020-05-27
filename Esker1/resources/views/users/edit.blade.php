@@ -1,22 +1,26 @@
 @extends('layouts.app')
-@section('title', 'Usuarios')
+@section('title', 'Panel de Administración::Editar Usuario')
+@section('class', 'contenido')
 @section('content')
-  <div id="faq" class="pagina">
-    <div class="container">
-      <h1>USUARIOS</h1>
+<div class="content">
+</div>
+
+<div id="administrador" class="admin-forms">
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        @include('admin.sidebar')
+        <!-- /#sidebar-wrapper -->
+        <div id="page-content-wrapper" class="administrador">
+            <button class="btn btn-dark btn-sm iconito" id="menu-toggle"><i id="iconito" class="fas fa-angle-double-right"></i></button>
+            <div class="container">
+
+                <p class="first fl">Editar usuario</p>
+
+                <a class="btn btn-sm btn-outline-dark agregar-item" href="{{url('/users')}}"><i class="fas fa-undo-alt"></i> Regresar </a>
+                <!-- Formulario -->
+                @include('users.form', ['user'=> $user, 'url' => '/users/'.$user->id, 'method' => 'PATCH'])
+            </div>
+        </div>
     </div>
-  </div>
-  <main id="administrador" class="contenido">
-  <div class="d-flex" id="wrapper">
-    @include('admin.sidebar')
-    <div id="page-content-wrapper" class="administrador">
-      <button class="btn btn-primary" id="menu-toggle"><i id="iconito" class="fas fa-angle-double-right"></i></button>
-      <div class="container white text-center">
-        <h1>Editar Usuario</h1>
-        <!-- Formulario -->
-        @include('users.form', ['user'=> $user, 'url' => '/users/'.$user->id, 'method' => 'PATCH'])
-      </div>
-    </div>
-  </div>
-  </main>
+</div>
 @endsection

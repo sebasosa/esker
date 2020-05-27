@@ -19,7 +19,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
 
-
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -31,10 +30,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+
+
+
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <script>document.getElementsByTagName("html")[0].className += " js";</script>
+    <link rel="stylesheet" href="css/back-to-top.css">
     @yield('css')
-    
+
     <style>@yield('style-home')</style>
+
+
 
 </head>
 <body>
@@ -43,5 +49,8 @@
     @yield('content')
   </main>
 @include('layouts.footer')
+<a href="#" class="cd-top text-replace js-cd-top">Top</a>
+<script src="js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+<script src="js/main.js"></script>
 </body>
 </html>
