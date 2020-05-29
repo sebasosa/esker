@@ -66,9 +66,14 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+      if (isset($data['avatar'])) {
+        $path= $data['name'].".".$data['avatar']->extension();
+        $data['avatar']->move(public_path().'/user/', "$path");
+      } else {
+        $path = null;
+      }
 
-      $path= $data['name'].".".$data['avatar']->extension();
-      $data['avatar']->move(public_path().'/user/', "$path");
+
       if(isset($data['legajo'])){
         return User::create([
             'name' => $data['name'],
