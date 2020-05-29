@@ -41,6 +41,12 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
+      $validatedData = $request->validate([
+        'name' => ['required', 'string', 'max:255'],
+        'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+        'password' => ['required', 'string', 'min:8'],
+        'avatar' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+      ]);
       $user = new User;
       $user->name = $request->name;
       $user->email = $request->email;
@@ -86,6 +92,11 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
+      $validatedData = $request->validate([
+        'name' => ['required', 'string', 'max:255'],
+        'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+        'avatar' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+      ]);
       if (Auth::user()->id == $id || Auth::user()->role =='admin') {
         $user = User::find($id);
         $user->name = $request->name;

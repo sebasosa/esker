@@ -59,7 +59,17 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-      //$hasFile = $request->hasFile('imagen1') && $request->imagen1->isValid();// pregunto si el post del formulario trae un archivo , y si ese archivo esta en la carp temporal
+      $validatedData = $request->validate([
+        'title' => ['required', 'string', 'max:255'],
+        'pricing' => ['required', 'numeric'],
+        'short_description' => ['required', 'string', 'min:8', 'max:255'],
+        'category_id' => ['required', 'numeric'],
+        'imagen1' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        'imagen2' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        'imagen3' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+
+      ]);
+      // pregunto si el post del formulario trae un archivo , y si ese archivo esta en la carp temporal
       $hasFile = $request->hasFile('imagen1') && $request->imagen1->isValid();
 
       $product = new Product;
@@ -134,6 +144,16 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
+      $validatedData = $request->validate([
+        'title' => ['required', 'string', 'max:255'],
+        'pricing' => ['required', 'numeric'],
+        'short_description' => ['required', 'string', 'min:8', 'max:255'],
+        'category_id' => ['required', 'numeric'],
+        'imagen1' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        'imagen2' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        'imagen3' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+
+      ]);
       $product = Product::find($id);
       $product->title = $request->title;
       $product->pricing = $request->pricing;

@@ -19,6 +19,15 @@
                 <a class="btn btn-sm btn-outline-dark agregar-item" href="{{url('/categories')}}"><i class="fas fa-undo-alt"></i> Regresar </a>
                 <!-- Formulario -->
                 @include('categories.form', ['category'=> $category, 'url' => '/categories', 'method' => 'POST'])
+                @if ($errors->any())
+                  <div class="alert alert-danger">
+                    <ul>
+                      @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                      @endforeach
+                    </ul>
+                  </div>
+                @endif
             </div>
         </div>
     </div>

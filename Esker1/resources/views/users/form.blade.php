@@ -9,7 +9,9 @@
   </div>
   <div class="form-group">
     {{ Form::file('avatar')}}
-    <img style="width: 150px" src="{{asset('/user/'.Auth::user()->imagen)}}" alt="">
+    @if ($method == 'PATCH')
+        <img style="width: 150px" src="{{asset('/user/'.Auth::user()->imagen)}}" alt="">
+    @endif
   </div>
   @if ($url === '/users')
     <div class="form-group">
