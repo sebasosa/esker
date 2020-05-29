@@ -9,7 +9,7 @@
   <main class="contenido">
     <div class="container">
         <div class="registrarse">
-          <p>Nuevo Cliente? Registrate aquí</p>
+          <p class="register-p">Nuevo Cliente? Registrate aquí</p>
           <p>Al crear una cuenta en nuestra página podrás moverte rápidamente por el proceso de pago, guardar múltiples direcciones de envío, ver y seguir el rastro de los pedidos de tu cuenta y más!</p>
           <form class="register-form" action="{{ route('register') }}" method="post" enctype="multipart/form-data">
             @csrf

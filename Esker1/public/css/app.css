@@ -3182,15 +3182,116 @@ margin-left: 0%;
 }
 
 /* Pantallas muy pequeñas (móviles en portrait de menos de 576px) */
-@media (max-width: 575.98px) {
-
+@media all and (min-width: 320px) and (max-width: 575.98px) {
+  .contenido{
+    padding: 35px 0;
+  }
+  .registrarse{
+    padding-bottom: 20px;
+  }
   .pagina h1{
-    font-size: 44px;
-    line-height: 50px;
+    font-size: 34px;
+    line-height: 40px;
   }
   #sidebar-wrapper{
     margin-left: -128px;
   }
+  .guest-mobile ul li a{
+    font-size: 16px;
+  }
+  .info-wrapper h1{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .info-wrapper h3{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .info-wrapper form .agregarCarrito{
+    margin-top: 0px;
+    margin-left: 10px;
+    padding: 6px 15px;
+    font-size: 1.5rem;
+  }
+  .info-wrapper span{
+    font-size: 1.5rem;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .login-p{
+    margin-top: 0px!important;
+  }
+  .register-p{
+    margin-top: 20px!important;
+  }
+  .iconos-footer div{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .login-form button, .register-form button{
+    margin-right: 0px;
+  }
+  .registro p:nth-last-child(2), .registrarse p:nth-last-child(2), .admin-forms p:nth-last-child(2){
+    margin: 20px 0;
+  }
+  .empresa .iconos img{
+    max-height: 72px;
+  }
+  .marcas h2, .titulo, .descripcion-larga h3{
+    font-size: 28px;
+  }
+  .empresa, .marcas, .formas{
+    padding: 35px 0;
+  }
+  .formas h2{
+    font-size: 32px;
+  }
+  .formas h3{
+    font-size: 21px;
+  }
+  .prod-links, .prod-links form .agregarCarrito{
+    font-size: 18px;
+  }
+  .opciones form .agregarCarrito{
+    font-size: 18px;
+    padding: 15px;
+  }
+  .opciones h2{
+    font-size: 34px;
+    line-height: 38px;
+  }
+  .descripcion-larga p, .descripcion-larga ul li{
+    font-size: 21px;
+    line-height: 24px;
+  }
+  .detalle{
+    padding: 20px 0;
+  }
+  .opciones p{
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .bienvenidos a.btn, .contact-form button, .enviar-admin{
+    font-size: 21px;
+  }
+  .fa-shopping-cart{
+    font-size: 18px;
+  }
+.topbar .contador{
+  font-size: 16px;
+  line-height: 21px;
+}
+.faq ul{
+  padding-left: 10px;
+}
+#administrador p.titulo-admin{
+  margin-left: 20px;
+}
 }
 
 

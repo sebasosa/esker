@@ -9,7 +9,7 @@
 <div class="contenido">
   <div class="container">
     <div class="login">
-      <p>Si ya tenés una cuenta, ingresá los datos a continuación</p>
+      <p class="login-p">Si ya tenés una cuenta, ingresá los datos a continuación</p>
       <form method="POST" action="{{ route('login') }}" class="login-form">
         @csrf
         <fieldset class="form-group">
@@ -46,7 +46,7 @@
       </form>
     </div>
     <div class="registro">
-      <p>Nuevos Clientes</p>
+      <p class="register-p">Nuevos Clientes</p>
       <p>Al crear una cuenta en nuestra página podrás moverte rápidamente por el proceso de pago, guardar múltiples direcciones de envío, ver y seguir el rastro de los pedidos de tu cuenta y más!</p>
       <a href="{{ route('register') }}" class="btn btn-secondary">Quiero crear mi cuenta</a>
     </div>
