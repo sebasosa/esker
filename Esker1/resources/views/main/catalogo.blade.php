@@ -16,15 +16,15 @@
           CATEGORIAS
         </button>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="{{url('/productos')}}">Todos</a>
+          <a class="dropdown-item {{ setActive('productos') }}" href="{{url('/productos')}}">Todos</a>
           @foreach ($categories as $cat)
-            <a class="dropdown-item" href="{{url('productos/'.$cat->id)}}"> {{$cat->title}}</a>
+            <a class="dropdown-item" href="{{url('productos/'.$cat->id)}}" class="{{ setActive('$cat->title') }}"> {{$cat->title}}</a>
           @endforeach
         </div>
       </div>
       <ul class="categorias men-cat-lg">
         <li>Categorias:</li>
-        <li><a href="{{url('/productos')}}" class="active">Todos</a></li>
+        <li><a href="{{url('/productos')}}" class="{{ setActive('productos') }}">Todos</a></li>
         @foreach ($categories as $cat)
           <li><a href="{{url('productos/'.$cat->id)}}">{{$cat->title}}</a></li>
         @endforeach

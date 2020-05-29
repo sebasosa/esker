@@ -3,7 +3,7 @@
     @include('admin.sidebar')
     <!-- /#sidebar-wrapper -->
     <div id="page-content-wrapper" class="administrador">
-        <button class="btn btn-dark btn-sm iconito" id="menu-toggle"><i id="iconito" class="fas fa-angle-double-right"></i></button>
+        <button class="btn btn-dark btn-sm iconito" id="menu-toggle" ><i id="iconito" class="fas fa-angle-double-right"></i></button>
 
         <!-- Page Content -->
         <div class="container">
@@ -67,27 +67,30 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="card ">
-                        <div class="card-header">
-                            <h3>Rendimiento</h3>
-                        </div>
-                        <div class="card-content">
-                            <div class="row">
-                                <div class="col-lg-6 sale-data">
-                                    Ingresos del mes
-                                    <span>{{$totalMensual}}USD</span>
+                <div class="col-lg-3 col-sm-6">
+    <!-- small card -->
+    <div class="small-box bg-info">
+        <div class="inner">
+            <h3>{{$totalMensual}} USD</h3>
 
-                                </div>
-                                <div class="col-lg-6 sale-data">
-                                    Numero de ventas
-                                    <span>{{$totalMensualCount}}</span>
+            <p>Ingresos del mes</p>
+        </div>
+        <div class="icon">
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </div>
+    <!-- small card -->
+    <div class="small-box bg-success">
+        <div class="inner">
+            <h3>{{$totalMensualCount}}</h3>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <p>Numero de ventas</p>
+        </div>
+        <div class="icon">
+            <i class="fas fa-chart-bar"></i>
+        </div>
+    </div>
+</div>
             </div>
             <div class="row">
                 <div class="col-lg-12">

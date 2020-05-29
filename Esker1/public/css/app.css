@@ -102,10 +102,10 @@ button:focus, a:focus, img:focus, input:focus, input:link {
     font-weight: 400;
 }
 
-.administrador .card-content, .administrador .card-content span {
+/* .administrador .card-content, .administrador .card-content span {
     overflow-x: hidden;
     border: none;
-}
+} */
 
 .administrador .table {
     margin: 0px;
@@ -189,26 +189,30 @@ header {
     margin-left: 25px;
     float: left;
 }
-.user-panel{
-  background-image: url("../user/user_bg.png");
-  background-position: center center;
-  background-color: #FFF;
-  border-radius: 50%;
+
+.user-panel {
+    background-image: url("../user/user_bg.png");
+    background-position: center center;
+    background-color: #FFF;
+    border-radius: 50%;
 }
+
 .user-panel img {
     height: 2.1rem;
     width: 2.1rem;
 }
+
 .elevation-2 {
-    box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23)!important;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23) !important;
 }
 
 .img-circle {
     border-radius: 50%;
 }
+
 .img-size-32 {
-  width: 32px;
-  height: auto;
+    width: 32px;
+    height: auto;
 }
 
 ul li.nav-item a, ul li.nav-item span {
@@ -463,7 +467,8 @@ ul li.nav-item span.divisor {
 }
 
 .info-wrapper h1 {
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Alfa Slab One'
+        , sans-serif, cursive;
     color: #FFF;
     font-size: 3rem;
     line-height: 3.5rem;
@@ -479,7 +484,8 @@ ul li.nav-item span.divisor {
 }
 
 .info-wrapper h3 {
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Alfa Slab One'
+        , sans-serif, cursive;
     color: #00c1de;
     font-size: 1.6rem;
     font-weight: 300;
@@ -534,6 +540,10 @@ ul li.nav-item span.divisor {
     content: "\f053";
 }
 
+.vac {
+    margin: auto 0px;
+}
+
 /* _______ EMPRESA ________ */
 .empresa {
     background-image: url("../img/bg-empresa.jpg");
@@ -549,7 +559,8 @@ ul li.nav-item span.divisor {
 }
 
 .titulo {
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Alfa Slab One'
+        , sans-serif, cursive;
     font-size: 56px;
     color: #FFF;
     text-transform: uppercase;
@@ -557,7 +568,8 @@ ul li.nav-item span.divisor {
 }
 
 .subtitulo {
-    font-family: 'Teko', cursive;
+    font-family: 'Teko'
+        , sans-serif, cursive;
     font-size: 34px;
     color: #FFF;
     font-weight: 300;
@@ -580,7 +592,8 @@ ul li.nav-item span.divisor {
 }
 
 .imagen-texto p {
-    font-family: 'Teko', cursive;
+    font-family: 'Teko'
+        , sans-serif, cursive;
     font-size: 24px;
     line-height: 30px;
     font-weight: 300;
@@ -619,7 +632,8 @@ ul li.nav-item span.divisor {
 }
 
 .empresa .frase-motivadora {
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Alfa Slab One'
+        , sans-serif, cursive;
     font-size: 48px;
     color: #00c1de;
     text-align: center;
@@ -681,7 +695,8 @@ ul li.nav-item span.divisor {
 }
 
 .marcas h2 {
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Alfa Slab One'
+        , sans-serif, cursive;
     font-size: 36px;
     color: #333;
     text-align: center;
@@ -938,12 +953,14 @@ footer h6 {
 }
 
 .reg .card-header {
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Alfa Slab One'
+        , sans-serif, cursive;
     font-size: 1.2rem;
 }
 
 .pagina h1 {
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Alfa Slab One'
+        , sans-serif, cursive;
     color: #FFF;
     line-height: 65px;
     text-transform: uppercase;
@@ -976,7 +993,8 @@ footer h6 {
 }
 
 .contenido p:first-child, #administrador p.first {
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Alfa Slab One'
+        , sans-serif, cursive;
     font-size: 28px;
     line-height: 32px;
     color: #22556e;
@@ -1033,7 +1051,8 @@ select {
     background-color: #00c2de;
     border: none;
     color: #FFF;
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Alfa Slab One'
+        , sans-serif, cursive;
     font-size: 24px;
     line-height: 24px;
     font-weight: 400;
@@ -1075,7 +1094,8 @@ select {
 .registro a, .opciones form .agregarCarrito {
     background-color: #00c2de;
     border-color: #00c2de;
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Alfa Slab One'
+        , sans-serif, cursive;
     font-size: 21px;
     line-height: 21px;
     font-weight: 300;
@@ -1141,14 +1161,17 @@ textarea.form-control {
 }
 
 .bienvenidos a.btn, .contact-form button, .enviar-admin {
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Alfa Slab One'
+        , sans-serif, cursive;
     font-size: 24px;
     color: #FFF;
     font-weight: 400;
     text-transform: uppercase;
 }
+
 .seguir-comprando {
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Alfa Slab One'
+        , sans-serif, cursive;
     font-size: 18px;
     color: #FFF;
     font-weight: 400;
@@ -1192,7 +1215,7 @@ ul.categorias {
 
 .categorias li a, .categorias li {
     font-family: "Teko", sans-serif;
-    font-size: calc(1.5rem + 1vw);
+    font-size: calc(1.3rem + 1vw);
     color: #808080;
     font-weight: 300;
     text-transform: uppercase;
@@ -1338,14 +1361,12 @@ ul.categorias {
 }
 
 /* ------------PERFIL -----------*/
-
-.perfil-user{
-  font-family: "Teko", sans-serif;
+.perfil-user {
+    font-family: "Teko", sans-serif;
 }
-.image-user{
-    background-image: url("../user/user_bg.png");
-    background-position: center center;
-    background-repeat: no-repeat;
+
+.image-user {
+    background-color: #b2b2b2;
 }
 
 .perfil_usuario {
@@ -1373,7 +1394,8 @@ ul.categorias {
 .datos_usuario button {
     background-color: #00c2de;
     border-color: #00c2de;
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Alfa Slab One'
+        , sans-serif, cursive;
     font-size: 24px;
     line-height: 24px;
     font-weight: 400;
@@ -1763,7 +1785,6 @@ li.breadcrumb-item.active a {
     display: none;
 }
 
-
 /* ============ Estilos del Carro de compras================== */
 .container-carro {
     margin: 0;
@@ -1830,8 +1851,8 @@ li.breadcrumb-item.active a {
     color: #FFFFFF;
     font-size: 13px;
     font-weight: normal;
-    font-family: 'Alfa Slab One', cursive;
-
+    font-family: 'Alfa Slab One'
+        , sans-serif, cursive;
     line-height: 19px;
     text-align: center;
     text-transform: uppercase;
@@ -1881,7 +1902,8 @@ li.breadcrumb-item.active a {
 .cart-table thead th {
     background-color: #c3d8d5;
     padding: 10px 5px;
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Alfa Slab One'
+        , sans-serif, cursive;
     font-size: 12px;
     border-bottom: 0;
 }
@@ -1897,8 +1919,8 @@ li.breadcrumb-item.active a {
 .cart-table tbody td {
     background-color: transparent;
     padding: 10px 5px;
-    font-family: 'Alfa Slab One', cursive;
-
+    font-family: 'Alfa Slab One'
+        , sans-serif, cursive;
 }
 
 .cart-table .product-cart-info,
@@ -1949,8 +1971,8 @@ li.breadcrumb-item.active a {
     font-size: 9px;
     padding: 0 5px;
     text-transform: uppercase;
-    font-family: 'Alfa Slab One', cursive;
-
+    font-family: 'Alfa Slab One'
+        , sans-serif, cursive;
 }
 
 .cart-table .product-cart-image .cart-links,
@@ -1974,8 +1996,8 @@ li.breadcrumb-item.active a {
 }
 
 .cart-table .product-cart-sku {
-  font-family: 'Alfa Slab One', cursive;
-
+    font-family: 'Alfa Slab One'
+        , sans-serif, cursive;
     font-style: normal;
     font-size: 11px;
     margin: 0 0 2px;
@@ -2049,8 +2071,8 @@ li.breadcrumb-item.active a {
 .cart-table .product-cart-actions {
     min-width: 60px;
     /* text-align: center; */
-    font-family: 'Alfa Slab One', cursive;
-
+    font-family: 'Alfa Slab One'
+        , sans-serif, cursive;
 }
 
 .cart-table .product-cart-actions .qty {
@@ -2061,8 +2083,8 @@ li.breadcrumb-item.active a {
     text-align: center;
     width: 28px;
     font-size: 13px;
-    font-family: 'Alfa Slab One', cursive;
-
+    font-family: 'Alfa Slab One'
+        , sans-serif, cursive;
     margin-left: -4px;
     margin-right: -4px;
 }
@@ -2127,13 +2149,13 @@ li.breadcrumb-item.active a {
 }
 
 .cart-totals table {
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Alfa Slab One'
+        , sans-serif, cursive;
     font-size: 12px;
     margin-bottom: 20px;
     text-transform: uppercase;
     width: 100%;
     background: #e6e6e6;
-
 }
 
 .cart-totals table td {
@@ -2161,14 +2183,14 @@ li.breadcrumb-item.active a {
     font-size: 24px;
     padding: 15px 30px 16px;
     vertical-align: middle;
-    font-family: 'Alfa Slab One', cursive;
-
+    font-family: 'Alfa Slab One'
+        , sans-serif, cursive;
 }
 
 .cart-totals table tfoot strong span,
 .cart-totals table tfoot span.price {
-    font-family: 'Alfa Slab One', cursive;
-
+    font-family: 'Alfa Slab One'
+        , sans-serif, cursive;
 }
 
 .cart-totals table tfoot strong {
@@ -2191,8 +2213,8 @@ h2 {
 }
 
 .cart .cart-totals table {
-    font-family: 'Alfa Slab One', cursive;
-
+    font-family: 'Alfa Slab One'
+        , sans-serif, cursive;
     font-size: 12px;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -2226,14 +2248,14 @@ h2 {
     font-size: 24px;
     padding: 15px 30px 16px;
     vertical-align: middle;
-    font-family: 'Alfa Slab One', cursive;
-
+    font-family: 'Alfa Slab One'
+        , sans-serif, cursive;
 }
 
 .cart .cart-totals table tfoot strong span,
 .cart .cart-totals table tfoot span.price {
-    font-family: 'Alfa Slab One', cursive;
-
+    font-family: 'Alfa Slab One'
+        , sans-serif, cursive;
 }
 
 .cart .cart-totals table tfoot strong {
@@ -2318,8 +2340,8 @@ h2 {
 
 .checkout-types.bottom li button {
     padding: 15px 30px;
-    font-family: 'Alfa Slab One', cursive;
-
+    font-family: 'Alfa Slab One'
+        , sans-serif, cursive;
 }
 
 .cart-totals .checkout-types .btn-checkout {
@@ -2327,8 +2349,8 @@ h2 {
 }
 
 .cart-table {
-    font-family: 'Alfa Slab One', cursive;
-
+    font-family: 'Alfa Slab One'
+        , sans-serif, cursive;
 }
 
 /* ==========================MEDIA QUERIES============================ */
@@ -2358,9 +2380,10 @@ h2 {
 
     .faq-xs {
         display: block;
-        margin: 10px 0;
+        margin: 5px 0;
         color: aliceblue;
-        border-block-end: 1px solid blueviolet;
+        border-block-end: 1px solid #22556e;
+        font-size: 21px;
     }
 
     .topbar .total, .topbar .buscador a {
@@ -2403,6 +2426,7 @@ h2 {
     .sm-footer {
         width: 100%;
     }
+
 
     /*============CARRITO DE COMPRAS ===============*/
     .cart-table thead th.cart-total-head,
@@ -2468,8 +2492,8 @@ h2 {
     .cart-table td[data-rwd-label]:before {
         content: attr(data-rwd-label) ":";
         font-size: 11px;
-        font-family: 'Alfa Slab One', cursive;
-
+        font-family: 'Alfa Slab One'
+            , sans-serif, cursive;
         padding-right: 5px;
         text-transform: uppercase;
     }
@@ -2686,12 +2710,12 @@ h2 {
 @media (max-width: 1024px) {
 
     /* =============Menu Principal-header ============*/
-    #menu-pcipal .nav-right, #menu-pcipal .nav-left {
+    /*  #menu-pcipal .nav-right, #menu-pcipal .nav-left {
         padding-bottom: 0;
         padding-top: 10px;
     }
 
-    .nav-left>ul {
+     .nav-left>ul {
         width: 100%;
         padding-left: 0px;
     }
@@ -2711,8 +2735,7 @@ h2 {
         width: 100%;
         text-align: center;
         margin: 5px;
-    }
-
+    } */
     /* ============ Detalle Producto ===========*/
     .fotos-detalle .thumbs ol li {
         width: 29%;
@@ -2723,4 +2746,568 @@ h2 {
     .empresa .iconos img:first-child {
         padding-left: 22px;
     }
+}
+/* Pantallas grandes (desktops de menos de 1200px) */
+
+@media (max-width: 1199.98px) {
+    .nav-right>ul, .nav-left>ul {
+        padding: 0px;
+    }
+
+    .slick-next {
+        right: 1rem;
+    }
+
+    .slick-prev {
+        left: 1rem;
+    }
+
+    .info-wrapper h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .titulo {
+        font-size: 52px;
+    }
+
+    .subtitulo {
+        font-size: 30px;
+    }
+
+    .empresa .iconos img {
+        max-height: 100px;
+        padding: 0 15px;
+    }
+
+    .empresa .frase-motivadora {
+        font-size: 42px;
+    }
+
+    .cada_marca {
+        max-width: 992px;
+    }
+
+    .cada_marca img {
+        max-height: 60px;
+    }
+
+    .iconos-footer div {
+        width: 30%;
+    }
+
+    .iconos-footer p:first-of-type {
+        font-size: 32px;
+    }
+
+    .contacto small, .contacto a {
+        font-family: "Teko", sans-serif;
+        font-size: 18px;
+    }
+
+    .contacto .mapa {
+        max-width: 450px;
+    }
+}
+
+/* Pantallas medianas (tablets de menos de 992px) */
+@media (max-width: 991.98px) {
+    .clasex {
+        max-width: 100% !important;
+    }
+
+    #menu-pcipal .nav-right {
+        padding-top: 12px;
+        padding-bottom: 5px;
+    }
+
+    #menu-pcipal .nav-right ul {
+        margin-bottom: 0px;
+    }
+
+    .topbar ul li a, #menu-pcipal ul li a {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .faq-lg {
+        width: 50%;
+    }
+    #menu-pcipal .logo{
+      padding: 0 20px;
+    }
+    .top-logo img{
+      max-width: 160px;
+      margin-top: -38px;
+    }
+
+    .info-wrapper h3 {
+        font-family: 'Alfa Slab One', sans-serif, cursive;
+        font-size: 1.3rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        line-height: 1.6rem;
+    }
+    .slick-dots {
+        bottom: 0px;
+    }
+    .info-wrapper form .agregarCarrito {
+        font-size: 28px;
+        line-height: 36px;
+        padding: 8px 30px;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    .info-wrapper span {
+        font-size: 2rem;
+        line-height: 2rem;
+        padding: 10px 30px 5px 30px;
+        margin-bottom: 10px;
+    }
+    .titulo {
+        font-size: 42px;
+    }
+
+    .subtitulo {
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    .imagen-texto{
+      padding: 0px;
+      margin-bottom: 20px;
+    }
+    .imagen-texto p{
+      font-size: 19px;
+      line-height: 21px;
+      font-weight: 300;
+      margin-bottom: 10px;
+    }
+    .imagen-texto p:nth-of-type(1){
+      padding-top: 0px;
+    }
+    .empresa, .marcas, .formas{
+      padding: 70px 0;
+    }
+    .empresa .iconos{
+      padding-top: 0px;
+    }
+    .empresa .iconos img{
+      max-height: 70px;
+    }
+    .empresa .iconos img {
+    padding: 0 10px;
+  }
+    .empresa .frase-pasion{
+      font-size: 21px;
+      margin-top: 20px;
+    }
+    .empresa .frase-motivadora{
+      font-size: 32px;
+    }
+    .forma_de_pagar{
+      min-height: 350px;
+    }
+    .formas h2{
+      font-size: 36px;
+      line-height: 36px;
+    }
+    .marcas h2{
+      padding-bottom: 20px;
+    }
+    .cada_marca img{
+      max-height: 45px;
+    }
+    footer{
+      padding-top: 0px;
+    }
+    .iconos-footer{
+      float: none;
+    }
+    .iconos-footer div{
+      width: 33%;
+    }
+    .iconos-footer p:first-of-type{
+      font-size: 38px;
+      line-height:42px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .iconos-footer p:nth-of-type(2){
+      font-size: 26px;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .contacto .mapa{
+      margin-top: 35px;
+      max-width: 100%;
+    }
+    .contacto .mapa iframe{
+      width: 700px;
+    }
+    .sm-footer{
+      width: 100%;
+      margin: 20px 0;
+    }
+    ul.categorias{
+      padding-left: 0px;
+    }
+    .categorias li a, .categorias li{
+      font-size: calc(1rem + 1vw);
+    }
+    .categorias li{
+      padding-right: 10px;
+    }
+
+}
+
+@media (min-width: 768px) {
+  .hidden-md{
+    display: none!important;
+  }
+}
+
+/* Pantallas pequeñas (móviles en landscape de menos de 768px) */
+@media (max-width: 767.98px) {
+  .top-logo img{
+    margin-top: -10px;
+  }
+  .clasex {
+  justify-content: flex-end!important;
+  }
+  .hidden-sm{
+    display: none!important;
+  }
+  .topbar{
+    padding-top: 0px;
+    margin-right: 0px!important;
+  }
+  .navbar-toggler{
+    padding: 0px;
+  }
+  .guest-mobile{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+  }
+  .guest-mobile ul{
+    list-style: none;
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+  }
+  .guest-mobile ul li{
+    float: left;
+  }
+  .guest-mobile ul li a{
+    padding: .5rem 0px;
+    font-size: 21px;
+  }
+  .guest-mobile ul li a:hover{
+    text-decoration: none ;
+  }
+  .guest-mobile ul li span{
+    padding: .5rem 5px !important;
+  }
+  .nav-mobile{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .nav-mobile li{
+    text-align: center;
+    font-size: 21px;
+  }
+  .nav-mobile li a{
+    text-decoration: none;
+  }
+  .nav-mobile li a:hover{
+    text-decoration: none;
+    font-size: 21px;
+    color: aliceblue;
+    border-left: none;
+  }
+  .nav-mobile li:hover{
+    border-left: none;
+  }
+  .ubicacion{
+    padding-bottom: 0px;
+  }
+  .contacto .mapa iframe{
+    max-width: 100%;
+  }
+  .cada_marca ul li{
+    margin: 10px 0;
+  }
+  .primero, .segundo, .tercero{
+    margin-bottom: 20px;
+  }
+  .formas h2{
+    margin-bottom: 0px;
+  }
+  .empresa .iconos img:first-child{
+    padding-left: 0px;
+  }
+  .empresa .iconos img{
+    padding: 10px
+  }
+  .your-class img{
+    max-height: 280px;
+  }
+  .slick-prev, .slick-next{
+    top: 20%;
+  }
+  .info-wrapper h1{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .info-wrapper h3{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .info-wrapper form .agregarCarrito{
+    margin-top: 0px;
+    margin-left: 10px;
+    padding: 6px 25px;
+  }
+  .info-wrapper span{
+    font-size: 1.8rem;
+  }
+  .slick-dots{
+    bottom: -20px;
+  }
+  .titulo{
+    font-size: 36px;
+  }
+  .empresa .frase-motivadora{
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .empresa .iconos img{
+    max-height: 75px;
+  }
+  .seguir-comprando{
+    font-size: 14px;
+  }
+  .btn-group-sm>.btn, .btn-sm{
+    line-height: 1rem;
+  }
+  .contenido p:first-child, #administrador p.first{
+    margin-bottom: 20px;
+  }
+  .iconos-footer p:first-of-type{
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .iconos-footer p:nth-of-type(2){
+    font-size: 22px;
+  }
+  .detalle .btn-group .dropdown-menu, .detalle .btn-group .dropdown-item, .detalle .btn-group .btn-info{
+    font-size: 18px;
+  }
+  .pagina h1{
+    font-size: 48px;
+    line-height: 52px;
+  }
+  .contenido p:first-child, #administrador p.first{
+    font-size: 24px;
+  }
+  .grilla{
+    padding: 0 20px;
+  }
+  .prod{
+    width: 100%;
+  }
+  .prod-title{
+    margin-bottom: 0px;
+  }
+  .prod h5 a, .prod-title{
+    font-size: 38px;
+    line-height: 42px;
+    }
+  .prod-price{
+    font-size: 32px;
+  }
+  .prod-links a, .prod-links span{
+    padding: 0 5px;
+  }
+  .prod-links, .prod-links form .agregarCarrito{
+    font-size: 24px;
+  }
+  .prod-links form .agregarCarrito{
+  padding: 0 10px;
+}
+.detalle{
+  padding-top: 20px;
+}
+.opciones h2{
+  font-weight: 600;
+}
+.opciones p, .opciones h2{
+  margin-bottom: 0px;
+}
+#sidebar-wrapper{
+  margin-left: -128px;
+}
+.administrador .row{
+  padding: 0px;
+}
+.administrador .card-tools{
+  min-width: 150px;
+  max-width: 200px;
+}
+.agregar-item{
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1rem;
+}
+
+}
+
+/* Pantallas muy pequeñas (móviles en portrait de menos de 576px) */
+@media (max-width: 575.98px) {
+
+  .pagina h1{
+    font-size: 44px;
+    line-height: 50px;
+  }
+  #sidebar-wrapper{
+    margin-left: -128px;
+  }
+}
+
+
+/* AdminLte */
+.small-box {
+  border-radius: 0.25rem;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.125), 0 1px 3px rgba(0, 0, 0, 0.2);
+  display: block;
+  position: relative;
+}
+
+.small-box > .inner {
+  padding: 10px;
+}
+
+.small-box > .small-box-footer {
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  display: block;
+  padding: 3px 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.small-box > .small-box-footer:hover {
+  background: rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+}
+
+.small-box h3 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  padding: 0;
+  white-space: nowrap;
+}
+.small-box p{
+  font-family: Teko, sans-serif;
+}
+
+@media (min-width: 992px) {
+  .col-xl-2 .small-box h3,
+  .col-lg-2 .small-box h3,
+  .col-md-2 .small-box h3 {
+    font-size: 1.6rem;
+  }
+  .col-xl-3 .small-box h3,
+  .col-lg-3 .small-box h3,
+  .col-md-3 .small-box h3 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-xl-2 .small-box h3,
+  .col-lg-2 .small-box h3,
+  .col-md-2 .small-box h3 {
+    font-size: 2.2rem;
+  }
+  .col-xl-3 .small-box h3,
+  .col-lg-3 .small-box h3,
+  .col-md-3 .small-box h3 {
+    font-size: 2.2rem;
+  }
+}
+
+.small-box p {
+  font-size: 1rem;
+}
+
+.small-box p > small {
+  color: #f8f9fa;
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.small-box h3,
+.small-box p {
+  z-index: 5;
+}
+
+.small-box .icon {
+  color: rgba(0, 0, 0, 0.15);
+  z-index: 0;
+}
+
+.small-box .icon > i {
+  font-size: 90px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  transition: all 0.3s linear;
+}
+
+.small-box .icon > i.fa, .small-box .icon > i.fas, .small-box .icon > i.far, .small-box .icon > i.fab, .small-box .icon > i.glyphicon, .small-box .icon > i.ion {
+  font-size: 70px;
+  top: 20px;
+}
+
+.small-box:hover {
+  text-decoration: none;
+}
+
+.small-box:hover .icon > i {
+  font-size: 95px;
+}
+
+.small-box:hover .icon > i.fa, .small-box:hover .icon > i.fas, .small-box:hover .icon > i.far, .small-box:hover .icon > i.fab, .small-box:hover .icon > i.glyphicon, .small-box:hover .icon > i.ion {
+  font-size: 75px;
+}
+
+@media (max-width: 767.98px) {
+  .small-box {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .small-box .bg-succes {
+    margin-bottom: 0px;
+  }
+  .small-box .icon {
+    display: none;
+  }
+  .small-box p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+.small-box .bg-info{
+  background-color: #6495ed;
 }

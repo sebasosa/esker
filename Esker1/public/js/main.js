@@ -28,4 +28,4 @@
 		( windowTop > offsetOpacity ) && Util.addClass(backTop, 'cd-top--fade-out');
 		scrolling = false;
 	}
-})();
+});

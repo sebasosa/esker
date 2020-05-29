@@ -9,7 +9,7 @@
     <div class="card mb-4 perfil-user" style="max-width: 540px;" >
       <div class="row no-gutters">
         <div class="col-md-4 image-user">
-          <img class="card-img-top" src="{{asset('/user/'.Auth::user()->imagen)}}" alt="Card image cap">
+          <img class="card-img-top" src="{{asset('/user/'.Auth::user()->imagen)}}" alt="Avatar">
         </div>
         <div class="col-md-8">
           <div class="card-body">

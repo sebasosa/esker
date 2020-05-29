@@ -3,6 +3,7 @@
 @section('title', 'Home')
 
 @section('style-home')
+  @media (min-width: 991.98px) {
   .forma_de_pagar {
     margin-top: -315px!important;
     padding: 200px 0px!important;
@@ -21,6 +22,7 @@
   -moz-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.4);
   }
+}
 @endsection
 
 
@@ -32,7 +34,7 @@
            @foreach ($products as $prod)
              <div class="container">
                <div class="row">
-                 <div class="col-md-6"><a href="{{url('/products/'.$prod->id)}}">
+                 <div class="col-md-6 vac"><a href="{{url('/products/'.$prod->id)}}">
                    @if ($prod->imagen())
                      <img src="{{asset('uploads/'.$prod->imagenes()->first()->url)}}" class="img-fluid" >
                    @else
