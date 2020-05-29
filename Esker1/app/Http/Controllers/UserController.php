@@ -90,12 +90,17 @@ class UserController extends Controller
         $user = User::find($id);
         $user->name = $request->name;
         $user->email = $request->email;
+        if ($request->hasFile('avatar')) {
+          $path= $request->name.".".$request->avatar->extension();
+          $request->avatar->move(public_path().'/user/', "$path");
+          $user->imagen = $path;
+        }
 
         if ($user->save()) {
           if (Auth::user()->role == 'admin') {
             return redirect('/users');
           } else {
-            return redirect('perfil');
+            return redirect('/perfil');
           }
 
         } else {

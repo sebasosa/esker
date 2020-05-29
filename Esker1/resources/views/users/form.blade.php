@@ -1,11 +1,15 @@
 
-{!!Form::open(['url' => $url, 'method' => $method])!!}
+{!!Form::open(['url' => $url, 'method' => $method, 'files'=> True])!!}
 
   <div class="form-group">
     {{ Form::text('name',"$user->name", ['class'=>'form-control', 'placeholder'=>'Nombre...'])}}
   </div>
   <div class="form-group">
     {{ Form::text('email',"$user->email", ['class'=>'form-control', 'placeholder'=>'Email...'])}}
+  </div>
+  <div class="form-group">
+    {{ Form::file('avatar')}}
+    <img style="width: 150px" src="{{asset('/user/'.Auth::user()->imagen)}}" alt="">
   </div>
   @if ($url === '/users')
     <div class="form-group">
