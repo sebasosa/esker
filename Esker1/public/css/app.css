@@ -3165,7 +3165,20 @@ h2 {
     font-size: .875rem;
     line-height: 1rem;
 }
-
+.login{
+  border-right: none;
+  border-bottom: 1px solid #CCC;
+  padding-right: 0px;:
+}
+.login, .registro {
+    width: 100%;
+}
+.login p:first-child, .registro p:first-child{
+  margin-top: 0px;
+}
+.registro{
+margin-left: 0%;
+}
 }
 
 /* Pantallas muy pequeñas (móviles en portrait de menos de 576px) */
@@ -3310,4 +3323,8 @@ h2 {
 }
 .small-box .bg-info{
   background-color: #6495ed;
+}
+.img-user{
+  width: auto;
+  max-height: 300px
 }
