@@ -16,7 +16,7 @@
 
                 <p class="first fl">Agregar nuevo producto</p>
 
-                <a class="btn btn-sm btn-outline-dark agregar-item" href="{{url('/products')}}" title="Agregar Categorias"><i class="fas fa-undo-alt"></i> Regresar </a>
+                <a class="btn btn-sm btn-outline-dark agregar-item" href="{{url('/products')}}" ><i class="fas fa-undo-alt"></i> Regresar </a>
                 <!-- Formulario -->
                 @include('products.form', ['products' => $product,'categories'=> $categories, 'url' => '/products', 'method' => 'POST'])
             </div>

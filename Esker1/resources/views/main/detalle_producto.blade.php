@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Producto')
+@section('title', 'Detalle de Producto')
 @section('content')
   <!-- DETALLE PRODUCTO -->
   <div id="producto" class="pagina">

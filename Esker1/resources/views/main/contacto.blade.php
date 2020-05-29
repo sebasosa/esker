@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('tilte','Contacto')
+@section('title','Contacto')
 @section('content')
   <!-- CONTACTO -->
   <div id="contacto" class="pagina">

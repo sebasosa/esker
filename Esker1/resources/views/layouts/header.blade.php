@@ -29,22 +29,22 @@
                     </a>
                   </li>
                   <li>
-                    <a class="faq-xs" href="{{url('/')}}">
+                    <a class="faq-xs {{ setActive('home') }}" href="{{url('/')}}">
                       <span>Home</span>
                     </a>
                   </li>
                   <li>
-                    <a class="faq-xs" href="{{url('/productos')}}">
+                    <a class="faq-xs {{ setActive('productos.catalogo') }}" href="{{url('/productos')}}">
                       <span>Productos</span>
                     </a>
                   </li>
                   <li>
-                    <a class="faq-xs"href="{{url('/faq')}}">
+                    <a class="faq-xs {{ setActive('faq') }}"href="{{url('/faq')}}">
                       <span>Preguntas Frecuentes</span>
                     </a>
                   </li>
                   <li>
-                    <a class="faq-xs" href="{{url('/contacto')}}">
+                    <a class="faq-xs {{ setActive('contacto') }}" href="{{url('/contacto')}}">
                       <span>Contacto</span>
                     </a>
                   </li>
@@ -62,13 +62,23 @@
                       </li>
                     @endif
                     @else
-                      <li><a class="nav-link perfil text-white" href="{{url('/perfil')}}"><i class="fas fa-user"></i></a></li>
+
+                      @if(Auth::user()->imagen)){
+                        <div class="user-panel">
+                            <a href="{{url('/perfil')}}"><img src="{{ asset('/user/'.Auth::user()->imagen) }}" class="img-size-32 img-circle elevation-2"></a>
+                        </div>
+                      }@else{
+                        <a class="nav-link perfil text-white" href="{{url('/perfil')}}"><i class="fas fa-user"></i></a>
+                      }@endif
+
+
                       <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                           {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="{{ url('/perfil') }}"> Mi Perfil </a>
                           <a class="dropdown-item" href="{{ route('logout') }}"
                               onclick="event.preventDefault();
                                   document.getElementById('logout-form').submit();">
@@ -88,6 +98,7 @@
   </div>
   <!-- NAV PRINCIPAL -->
   <nav id="menu-pcipal">
+
     <div class="logo">
       <a class="top-logo" href="{{url('/')}}">
         <img src="{{ asset('img/logos/logo-esker.png') }}" alt="Logo Esker Outdoors" width="185" height="153">
@@ -97,12 +108,12 @@
     <div class="nav-left">
       <ul>
         <li>
-          <a  href="{{url('/')}}">
+          <a class="{{ setActive('home') }}" href="{{url('/')}}">
             <span>Home</span>
           </a>
         </li>
         <li>
-          <a href="{{url('/productos')}}">
+          <a class="{{ setActive('productos.catalogo') }}" href="{{url('/productos')}}">
             <span>Productos</span>
           </a>
         </li>
@@ -112,12 +123,12 @@
     <div class="nav-right">
       <ul>
         <li>
-          <a class="faq-lg" href="{{url('/faq')}}">
+          <a class="faq-lg {{ setActive('faq') }}" href="{{url('/faq')}}">
             <span>Preguntas Frecuentes</span>
           </a>
         </li>
         <li>
-          <a href="{{url('/contacto')}}">
+          <a class="{{ setActive('contacto') }}" href="{{url('/contacto')}}">
             <span>Contacto</span>
           </a>
         </li>

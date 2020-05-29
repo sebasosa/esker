@@ -16,7 +16,7 @@
 
                 <p class="first fl">Listado de Usuarios</p>
 
-                <a class="btn btn-outline-dark agregar-item" href="{{url('/users/create')}}"><i class="fas fa-plus-circle"></i> Agregar Usuario </a>
+                <a class="btn btn-outline-dark agregar-item" href="{{url('/users/agregar')}}"><i class="fas fa-plus-circle"></i> Agregar Usuario </a>
 
                 <div class="card mb-4">
                     <div class="card-content table-responsive">
@@ -36,7 +36,7 @@
                                     <td>{{$user->email}}</td>
                                     <td>{{$user->role}}</td>
                                     <td>
-                                        <a class="btn btn-sm btn-outline-primary fl mb-1 mr-1" href="{{url('/users/'.$user->id.'/edit')}}"> Editar</a>
+                                        <a class="btn btn-sm btn-outline-primary fl mb-1 mr-1" href="{{url('/users/'.$user->id.'/editar')}}"> Editar</a>
                                         @include('users.delete', ['user' => $user->id])
                                     </td>
                                 </tr>

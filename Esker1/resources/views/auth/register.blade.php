@@ -44,6 +44,7 @@
               <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password" placeholder="Repetí tu contraseña">
             </fieldset>
             <fieldset class="form-group">
+              <label for="avatar">Imagen de perfil</label>
               <input id="avatar" type="file" class="form-control" name="avatar">
             </fieldset>
 

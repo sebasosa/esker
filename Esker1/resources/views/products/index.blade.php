@@ -16,7 +16,7 @@
 
                 <p class="first fl">Listado de Productos</p>
 
-                <a class="btn btn-outline-dark agregar-item" href="{{url('/products/create')}}" title="Agregar Categorias"><i class="fas fa-plus-circle"></i> Agregar Producto </a>
+                <a class="btn btn-outline-dark agregar-item" href="{{url('/products/agregar')}}" ><i class="fas fa-plus-circle"></i> Agregar Producto </a>
 
                 <div class="card mb-4">
                     <div class="card-content table-responsive">
@@ -48,7 +48,7 @@
                                     <td>{{$product->pricing}}</td>
                                     <td>{{$product->category('title')}}</td>
                                     <td>
-                                        <a class="btn btn-sm btn-outline-primary fl mb-1" href="{{url('/products/'.$product->id.'/edit')}}"> Editar</a>
+                                        <a class="btn btn-sm btn-outline-primary fl mb-1" href="{{url('/products/'.$product->id.'/editar')}}"> Editar</a>
                                         @include('products.delete', ['product' => $product->id])
 
                                     </td>

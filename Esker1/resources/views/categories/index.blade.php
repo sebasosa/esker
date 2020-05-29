@@ -16,7 +16,7 @@
 
                 <p class="first fl">Listado de Categorias</p>
 
-                <a class="btn btn-outline-dark agregar-item" href="{{url('/categories/create')}}"><i class="fas fa-plus-circle"></i> Agregar Categoria </a>
+                <a class="btn btn-outline-dark agregar-item" href="{{url('/categories/agregar')}}"><i class="fas fa-plus-circle"></i> Agregar Categoria </a>
 
                 <div class="card mb-4">
                     <div class="card-content table-responsive">
@@ -34,7 +34,7 @@
                                     <td>{{$category->id}}</td>
                                     <td>{{$category->title}}</td>
                                     <td>
-                                        <a class="btn btn-sm btn-outline-primary fl mb-1 mr-1" href="{{url('/categories/'.$category->id.'/edit')}}"> Editar</a>
+                                        <a class="btn btn-sm btn-outline-primary fl mb-1 mr-1" href="{{url('/categories/'.$category->id.'/editar')}}"> Editar</a>
                                         @include('categories.delete', ['category' => $category->id])
                                     </td>
                                 </tr>
